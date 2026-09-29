@@ -92,3 +92,11 @@ genomen. Elke beslissing heeft een korte motivatie.
 | D53 | De AI-teksten laden via `Suspense` terwijl de getallen direct zichtbaar zijn; per berekening wordt één rapport opgeslagen (`advice_reports`) en hergebruikt | Snelle pagina, geen dubbele AI-kosten. |
 | D54 | Grafieken met Recharts in het gevalideerde referentiepalet (slot 1 blauw, slot 2 oranje; aparte donkere stappen; validator draait groen). Geen dubbele assen: schuld/waarde, bruto/netto, renteaftrek, overwaarde en LTV zijn aparte grafieken; elk met tooltip en een tabelweergave | Toegankelijkheid en leesbaarheid (dataviz-richtlijnen). |
 | D55 | PDF met `@react-pdf/renderer` in een route handler (Node-runtime): dezelfde onderdelen en getallen als het dashboard, eenvoudige vectorgrafieken en de disclaimer als vaste voettekst op elke pagina. Paginanummers zijn weggelaten omdat een `render`-element de vaste laag in react-pdf 4.9 laat verdwijnen | Disclaimer op elke pagina is een harde eis; paginanummers niet. |
+
+## Fase 8 — Wat-als-modus en dossier-chat
+
+| # | Beslissing | Motivatie |
+|---|---|---|
+| D56 | De wat-als-modus draait `runAdvice` in de browser met de opgeslagen engine-invoer, de actieve normenset en alleen de rentes voor de gekozen rentevaste periode; `useDeferredValue` houdt de schuiven vloeiend | De engine is isomorf; geen serververzoeken per wijziging en geen afwijking van het rapport. |
+| D57 | Schuifregelaars zijn native `input type="range"` met label, `output` en `aria-valuetext` | Toetsenbord- en schermlezer-toegankelijk zonder extra componentlogica. |
+| D58 | Chat: context = feiten + banktabel met redenen + controles + bronnen (met URL). Het model mag alleen getallen uit die context gebruiken; de getallencheck draait ook hier (één herkansing, anders een veilig antwoord). Berichten worden versleuteld opgeslagen; limiet via dezelfde AI-rate-limit | Antwoorden zijn herleidbaar en voorzien van bronvermelding. |
