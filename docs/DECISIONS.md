@@ -112,3 +112,12 @@ genomen. Elke beslissing heeft een korte motivatie.
 | D63 | AVG: export van alle gegevens als JSON (art. 15/20), direct verwijderen van een dossier incl. bestanden, en verwijderen van het hele account incl. Clerk-gebruiker (art. 17). De audit-log wordt bij accountverwijdering geanonimiseerd | Wettelijke rechten, direct zelf uit te voeren. |
 | D64 | Logging bevat alleen foutnamen, nooit foutberichten met mogelijk persoonsgegevens; URL's bevatten alleen UUID's | "Geen persoonsgegevens in logs of URL's". |
 | D65 | Integratietests van de servicelaag draaien tegen PGlite met de echte migraties | Test autorisatie (isolatie per gebruiker), versleuteling in rust, hergebruik van berekeningen en AVG-functies zonder externe database. |
+
+## Fase 10 — E2E-tests en documentatie
+
+| # | Beslissing | Motivatie |
+|---|---|---|
+| D66 | E2E-tests draaien tegen `next dev` in `E2E_TEST_MODE` met een verse PGlite-database, lokale opslag en zonder AI-sleutel | Volledige flows (starter, doorstromer, verhogen, oversluiten, ondernemers, AVG, beheer) zijn in CI en lokaal te testen zonder externe accounts of geheimen. De Clerk-login zelf wordt niet e2e getest. |
+| D67 | Openbare voorbeeldpagina (`/demo`) met drie fictieve profielen die in de browser worden doorgerekend | Laat de werking zien zonder account; hergebruikt de wat-als-modus. |
+| D68 | De wizard vult standaard drie jaar cijfers voor; jaren vóór de startdatum van de onderneming worden bij het omzetten naar de engine weggelaten | Gevonden via e2e: anders zou een starter met 1 jaar als 3-jarige onderneming (met twee nuljaren) worden beoordeeld. |
+| D69 | `pg` als devDependency | `drizzle-kit migrate` heeft een Node-Postgresdriver nodig voor Neon-connection strings. |

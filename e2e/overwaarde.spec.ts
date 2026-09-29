@@ -1,0 +1,52 @@
+import { expect, test, type Page } from "@playwright/test"
+import { calculate, fillMoney, login, newDossier, next, personal } from "./helpers"
+
+async function currentHome(page: Page) {
+  await fillMoney(page, "WOZ-waarde", "480000")
+  await fillMoney(page, "Geschatte marktwaarde", "500000")
+  await page.getByRole("button", { name: "Leningdeel toevoegen" }).click()
+  await fillMoney(page, "Restschuld", "200000")
+  await page.getByLabel("Rente", { exact: true }).fill("4.9")
+  await page.getByLabel("Einde rentevaste periode").fill("2029-06-01")
+  await page.getByLabel("Einddatum looptijd").fill("2045-06-01")
+}
+
+test("overwaarde: hypotheek verhogen voor verduurzaming", async ({ page }) => {
+  await login(page, "overwaarde")
+  await newDossier(page, /Hypotheek verhogen of overwaarde opnemen/)
+  await personal(page, ["1970-01-01"])
+  await next(page, "inkomen")
+  await fillMoney(page, "Bruto jaarsalaris (zonder vakantiegeld)", "80000")
+  await next(page, "verplichtingen")
+  await next(page, "vermogen")
+  await fillMoney(page, "Spaargeld", "60000")
+  await next(page, "huidige-woning")
+  await currentHome(page)
+  await next(page, "voorkeuren")
+  await fillMoney(page, "Gewenst extra bedrag", "40000")
+  await page.getByLabel("Waarvoor?").selectOption("energy")
+  await next(page, "risicos")
+  await next(page, "overzicht")
+  await calculate(page)
+  await expect(page.getByRole("heading", { name: "Overwaarde benutten" })).toBeVisible()
+  await expect(page.getByText("Aflossen vs").or(page.getByText("Extra aflossen")).first()).toBeVisible()
+  await expect(page.getByText("Verhogen voor verduurzaming")).toBeVisible()
+})
+
+test("oversluiten: boeterente en besparing", async ({ page }) => {
+  await login(page, "oversluiter")
+  await newDossier(page, /Mijn hypotheek oversluiten/)
+  await personal(page, ["1980-01-01"])
+  await next(page, "inkomen")
+  await fillMoney(page, "Bruto jaarsalaris (zonder vakantiegeld)", "65000")
+  await next(page, "verplichtingen")
+  await next(page, "vermogen")
+  await next(page, "huidige-woning")
+  await currentHome(page)
+  await next(page, "voorkeuren")
+  await next(page, "risicos")
+  await next(page, "overzicht")
+  await calculate(page)
+  await expect(page.getByText("Boeterente (totaal)")).toBeVisible()
+  await expect(page.getByText("Terugverdientijd")).toBeVisible()
+})

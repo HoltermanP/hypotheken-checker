@@ -14,6 +14,9 @@ export class IntakeIncompleteError extends Error {
 }
 
 export function businessToEngine(b: BusinessForm): BusinessInput {
+  // Jaren vóór de startdatum van de onderneming tellen niet mee (de wizard vult standaard 3 jaar voor).
+  const startYear = Number(b.startDate.slice(0, 4)) || 0
+  const fromStart = <T extends { year: number }>(rows: T[]) => rows.filter((r) => r.year >= startYear)
   return {
     id: b.id,
     legalForm: b.legalForm,
@@ -23,16 +26,16 @@ export function businessToEngine(b: BusinessForm): BusinessInput {
     soleProp:
       b.legalForm === "bv" || b.legalForm === "bv_holding" || !b.soleProp
         ? undefined
-        : { years: b.soleProp.years, forBalance: b.soleProp.forBalance, forecastProfit: b.soleProp.forecastProfit ?? null },
+        : { years: fromStart(b.soleProp.years), forBalance: b.soleProp.forBalance, forecastProfit: b.soleProp.forecastProfit ?? null },
     bv:
       (b.legalForm === "bv" || b.legalForm === "bv_holding") && b.bv
         ? {
             shareholdingPct: b.bv.shareholdingPct,
             statutoryDirector: b.bv.statutoryDirector,
-            salaries: b.bv.salaries,
+            salaries: fromStart(b.bv.salaries),
             carBenefit: b.bv.carBenefit,
             pensionAccrual: b.bv.pensionAccrual,
-            entities: b.bv.entities.map((e) => ({ ...e, parentKey: e.parentKey || null })),
+            entities: b.bv.entities.map((e) => ({ ...e, parentKey: e.parentKey || null, financials: fromStart(e.financials) })),
             fiscalUnity: b.bv.fiscalUnity,
             consolidated: null,
             managementFee: b.bv.managementFee.annual > 0 ? b.bv.managementFee : null,

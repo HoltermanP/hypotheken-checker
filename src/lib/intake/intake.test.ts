@@ -102,6 +102,16 @@ describe("intake", () => {
     expect(STEP_SCHEMAS.ondernemer.safeParse(i.ondernemer).success).toBe(true)
   })
 
+  it("jaren vóór de startdatum van de onderneming tellen niet mee", () => {
+    const i = fullIntake("starter")
+    i.inkomen!.applicants[0]!.isEntrepreneur = true
+    const b = defaultBusiness(2026)
+    b.startDate = "2025-01-01"
+    i.ondernemer = { applicants: [{ businesses: [b] }] }
+    const input = intakeToEngineInput(i, { calculationDate: "2026-09-29", referenceRatePct: 4.2 })
+    expect(input.applicants[0]!.businesses[0]!.soleProp!.years.map((y) => y.year)).toEqual([2025])
+  })
+
   it("onvolledige intake geeft een duidelijke fout", () => {
     expect(() => intakeToEngineInput({ doel: { goal: "doorstromer" } }, { calculationDate: "2026-09-29", referenceRatePct: 4 })).toThrow(IntakeIncompleteError)
     try {
