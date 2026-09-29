@@ -1,9 +1,11 @@
 import { SignUp } from "@clerk/nextjs"
+import { isE2ETestMode } from "@/env"
+import { TestLogin } from "@/components/auth/test-login"
 
 export default function SignUpPage() {
   return (
     <main id="main" className="flex flex-1 items-center justify-center p-4">
-      <SignUp />
+      {isE2ETestMode() ? <TestLogin /> : <SignUp />}
     </main>
   )
 }

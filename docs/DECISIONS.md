@@ -48,3 +48,15 @@ genomen. Elke beslissing heeft een korte motivatie.
 | D29 | Continuïteitsrisicoscore en branchetabel zijn modelaannames (geen bankcriterium) | Duiding voor de gebruiker; beïnvloedt de leenruimte niet. |
 | D30 | Scenario's rekenen elk opnieuw de referentierente (mediaan van de banken bij de nieuwe LTV/NHG/periode) | Anders zou bijvoorbeeld "zonder NHG" of "20 jaar vast" onterecht dezelfde rente krijgen. |
 | D31 | Verstandig lenen: hoogste bedrag waarbij na alle vaste lasten ≥ 10% van het netto-inkomen overblijft (Nibud-spaaradvies) en onder de gewenste maximale maandlast | Een onderbouwde, uitlegbare grens naast de wettelijke maximale hypotheek. |
+
+## Fase 4 — Intake en persistentie
+
+| # | Beslissing | Motivatie |
+|---|---|---|
+| D32 | Eén Zod-schema per wizardstap; "Opslaan en verder" valideert strikt en schrijft genormaliseerd naar de tabellen (applicants, incomes, businesses + entities/financials/shareholdings/guarantees/dga_loans, obligations, assets, current_properties + loan_parts, target_properties). Tussentijds wordt de onvolledige invoer elke 1,5 s als versleuteld concept in `dossiers.general.drafts` bewaard | Automatisch opslaan zonder dat halve invoer de rekenkern of de genormaliseerde tabellen vervuilt; hervatten laadt eerst het concept. |
+| D33 | Schrijfacties per stap zijn atomair (Neon `batch`; ID's worden vooraf gegenereerd zodat alles in één batch past) | Geen half opgeslagen stap bij een netwerkfout. |
+| D34 | Conditionele stappen: "Onderneming" alleen als een aanvrager ondernemer is; "Huidige woning" bij doorstromen/oversluiten/verhogen/verkopen (en bij oriëntatie als iemand al een woning had); "Nieuwe woning" is optioneel bij oriëntatie | "Vraag alleen wat relevant is." |
+| D35 | Elk veld heeft een label en een korte uitleg waarom we het vragen (via `aria-describedby`); fouten met `role="alert"`; bedragen in nl-NL-notatie met een eigen invoerveld dat "1.234,56" én "1234.56" accepteert | Toegankelijkheid (WCAG 2.1 AA) en gebruiksgemak. |
+| D36 | Lokale database-modus `DATABASE_URL=pglite:./.pglite` (PGlite als devDependency, runtime-require, geblokkeerd op Vercel) | Lokaal ontwikkelen en e2e-tests draaien zonder Neon-account; migraties en seed werken er ook mee. |
+| D37 | Clerk `createRouteMatcher` (deprecated in Core 3) vervangen door een eenvoudige padcontrole in `proxy.ts`; elke pagina/layout/server action controleert zelf de sessie en het eigendom | Volgt de aanbeveling van Clerk (resource-based checks). |
+| D38 | Berekeningen worden opgeslagen met input-hash (stabiele JSON), engineversie en normversie; ongewijzigde invoer hergebruikt de bestaande berekening | Herleidbaarheid en geen onnodige herberekening. |

@@ -1,4 +1,4 @@
-import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server"
+import { clerkMiddleware } from "@clerk/nextjs/server"
 import { NextResponse, type NextRequest } from "next/server"
 
 /**
@@ -6,7 +6,8 @@ import { NextResponse, type NextRequest } from "next/server"
  * authenticatie en eigendom (401/403) — behalve cron (CRON_SECRET) en de Blob-upload-callback
  * (ondertekend door Vercel Blob).
  */
-const isProtectedPage = createRouteMatcher(["/app(.*)", "/admin(.*)"])
+/** Pagina's onder /app en /admin. Elke pagina, layout en server action controleert daarnaast zelf auth. */
+const isProtectedPage = (req: NextRequest) => /^\/(app|admin)(\/|$)/.test(req.nextUrl.pathname)
 
 const e2eMode =
   process.env.E2E_TEST_MODE === "1" &&
