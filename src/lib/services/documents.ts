@@ -283,3 +283,13 @@ export async function purgeExpiredDocuments(now = new Date()): Promise<number> {
   }
   return expired.length
 }
+
+/** Eén bevestigde waarde uit een document van een type (of null). */
+export async function confirmedDocumentValue(userId: string, dossierId: string, type: string, key: string): Promise<FieldValue | null> {
+  const rows = await getDb()
+    .select()
+    .from(schema.documents)
+    .where(and(eq(schema.documents.dossierId, dossierId), eq(schema.documents.userId, userId), eq(schema.documents.type, type)))
+  for (const d of toConfirmed(rows)) if (d.values[key] !== undefined && d.values[key] !== null) return d.values[key]!
+  return null
+}

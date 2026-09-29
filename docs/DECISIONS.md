@@ -82,3 +82,13 @@ genomen. Elke beslissing heeft een korte motivatie.
 | D48 | Scenario's worden per dossier opgeslagen (max. 4, tabel `scenarios`, overrides gevalideerd met een strikt Zod-schema). Zonder opgeslagen scenario's toont de app de voorstellen van de engine (voorkeur, andere rentevaste periode, NHG, eigen geld; bij doorstromers eerst kopen/verkopen; bij DGA's salaris verhogen en hypotheek bij eigen BV) | Direct nuttig zonder configuratie, maar volledig aanpasbaar. |
 | D49 | Bankvergelijking toont álle banken (ook inactieve en niet-accepterende) met reden, en per rente "rente van [datum]" plus een markering als de rente niet geverifieerd of afgeleid is | Transparantie: de gebruiker ziet waarom een bank afvalt en hoe actueel de rente is. |
 | D50 | Stoplichten hebben altijd een tekstalternatief (sr-only) | WCAG 1.4.1: kleur is nooit de enige informatiedrager. |
+
+## Fase 7 — Adviesrapport, dashboard, grafieken en PDF
+
+| # | Beslissing | Motivatie |
+|---|---|---|
+| D51 | Het LLM krijgt uitsluitend `buildFacts(output)`: een compacte, afgeronde selectie uit de engine-uitvoer (hele euro's, 2 decimalen voor percentages). Dezelfde feiten zijn de referentie voor de getallencheck | Wat het LLM ziet, is precies wat we kunnen controleren. |
+| D52 | Anti-hallucinatiecheck: elk getal in de tekst moet (na afronding op 0/1/2 decimalen of op honderden/duizenden) in de feiten voorkomen; telwoorden 0–12 zijn vrij. Bij een afwijking één nieuwe poging met de afwijkende getallen als feedback, daarna de vaste template (die per constructie slaagt; getest) | Eis §7; de gebruiker ziet altijd of een tekst van AI of van de template komt. |
+| D53 | De AI-teksten laden via `Suspense` terwijl de getallen direct zichtbaar zijn; per berekening wordt één rapport opgeslagen (`advice_reports`) en hergebruikt | Snelle pagina, geen dubbele AI-kosten. |
+| D54 | Grafieken met Recharts in het gevalideerde referentiepalet (slot 1 blauw, slot 2 oranje; aparte donkere stappen; validator draait groen). Geen dubbele assen: schuld/waarde, bruto/netto, renteaftrek, overwaarde en LTV zijn aparte grafieken; elk met tooltip en een tabelweergave | Toegankelijkheid en leesbaarheid (dataviz-richtlijnen). |
+| D55 | PDF met `@react-pdf/renderer` in een route handler (Node-runtime): dezelfde onderdelen en getallen als het dashboard, eenvoudige vectorgrafieken en de disclaimer als vaste voettekst op elke pagina. Paginanummers zijn weggelaten omdat een `render`-element de vaste laag in react-pdf 4.9 laat verdwijnen | Disclaimer op elke pagina is een harde eis; paginanummers niet. |

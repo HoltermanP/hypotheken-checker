@@ -147,3 +147,17 @@
 .skip-link:focus {
   left: 0.5rem;
 }
+
+/* Grafiekkleuren (gevalideerd referentiepalet: categorisch slot 1 en 2), apart gestapt voor donker. */
+:root {
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --chart-grid: #e4e3df;
+  --chart-text: #52514e;
+}
+.dark {
+  --series-1: #3987e5;
+  --series-2: #d95926;
+  --chart-grid: #3a3936;
+  --chart-text: #c3c2b7;
+}
