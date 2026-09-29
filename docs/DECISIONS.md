@@ -60,3 +60,17 @@ genomen. Elke beslissing heeft een korte motivatie.
 | D36 | Lokale database-modus `DATABASE_URL=pglite:./.pglite` (PGlite als devDependency, runtime-require, geblokkeerd op Vercel) | Lokaal ontwikkelen en e2e-tests draaien zonder Neon-account; migraties en seed werken er ook mee. |
 | D37 | Clerk `createRouteMatcher` (deprecated in Core 3) vervangen door een eenvoudige padcontrole in `proxy.ts`; elke pagina/layout/server action controleert zelf de sessie en het eigendom | Volgt de aanbeveling van Clerk (resource-based checks). |
 | D38 | Berekeningen worden opgeslagen met input-hash (stabiele JSON), engineversie en normversie; ongewijzigde invoer hergebruikt de bestaande berekening | Herleidbaarheid en geen onnodige herberekening. |
+
+## Fase 5 — Documenten, extractie en consistentie
+
+| # | Beslissing | Motivatie |
+|---|---|---|
+| D39 | Upload: Vercel Blob client-upload met `handleUpload` (private, max. 20 MB, PDF/JPG/PNG/WebP, pad `dossiers/<id>/…`, token 10 min geldig). De browser registreert het document daarna via een server action; `onUploadCompleted` registreert idempotent als vangnet | `onUploadCompleted` bereikt localhost niet; zo werkt het lokaal én op Vercel, en eigendom wordt twee keer gecontroleerd. |
+| D40 | Lokaal zonder `BLOB_READ_WRITE_TOKEN`: upload via een server action naar `.uploads/` (nooit op Vercel) | Ontwikkelen en e2e-tests zonder Blob-store. |
+| D41 | Extractie: één generiek structured-output-schema (sleutel, waarde als tekst, betrouwbaarheid, toelichting) met `messages.parse` + `zodOutputFormat`; de app zet waarden om naar het juiste type per veld | Eén robuust schema voor 29 documenttypes; typeconversie en validatie gebeuren deterministisch in onze code. Documentinhoud wordt expliciet als gegevens behandeld (prompt-injectie). |
+| D42 | BSN: het model mag het niet overnemen, en daarna verwijdert `redactDeep` elk 9-cijferig getal dat de elfproef doorstaat en elk veld met "bsn" in de naam, vóór opslag. Het originele bestand (dat een BSN kan bevatten) staat privé in Blob en wordt na de bewaartermijn verwijderd; de gebruiker wordt gevraagd een BSN vooraf onleesbaar te maken | Maskeren vóór extractie is bij scans/foto's niet betrouwbaar zonder OCR; verwijderen uit de uitvoer is wel sluitend. |
+| D43 | Zonder `ANTHROPIC_API_KEY` of bij een weigering (`stop_reason: "refusal"`) valt de extractie terug op handmatig invullen | De app blijft bruikbaar; niets wordt overgenomen zonder bevestiging. |
+| D44 | Pas na "Bevestigen" worden waarden (per documenttype een expliciete mapping in `documents/apply.ts`) via de normale, gevalideerde stap-opslag in de intake gezet | Eis: de gebruiker bevestigt of corrigeert eerst. |
+| D45 | Consistentiedrempels: ≤ 5% groen, ≤ 15% oranje, > 15% rood (fiscaal loon ruimer; koopsom strenger); documenten ouder dan de maximale leeftijd per type worden oranje; winstschommeling > 30% zonder toelichting vraagt om uitleg | Uitlegbare, geteste regels; de uitkomsten gaan als "Documenten"-controles het rapport in. |
+| D46 | Downloads alleen via `/api/documents/[id]/download` met een HMAC-token (5 min, gebonden aan document + gebruiker) én een geldige sessie; `Cache-Control: private, no-store` | Private blobs nooit direct naar de browser; gelekte links verlopen snel en werken niet voor anderen. |
+| D47 | Rate limiting op AI-endpoints met een vast uurvenster in de database (`rate_limits`) | Werkt serverless zonder extra dienst; limiet instelbaar via `AI_RATE_LIMIT_PER_HOUR`. |
