@@ -18,6 +18,9 @@ export function SiteHeader({ showAdmin = false }: { showAdmin?: boolean }) {
           <Link href="/demo" className="hidden hover:underline sm:inline">
             Voorbeelden
           </Link>
+          <Link href="/app/account" className="hidden hover:underline sm:inline">
+            Account
+          </Link>
           {showAdmin ? (
             <Link href="/admin" className="hover:underline">
               Beheer

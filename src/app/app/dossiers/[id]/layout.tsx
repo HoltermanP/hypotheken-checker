@@ -3,6 +3,8 @@ import { notFound } from "next/navigation"
 import { requireUserIdOrRedirect } from "@/lib/auth"
 import { audit } from "@/lib/services/audit"
 import { getOwnedDossier, NotFoundError } from "@/lib/services/dossiers"
+import { deleteDossierAction } from "@/app/app/account/actions"
+import { Button } from "@/components/ui/button"
 
 export default async function DossierLayout({ children, params }: LayoutProps<"/app/dossiers/[id]">) {
   const { id } = await params
@@ -42,6 +44,19 @@ export default async function DossierLayout({ children, params }: LayoutProps<"/
         </ul>
       </nav>
       {children}
+      <details className="rounded-xl border border-destructive/30 p-4 text-sm">
+        <summary className="cursor-pointer font-medium">Dossier verwijderen</summary>
+        <form action={deleteDossierAction} className="mt-3 space-y-2">
+          <input type="hidden" name="dossierId" value={id} />
+          <p className="text-muted-foreground">Dit verwijdert direct het dossier, alle documenten (ook de bestanden), berekeningen en chats.</p>
+          <label className="flex items-center gap-2">
+            <input type="checkbox" name="confirm" required /> Ik begrijp dat dit niet ongedaan kan worden gemaakt
+          </label>
+          <Button type="submit" variant="destructive" size="sm">
+            Dossier definitief verwijderen
+          </Button>
+        </form>
+      </details>
     </div>
   )
 }

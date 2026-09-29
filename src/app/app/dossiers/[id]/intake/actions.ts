@@ -12,7 +12,7 @@ export type StepActionResult = { ok: true; next: StepKey | null } | { ok: false;
 function fail(err: unknown): { ok: false; errors: string[] } {
   if (err instanceof AuthError) return { ok: false, errors: ["Je sessie is verlopen. Log opnieuw in."] }
   if (err instanceof NotFoundError) return { ok: false, errors: ["Dossier niet gevonden."] }
-  console.error("Intake opslaan mislukt:", (err as Error).message)
+  console.error("Intake opslaan mislukt:", (err as Error).name)
   return { ok: false, errors: ["Opslaan is niet gelukt. Probeer het opnieuw."] }
 }
 

@@ -100,3 +100,15 @@ genomen. Elke beslissing heeft een korte motivatie.
 | D56 | De wat-als-modus draait `runAdvice` in de browser met de opgeslagen engine-invoer, de actieve normenset en alleen de rentes voor de gekozen rentevaste periode; `useDeferredValue` houdt de schuiven vloeiend | De engine is isomorf; geen serververzoeken per wijziging en geen afwijking van het rapport. |
 | D57 | Schuifregelaars zijn native `input type="range"` met label, `output` en `aria-valuetext` | Toetsenbord- en schermlezer-toegankelijk zonder extra componentlogica. |
 | D58 | Chat: context = feiten + banktabel met redenen + controles + bronnen (met URL). Het model mag alleen getallen uit die context gebruiken; de getallencheck draait ook hier (één herkansing, anders een veilig antwoord). Berichten worden versleuteld opgeslagen; limiet via dezelfde AI-rate-limit | Antwoorden zijn herleidbaar en voorzien van bronvermelding. |
+
+## Fase 9 — Cron, beveiliging en AVG
+
+| # | Beslissing | Motivatie |
+|---|---|---|
+| D59 | Rente-cron (dagelijks 05:00) met adapters voor banken met een publieke HTML-rentepagina (Argenta, Lot, MUNT, Lloyds Bank, ASN Bank). Eerst robots.txt, eigen User-Agent, time-outs, plausibiliteitscheck (0,5–12%, minimaal aantal rijen). Mislukt een adapter, dan blijft de laatst bekende tabel staan en toont de app "rente van [datum]". Banken met alleen pdf-rentebladen worden via /admin bijgewerkt | Respecteert de voorwaarden van sites; scrapers zijn inherent fragiel, dus falen mag nooit tot verkeerde rentes leiden. Resultaten staan in `cron_runs` en op /admin. |
+| D60 | Opschoon-cron (dagelijks 03:30): documenten na de bewaartermijn (blob + rij), rate-limit-vensters > 2 dagen, audit-log > 2 jaar | AVG-dataminimalisatie. |
+| D61 | Cron-endpoints vereisen `Authorization: Bearer <CRON_SECRET>` (constant-time vergelijking) | Zoals Vercel Cron het meestuurt; niemand anders kan ze aanroepen. |
+| D62 | Content-Security-Policy met expliciete bronnen (Clerk, Cloudflare Turnstile, Vercel Blob-upload); uitbreidbaar via `CSP_EXTRA_HOSTS` (bijv. een eigen Clerk-domein in productie). `'unsafe-inline'` voor scripts blijft nodig voor Next.js zonder nonce-middleware | Balans tussen bescherming en werkende inlog; in de README staat hoe je het eigen Clerk-domein toevoegt. |
+| D63 | AVG: export van alle gegevens als JSON (art. 15/20), direct verwijderen van een dossier incl. bestanden, en verwijderen van het hele account incl. Clerk-gebruiker (art. 17). De audit-log wordt bij accountverwijdering geanonimiseerd | Wettelijke rechten, direct zelf uit te voeren. |
+| D64 | Logging bevat alleen foutnamen, nooit foutberichten met mogelijk persoonsgegevens; URL's bevatten alleen UUID's | "Geen persoonsgegevens in logs of URL's". |
+| D65 | Integratietests van de servicelaag draaien tegen PGlite met de echte migraties | Test autorisatie (isolatie per gebruiker), versleuteling in rust, hergebruik van berekeningen en AVG-functies zonder externe database. |
