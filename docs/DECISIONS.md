@@ -74,3 +74,11 @@ genomen. Elke beslissing heeft een korte motivatie.
 | D45 | Consistentiedrempels: ≤ 5% groen, ≤ 15% oranje, > 15% rood (fiscaal loon ruimer; koopsom strenger); documenten ouder dan de maximale leeftijd per type worden oranje; winstschommeling > 30% zonder toelichting vraagt om uitleg | Uitlegbare, geteste regels; de uitkomsten gaan als "Documenten"-controles het rapport in. |
 | D46 | Downloads alleen via `/api/documents/[id]/download` met een HMAC-token (5 min, gebonden aan document + gebruiker) én een geldige sessie; `Cache-Control: private, no-store` | Private blobs nooit direct naar de browser; gelekte links verlopen snel en werken niet voor anderen. |
 | D47 | Rate limiting op AI-endpoints met een vast uurvenster in de database (`rate_limits`) | Werkt serverless zonder extra dienst; limiet instelbaar via `AI_RATE_LIMIT_PER_HOUR`. |
+
+## Fase 6 — Scenario's, bankadvies en stresstests
+
+| # | Beslissing | Motivatie |
+|---|---|---|
+| D48 | Scenario's worden per dossier opgeslagen (max. 4, tabel `scenarios`, overrides gevalideerd met een strikt Zod-schema). Zonder opgeslagen scenario's toont de app de voorstellen van de engine (voorkeur, andere rentevaste periode, NHG, eigen geld; bij doorstromers eerst kopen/verkopen; bij DGA's salaris verhogen en hypotheek bij eigen BV) | Direct nuttig zonder configuratie, maar volledig aanpasbaar. |
+| D49 | Bankvergelijking toont álle banken (ook inactieve en niet-accepterende) met reden, en per rente "rente van [datum]" plus een markering als de rente niet geverifieerd of afgeleid is | Transparantie: de gebruiker ziet waarom een bank afvalt en hoe actueel de rente is. |
+| D50 | Stoplichten hebben altijd een tekstalternatief (sr-only) | WCAG 1.4.1: kleur is nooit de enige informatiedrager. |
