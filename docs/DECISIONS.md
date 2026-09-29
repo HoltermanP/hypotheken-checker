@@ -34,3 +34,17 @@ genomen. Elke beslissing heeft een korte motivatie.
 | D20 | Inactieve geldverstrekkers (Aegon, BLG Wonen, Woonfonds, MoneYou) blijven in de vergelijking staan als "niet acceptabel" met de reden | De opdracht noemt ze expliciet; de gebruiker ziet zo waarom ze afvallen. bijBouwe blijkt géén opvolger van MoneYou; Lloyds Bank is toegevoegd als actieve online aanbieder. |
 | D21 | Referentiedata (normen, banken, rentes) komt uit de database met een korte cache (60 s) en valt terug op de seed als de database niet bereikbaar is | De app blijft werken bij een tijdelijke databasestoring en in CI/preview zonder database. |
 | D22 | Admin: een normwaarde kan alleen worden opgeslagen als de hele normenset daarna nog door de rekenkern kan worden gebouwd; een geverifieerde norm vereist een bron-URL; klonen naar een nieuw jaar zet alle waarden op "te verifiëren" | Voorkomt dat een beheerder de rekenkern breekt en dat oude waarden stilzwijgend als geverifieerd doorlopen. |
+
+## Fase 3 — Rekenkern
+
+| # | Beslissing | Motivatie |
+|---|---|---|
+| D23 | De engine leest nooit de klok: `calculationDate` zit in de invoer | Determinisme en reproduceerbaarheid (input-hash + engineversie + normversie). |
+| D24 | AOW-toets: voor elk AOW-moment binnen 10 jaar opnieuw toetsen met het inkomen na AOW en de AOW-tabel; laagste uitkomst bepalend | Volgt Trhk art. 2 lid 5 en NHG C.7.4.2. Zonder opgegeven pensioen rekenen we met alleen de AOW (conservatief) en tonen we een waarschuwing. |
+| D25 | Netto lasten: renteaftrek tegen het marginale tarief van de partner met het hoogste inkomen (max. aftrektarief); EWF en Hillen per jaar; Hillen-afbouw extrapoleert de laatste jaarlijkse stap | Fiscale partners mogen de aftrek toedelen; de toekomst is onzeker, dus we houden overige fiscale parameters constant en documenteren dat. |
+| D26 | Overwaarde doorstromer = verkoopprijs − verkoopkosten − **totale** schuld; meegenomen delen tellen in de nieuwe totale hypotheek | Voorkomt dubbeltelling van meegenomen schuld (bug gevonden en getest in de referentiecasussen). |
+| D27 | Holding-consolidatie: integraal bij meerderheidsbelang, anders naar rato; eliminatie van deelnemingsresultaat, boekwaarde deelnemingen, management fee en onderlinge posities | Dit benadert een IVO-methodiek zonder dubbeltellingen. |
+| D28 | Standaarddrempels voor uitkeerbare winst bij onbekend bankbeleid: solvabiliteit 20%, current ratio 1,0 | Modelaanname, gedocumenteerd in ENTREPRENEURS.md en zichtbaar in de uitleg per bank. |
+| D29 | Continuïteitsrisicoscore en branchetabel zijn modelaannames (geen bankcriterium) | Duiding voor de gebruiker; beïnvloedt de leenruimte niet. |
+| D30 | Scenario's rekenen elk opnieuw de referentierente (mediaan van de banken bij de nieuwe LTV/NHG/periode) | Anders zou bijvoorbeeld "zonder NHG" of "20 jaar vast" onterecht dezelfde rente krijgen. |
+| D31 | Verstandig lenen: hoogste bedrag waarbij na alle vaste lasten ≥ 10% van het netto-inkomen overblijft (Nibud-spaaradvies) en onder de gewenste maximale maandlast | Een onderbouwde, uitlegbare grens naast de wettelijke maximale hypotheek. |
