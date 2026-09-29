@@ -1,0 +1,4279 @@
+[
+ {
+  "slug": "abn-amro",
+  "name": "ABN AMRO",
+  "active": true,
+  "activeNote": null,
+  "maxLtvPct": null,
+  "maxInterestOnlyPctOfValue": 30,
+  "meeneemregeling": true,
+  "verhuisregeling": true,
+  "accepts": {
+   "permanentContract": true,
+   "intentieverklaring": true,
+   "flexIBL": null,
+   "perspectiefverklaring": true,
+   "benefits": null,
+   "pension": true
+  },
+  "entrepreneur": {
+   "minYearsFigures": 1,
+   "acceptsForecastForStarters": null,
+   "ivoPolicy": "accepted",
+   "calcMethod": null,
+   "acceptedLegalForms": [
+    "eenmanszaak",
+    "vof",
+    "maatschap",
+    "cv",
+    "bv"
+   ],
+   "dgaTreatment": "salary_plus_distributable_profit",
+   "minSolvencyPct": null,
+   "minCurrentRatio": null,
+   "countsManagementFee": null,
+   "dgaThresholdPct": null,
+   "allowsLoanNextToOwnBv": null,
+   "guaranteesTreatment": null,
+   "maxLtvPct": null,
+   "maxInterestOnlyPct": null
+  },
+  "bridgeLoanMaxMonths": 24,
+  "restschuldFinancing": true,
+  "penaltyFreeRepaymentPct": 10,
+  "rentemiddeling": true,
+  "energyLabelDiscounts": {
+   "A++++": 0.04,
+   "A++++EPG": 0.04,
+   "A": 0,
+   "A+": 0,
+   "A++": 0,
+   "A+++": 0,
+   "B": -0.07,
+   "C": -0.12,
+   "D": -0.13,
+   "E": -0.16,
+   "F": -0.16,
+   "G": -0.16,
+   "geen": -0.16
+  },
+  "closingCostsEur": 750,
+  "bouwdepot": true,
+  "allowsConsumptiveRelease": null,
+  "allowsBusinessRelease": null,
+  "sources": {
+   "maxLtvPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "maxInterestOnlyPctOfValue": {
+    "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/hypotheek-afsluiten/hypotheekvormen/aflossingsvrije-hypotheek/index.html",
+    "status": "verified"
+   },
+   "meeneemregeling": {
+    "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/huis-kopen/verhuizen/index.html",
+    "status": "verified"
+   },
+   "verhuisregeling": {
+    "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/huis-kopen/verhuizen/index.html",
+    "status": "verified"
+   },
+   "acceptsPermanentContract": {
+    "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/hypotheek-berekenen/inkomen.html",
+    "status": "verified"
+   },
+   "acceptsIntentieverklaring": {
+    "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/hypotheek-berekenen/inkomen.html",
+    "status": "verified"
+   },
+   "acceptsFlexIBL": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsPerspectiefverklaring": {
+    "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/hypotheek-berekenen/inkomen-perspectiefverklaring.html",
+    "status": "verified"
+   },
+   "acceptsBenefits": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsPension": {
+    "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/hypotheek-berekenen/inkomen.html",
+    "status": "verified"
+   },
+   "entMinYearsFigures": {
+    "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/hypotheek-afsluiten/hypotheek-ondernemers.html",
+    "status": "verified"
+   },
+   "entAcceptsForecastForStarters": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entIvoPolicy": {
+    "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/hypotheek-afsluiten/hypotheek-ondernemers.html",
+    "status": "verified"
+   },
+   "entCalcMethod": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entAcceptedLegalForms": {
+    "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/hypotheek-afsluiten/hypotheek-ondernemers.html",
+    "status": "verified"
+   },
+   "entDgaTreatment": {
+    "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/hypotheek-afsluiten/hypotheek-ondernemers.html",
+    "status": "verified"
+   },
+   "entMinSolvencyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinCurrentRatio": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entCountsManagementFee": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaThresholdPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entAllowsLoanNextToOwnBv": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entGuaranteesTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxLtvPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxInterestOnlyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanMaxMonths": {
+    "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/huis-kopen/verhuizen/overbruggingshypotheek/index.html",
+    "status": "verified"
+   },
+   "bridgeLoanConditions": {
+    "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/huis-kopen/verhuizen/overbruggingshypotheek/index.html",
+    "status": "verified"
+   },
+   "oversluitenVerhogenConditions": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bouwdepot": {
+    "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/hypotheek-afsluiten/bouwdepot/index.html",
+    "status": "verified"
+   },
+   "duurzaamheidsdepot": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "restschuldFinancing": {
+    "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/mijn-hypotheek/restschuld/index.html",
+    "status": "verified"
+   },
+   "penaltyFreeRepaymentPct": {
+    "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/mijn-hypotheek/extra-aflossen/index.html",
+    "status": "verified"
+   },
+   "renteverlenging": {
+    "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/mijn-hypotheek/hypotheek-verlengen.html",
+    "status": "verified"
+   },
+   "rentemiddeling": {
+    "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/mijn-hypotheek/hypotheekrente-wijzigen/rentemiddeling.html",
+    "status": "verified"
+   },
+   "energyLabelDiscount": {
+    "sourceUrl": "https://hypotheken.abnamro.nl/interest-rates/app/?lang=nl",
+    "status": "verified"
+   },
+   "closingCostsEur": {
+    "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/hypotheek-afsluiten/hypotheekadvies/kosten.html",
+    "status": "verified"
+   },
+   "specials": {
+    "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/actuele-hypotheekrente/index.html",
+    "status": "verified"
+   }
+  }
+ },
+ {
+  "slug": "ing",
+  "name": "ING",
+  "active": true,
+  "activeNote": null,
+  "maxLtvPct": 100,
+  "maxInterestOnlyPctOfValue": 30,
+  "meeneemregeling": true,
+  "verhuisregeling": true,
+  "accepts": {
+   "permanentContract": true,
+   "intentieverklaring": true,
+   "flexIBL": true,
+   "perspectiefverklaring": true,
+   "benefits": true,
+   "pension": true
+  },
+  "entrepreneur": {
+   "minYearsFigures": null,
+   "acceptsForecastForStarters": null,
+   "ivoPolicy": "accepted",
+   "calcMethod": "avg3_capped_by_last",
+   "acceptedLegalForms": [
+    "eenmanszaak",
+    "vof",
+    "maatschap",
+    "bv",
+    "bv_holding"
+   ],
+   "dgaTreatment": "salary_plus_distributable_profit",
+   "minSolvencyPct": null,
+   "minCurrentRatio": null,
+   "countsManagementFee": null,
+   "dgaThresholdPct": null,
+   "allowsLoanNextToOwnBv": true,
+   "guaranteesTreatment": null,
+   "maxLtvPct": null,
+   "maxInterestOnlyPct": null
+  },
+  "bridgeLoanMaxMonths": null,
+  "restschuldFinancing": true,
+  "penaltyFreeRepaymentPct": 10,
+  "rentemiddeling": true,
+  "energyLabelDiscounts": {
+   "A+++": 0.2,
+   "A++++": 0.2,
+   "A++++EPG": 0.2,
+   "A": 0.18,
+   "A+": 0.18,
+   "A++": 0.18,
+   "B": 0.1,
+   "C": 0.07,
+   "D": 0.03
+  },
+  "closingCostsEur": null,
+  "bouwdepot": true,
+  "allowsConsumptiveRelease": null,
+  "allowsBusinessRelease": null,
+  "sources": {
+   "maxLtvPct": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+    "status": "verified"
+   },
+   "maxInterestOnlyPctOfValue": {
+    "sourceUrl": "https://www.banken.nl/nieuws/27131/ook-ing-scherpt-beleid-voor-aflossingsvrije-hypotheken-aan",
+    "status": "verified"
+   },
+   "meeneemregeling": {
+    "sourceUrl": "https://www.ing.nl/particulier/hypotheek/huis-kopen/ander-huis-kopen/hypotheek-meenemen",
+    "status": "verified"
+   },
+   "verhuisregeling": {
+    "sourceUrl": "https://hypotheekmeeneemregeling.nl/verhuisregeling-ing/",
+    "status": "verified"
+   },
+   "acceptsPermanentContract": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsIntentieverklaring": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsFlexIBL": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsPerspectiefverklaring": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsBenefits": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsPension": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+    "status": "verified"
+   },
+   "entMinYearsFigures": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+    "status": "unknown"
+   },
+   "entAcceptsForecastForStarters": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+    "status": "unknown"
+   },
+   "entIvoPolicy": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+    "status": "verified"
+   },
+   "entCalcMethod": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+    "status": "verified"
+   },
+   "entAcceptedLegalForms": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+    "status": "verified"
+   },
+   "entDgaTreatment": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+    "status": "verified"
+   },
+   "entMinSolvencyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinCurrentRatio": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entCountsManagementFee": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaThresholdPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entAllowsLoanNextToOwnBv": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+    "status": "verified"
+   },
+   "entGuaranteesTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxLtvPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxInterestOnlyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanMaxMonths": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+    "status": "unknown"
+   },
+   "bridgeLoanConditions": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+    "status": "verified"
+   },
+   "oversluitenVerhogenConditions": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+    "status": "verified"
+   },
+   "bouwdepot": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+    "status": "verified"
+   },
+   "duurzaamheidsdepot": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+    "status": "verified"
+   },
+   "restschuldFinancing": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+    "status": "verified"
+   },
+   "penaltyFreeRepaymentPct": {
+    "sourceUrl": "https://www.homefinance.nl/hypotheek/berekenen/ing/boetevrij-aflossen/",
+    "status": "verified"
+   },
+   "renteverlenging": {
+    "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2026/09/ing-rentetarieven-23-09-2026.pdf",
+    "status": "verified"
+   },
+   "rentemiddeling": {
+    "sourceUrl": "https://www.ing.nl/particulier/hypotheek/jouw-hypotheek/tussentijds-aanpassen",
+    "status": "verified"
+   },
+   "energyLabelDiscount": {
+    "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2026/09/ing-rentetarieven-23-09-2026.pdf",
+    "status": "verified"
+   },
+   "closingCostsEur": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "specials": {
+    "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2026/09/ing-rentetarieven-23-09-2026.pdf",
+    "status": "verified"
+   }
+  }
+ },
+ {
+  "slug": "rabobank",
+  "name": "Rabobank",
+  "active": true,
+  "activeNote": "Obvion is a Rabobank subsidiary (separate lender, not included here).",
+  "maxLtvPct": 100,
+  "maxInterestOnlyPctOfValue": 30,
+  "meeneemregeling": true,
+  "verhuisregeling": true,
+  "accepts": {
+   "permanentContract": true,
+   "intentieverklaring": true,
+   "flexIBL": true,
+   "perspectiefverklaring": true,
+   "benefits": true,
+   "pension": true
+  },
+  "entrepreneur": {
+   "minYearsFigures": null,
+   "acceptsForecastForStarters": true,
+   "ivoPolicy": "required",
+   "calcMethod": "ivo",
+   "acceptedLegalForms": [
+    "eenmanszaak",
+    "vof",
+    "maatschap",
+    "bv"
+   ],
+   "dgaTreatment": "ivo",
+   "minSolvencyPct": null,
+   "minCurrentRatio": null,
+   "countsManagementFee": null,
+   "dgaThresholdPct": 25,
+   "allowsLoanNextToOwnBv": null,
+   "guaranteesTreatment": null,
+   "maxLtvPct": null,
+   "maxInterestOnlyPct": null
+  },
+  "bridgeLoanMaxMonths": 24,
+  "restschuldFinancing": true,
+  "penaltyFreeRepaymentPct": 10,
+  "rentemiddeling": true,
+  "energyLabelDiscounts": {
+   "A": 0.15,
+   "A+": 0.15,
+   "A++": 0.15,
+   "A+++": 0.15,
+   "A++++": 0.15,
+   "A++++EPG": 0.15
+  },
+  "closingCostsEur": null,
+  "bouwdepot": true,
+  "allowsConsumptiveRelease": null,
+  "allowsBusinessRelease": null,
+  "sources": {
+   "maxLtvPct": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+    "status": "verified"
+   },
+   "maxInterestOnlyPctOfValue": {
+    "sourceUrl": "https://www.rabobank.nl/nieuws/011512344/rabobank-scherpt-beleid-voor-aflossingsvrije-hypotheek-aan-per-11-mei-2026",
+    "status": "verified"
+   },
+   "meeneemregeling": {
+    "sourceUrl": "https://www.rabobank.nl/particulieren/hypotheek/hypotheekvormen-en-voorwaarden/basisvoorwaarden",
+    "status": "verified"
+   },
+   "verhuisregeling": {
+    "sourceUrl": "https://www.rabobank.nl/particulieren/hypotheek/hypotheekvormen-en-voorwaarden/plusvoorwaarden",
+    "status": "verified"
+   },
+   "acceptsPermanentContract": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsIntentieverklaring": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsFlexIBL": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsPerspectiefverklaring": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsBenefits": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsPension": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+    "status": "verified"
+   },
+   "entMinYearsFigures": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+    "status": "unknown"
+   },
+   "entAcceptsForecastForStarters": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+    "status": "verified"
+   },
+   "entIvoPolicy": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+    "status": "verified"
+   },
+   "entCalcMethod": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+    "status": "verified"
+   },
+   "entAcceptedLegalForms": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+    "status": "verified"
+   },
+   "entDgaTreatment": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+    "status": "verified"
+   },
+   "entMinSolvencyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinCurrentRatio": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entCountsManagementFee": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaThresholdPct": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+    "status": "verified"
+   },
+   "entAllowsLoanNextToOwnBv": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+    "status": "unknown"
+   },
+   "entGuaranteesTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxLtvPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxInterestOnlyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanMaxMonths": {
+    "sourceUrl": "https://www.rabobank.nl/particulieren/hypotheek/hypotheekvormen-en-voorwaarden/hypotheekproducten/overbruggingshypotheek",
+    "status": "verified"
+   },
+   "bridgeLoanConditions": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+    "status": "verified"
+   },
+   "oversluitenVerhogenConditions": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+    "status": "verified"
+   },
+   "bouwdepot": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+    "status": "verified"
+   },
+   "duurzaamheidsdepot": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+    "status": "verified"
+   },
+   "restschuldFinancing": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+    "status": "verified"
+   },
+   "penaltyFreeRepaymentPct": {
+    "sourceUrl": "https://www.rabobank.nl/particulieren/hypotheek/hypotheekvormen-en-voorwaarden/basisvoorwaarden",
+    "status": "verified"
+   },
+   "renteverlenging": {
+    "sourceUrl": "https://www.rabobank.nl/particulieren/hypotheek/mijn-hypotheek-of-woning-aanpassen/rente-aanpassen",
+    "status": "verified"
+   },
+   "rentemiddeling": {
+    "sourceUrl": "https://www.rabobank.nl/particulieren/hypotheek/mijn-hypotheek-of-woning-aanpassen/rente-aanpassen",
+    "status": "verified"
+   },
+   "energyLabelDiscount": {
+    "sourceUrl": "https://www.rabobank.nl/particulieren/hypotheek/hypotheekrente/duurzaamheidskorting",
+    "status": "verified"
+   },
+   "closingCostsEur": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "specials": {
+    "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2026/09/rabobank-rentetarieven-21-09-2026.pdf",
+    "status": "verified"
+   }
+  }
+ },
+ {
+  "slug": "de-volksbank",
+  "name": "de Volksbank (ASN Bank)",
+  "active": true,
+  "activeNote": "De Volksbank N.V. heet nu ASN Bank N.V. (KvK 16062338; devolksbank.nl verwijst naar corporate.asnbank.nl). SNS, RegioBank en BLG Wonen zijn opgegaan in het merk ASN Bank: snsbank.nl en regiobank.nl tonen 'SNS/RegioBank is nu ASN Bank', snsbank.nl-hypotheekpagina's redirecten naar asnbank.nl en blgwonen.nl naar asnbank.nl/blg-wonen. Nieuwe hypotheken sinds 1 juli 2025 alleen als ASN Hypotheek / ASN Bespaarhypotheek; SNS-, RegioBank- en BLG-merkhypotheken zijn niet meer af te sluiten (alleen rentearchieven voor bestaande klanten). Er zijn dus geen afzonderlijke merktarieven meer.",
+  "maxLtvPct": 100,
+  "maxInterestOnlyPctOfValue": 30,
+  "meeneemregeling": true,
+  "verhuisregeling": true,
+  "accepts": {
+   "permanentContract": true,
+   "intentieverklaring": true,
+   "flexIBL": true,
+   "perspectiefverklaring": true,
+   "benefits": true,
+   "pension": true
+  },
+  "entrepreneur": {
+   "minYearsFigures": 1,
+   "acceptsForecastForStarters": false,
+   "ivoPolicy": "required",
+   "calcMethod": "avg3_capped_by_last",
+   "acceptedLegalForms": [
+    "eenmanszaak",
+    "vof",
+    "maatschap",
+    "bv"
+   ],
+   "dgaTreatment": "salary_plus_distributable_profit",
+   "minSolvencyPct": 20,
+   "minCurrentRatio": 1,
+   "countsManagementFee": null,
+   "dgaThresholdPct": 25,
+   "allowsLoanNextToOwnBv": null,
+   "guaranteesTreatment": null,
+   "maxLtvPct": null,
+   "maxInterestOnlyPct": null
+  },
+  "bridgeLoanMaxMonths": 18,
+  "restschuldFinancing": true,
+  "penaltyFreeRepaymentPct": 10,
+  "rentemiddeling": true,
+  "energyLabelDiscounts": {},
+  "closingCostsEur": null,
+  "bouwdepot": true,
+  "allowsConsumptiveRelease": null,
+  "allowsBusinessRelease": null,
+  "sources": {
+   "maxLtvPct": {
+    "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+    "status": "verified"
+   },
+   "maxInterestOnlyPctOfValue": {
+    "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+    "status": "verified"
+   },
+   "meeneemregeling": {
+    "sourceUrl": "https://www.asnbank.nl/downloads/informatiewijzer-asn-hypotheken.html",
+    "status": "verified"
+   },
+   "verhuisregeling": {
+    "sourceUrl": "https://www.asnbank.nl/hypotheek/informatie-voor-adviseurs/57-plussers.html",
+    "status": "verified"
+   },
+   "acceptsPermanentContract": {
+    "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsIntentieverklaring": {
+    "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsFlexIBL": {
+    "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsPerspectiefverklaring": {
+    "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsBenefits": {
+    "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsPension": {
+    "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+    "status": "verified"
+   },
+   "entMinYearsFigures": {
+    "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+    "status": "verified"
+   },
+   "entAcceptsForecastForStarters": {
+    "sourceUrl": "https://www.asnbank.nl/hypotheek/hypotheek-voor-zzp-of-ondernemer.html",
+    "status": "verified"
+   },
+   "entIvoPolicy": {
+    "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+    "status": "verified"
+   },
+   "entCalcMethod": {
+    "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+    "status": "verified"
+   },
+   "entAcceptedLegalForms": {
+    "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+    "status": "verified"
+   },
+   "entDgaTreatment": {
+    "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+    "status": "verified"
+   },
+   "entMinSolvencyPct": {
+    "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+    "status": "verified"
+   },
+   "entMinCurrentRatio": {
+    "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+    "status": "verified"
+   },
+   "entCountsManagementFee": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaThresholdPct": {
+    "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+    "status": "verified"
+   },
+   "entAllowsLoanNextToOwnBv": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entGuaranteesTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxLtvPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxInterestOnlyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanMaxMonths": {
+    "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+    "status": "verified"
+   },
+   "bridgeLoanConditions": {
+    "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+    "status": "verified"
+   },
+   "oversluitenVerhogenConditions": {
+    "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+    "status": "verified"
+   },
+   "bouwdepot": {
+    "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+    "status": "verified"
+   },
+   "duurzaamheidsdepot": {
+    "sourceUrl": "https://www.asnbank.nl/downloads/rentetarieven-asn-hypotheek-per-26-september-2026.html",
+    "status": "verified"
+   },
+   "restschuldFinancing": {
+    "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+    "status": "verified"
+   },
+   "penaltyFreeRepaymentPct": {
+    "sourceUrl": "https://www.asnbank.nl/downloads/informatiewijzer-asn-hypotheken.html",
+    "status": "verified"
+   },
+   "renteverlenging": {
+    "sourceUrl": "https://www.asnbank.nl/hypotheek/mijn-asn-hypotheek/hypotheekrente-eerder-aanpassen.html",
+    "status": "verified"
+   },
+   "rentemiddeling": {
+    "sourceUrl": "https://www.asnbank.nl/hypotheek/mijn-asn-hypotheek/hypotheekrente-eerder-aanpassen.html",
+    "status": "verified"
+   },
+   "energyLabelDiscount": {
+    "sourceUrl": "https://www.asnbank.nl/downloads/rentetarieven-asn-bespaarhypotheek-per-26-september-2026.html",
+    "status": "verified"
+   },
+   "closingCostsEur": {
+    "sourceUrl": "https://www.asnbank.nl/downloads/kostenoverzicht-wijzigen-hypotheek.html",
+    "status": "unknown"
+   },
+   "specials": {
+    "sourceUrl": "https://www.asnbank.nl/hypotheek/informatie-voor-adviseurs/starters.html",
+    "status": "verified"
+   }
+  }
+ },
+ {
+  "slug": "nationale-nederlanden",
+  "name": "Nationale-Nederlanden",
+  "active": true,
+  "activeNote": "Actief; hypotheken verstrekt door Nationale-Nederlanden Bank, alleen via adviseur/HDN. Acceptatiebeleid op adviseur.nn.nl is publiek (geraadpleegd 29-09-2026).",
+  "maxLtvPct": 100,
+  "maxInterestOnlyPctOfValue": 50,
+  "meeneemregeling": true,
+  "verhuisregeling": true,
+  "accepts": {
+   "permanentContract": true,
+   "intentieverklaring": true,
+   "flexIBL": true,
+   "perspectiefverklaring": true,
+   "benefits": true,
+   "pension": true
+  },
+  "entrepreneur": {
+   "minYearsFigures": 1,
+   "acceptsForecastForStarters": null,
+   "ivoPolicy": "required",
+   "calcMethod": "avg3_capped_by_last",
+   "acceptedLegalForms": null,
+   "dgaTreatment": "ivo",
+   "minSolvencyPct": null,
+   "minCurrentRatio": null,
+   "countsManagementFee": null,
+   "dgaThresholdPct": null,
+   "allowsLoanNextToOwnBv": null,
+   "guaranteesTreatment": null,
+   "maxLtvPct": null,
+   "maxInterestOnlyPct": null
+  },
+  "bridgeLoanMaxMonths": 12,
+  "restschuldFinancing": null,
+  "penaltyFreeRepaymentPct": 10,
+  "rentemiddeling": true,
+  "energyLabelDiscounts": {},
+  "closingCostsEur": null,
+  "bouwdepot": true,
+  "allowsConsumptiveRelease": null,
+  "allowsBusinessRelease": null,
+  "sources": {
+   "maxLtvPct": {
+    "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+    "status": "verified"
+   },
+   "maxInterestOnlyPctOfValue": {
+    "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+    "status": "verified"
+   },
+   "meeneemregeling": {
+    "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+    "status": "verified"
+   },
+   "verhuisregeling": {
+    "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+    "status": "verified"
+   },
+   "acceptsPermanentContract": {
+    "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+    "status": "verified"
+   },
+   "acceptsIntentieverklaring": {
+    "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+    "status": "verified"
+   },
+   "acceptsFlexIBL": {
+    "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+    "status": "verified"
+   },
+   "acceptsPerspectiefverklaring": {
+    "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+    "status": "verified"
+   },
+   "acceptsBenefits": {
+    "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+    "status": "verified"
+   },
+   "acceptsPension": {
+    "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+    "status": "verified"
+   },
+   "entMinYearsFigures": {
+    "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+    "status": "verified"
+   },
+   "entAcceptsForecastForStarters": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entIvoPolicy": {
+    "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+    "status": "verified"
+   },
+   "entCalcMethod": {
+    "sourceUrl": "https://www.nn.nl/Particulier/Hypotheken/Een-hypotheek-voor-ondernemers.htm",
+    "status": "verified"
+   },
+   "entAcceptedLegalForms": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaTreatment": {
+    "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+    "status": "verified"
+   },
+   "entMinSolvencyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinCurrentRatio": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entCountsManagementFee": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaThresholdPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entAllowsLoanNextToOwnBv": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entGuaranteesTreatment": {
+    "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+    "status": "unknown"
+   },
+   "entMaxLtvPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxInterestOnlyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanMaxMonths": {
+    "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+    "status": "verified"
+   },
+   "bridgeLoanConditions": {
+    "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+    "status": "verified"
+   },
+   "oversluitenVerhogenConditions": {
+    "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+    "status": "verified"
+   },
+   "bouwdepot": {
+    "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+    "status": "verified"
+   },
+   "duurzaamheidsdepot": {
+    "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+    "status": "verified"
+   },
+   "restschuldFinancing": {
+    "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+    "status": "verified"
+   },
+   "penaltyFreeRepaymentPct": {
+    "sourceUrl": "https://www.nn.nl/Download/Voorwaarden-NN-Hypotheek.htm",
+    "status": "verified"
+   },
+   "renteverlenging": {
+    "sourceUrl": "https://www.nn.nl/Download/Voorwaarden-NN-Hypotheek.htm",
+    "status": "verified"
+   },
+   "rentemiddeling": {
+    "sourceUrl": "https://www.nn.nl/Particulier/Hypotheken/Je-hypotheek/Hypotheekrente-wijzigen/Tussentijdse-rentewijziging-met-rentemiddeling.htm",
+    "status": "verified"
+   },
+   "energyLabelDiscount": {
+    "sourceUrl": "https://www.nn.nl/Hypotheekrente-overzicht.htm",
+    "status": "verified"
+   },
+   "closingCostsEur": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "specials": {
+    "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+    "status": "verified"
+   }
+  }
+ },
+ {
+  "slug": "aegon",
+  "name": "Aegon",
+  "active": false,
+  "activeNote": "Niet meer actief als hypotheekmerk (gecontroleerd 29-09-2026). Alle aegon.nl-URL's (incl. /hypotheek, /hypotheek/hypotheekrente, /adviseur/hypotheken) worden 301-doorgestuurd naar https://www.asr.nl/hallo-klant-van-aegon ('Aegon Nederland is nu onderdeel van a.s.r.'). Volgens a.s.r. zijn de Aegon-hypotheken in 2025 verhuisd naar het a.s.r.-administratiesysteem en is de naam veranderd in a.s.r.; de rekening van Aegon Hypotheken B.V. heet nu ASR Hypotheken B.V. Nieuwe hypotheken worden aangeboden als a.s.r. hypotheek (https://www.asr.nl/hypotheek). Geen aparte Aegon-rentetabel of acceptatiecriteria meer gepubliceerd.",
+  "maxLtvPct": null,
+  "maxInterestOnlyPctOfValue": null,
+  "meeneemregeling": null,
+  "verhuisregeling": null,
+  "accepts": {
+   "permanentContract": null,
+   "intentieverklaring": null,
+   "flexIBL": null,
+   "perspectiefverklaring": null,
+   "benefits": null,
+   "pension": null
+  },
+  "entrepreneur": {
+   "minYearsFigures": null,
+   "acceptsForecastForStarters": null,
+   "ivoPolicy": null,
+   "calcMethod": null,
+   "acceptedLegalForms": null,
+   "dgaTreatment": null,
+   "minSolvencyPct": null,
+   "minCurrentRatio": null,
+   "countsManagementFee": null,
+   "dgaThresholdPct": null,
+   "allowsLoanNextToOwnBv": null,
+   "guaranteesTreatment": null,
+   "maxLtvPct": null,
+   "maxInterestOnlyPct": null
+  },
+  "bridgeLoanMaxMonths": null,
+  "restschuldFinancing": null,
+  "penaltyFreeRepaymentPct": null,
+  "rentemiddeling": null,
+  "energyLabelDiscounts": {},
+  "closingCostsEur": null,
+  "bouwdepot": null,
+  "allowsConsumptiveRelease": null,
+  "allowsBusinessRelease": null,
+  "sources": {
+   "maxLtvPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "maxInterestOnlyPctOfValue": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "meeneemregeling": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "verhuisregeling": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsPermanentContract": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsIntentieverklaring": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsFlexIBL": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsPerspectiefverklaring": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsBenefits": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsPension": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinYearsFigures": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entAcceptsForecastForStarters": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entIvoPolicy": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entCalcMethod": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entAcceptedLegalForms": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinSolvencyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinCurrentRatio": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entCountsManagementFee": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaThresholdPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entAllowsLoanNextToOwnBv": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entGuaranteesTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxLtvPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxInterestOnlyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanMaxMonths": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanConditions": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "oversluitenVerhogenConditions": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bouwdepot": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "duurzaamheidsdepot": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "restschuldFinancing": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "penaltyFreeRepaymentPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "renteverlenging": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "rentemiddeling": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "energyLabelDiscount": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "closingCostsEur": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "specials": {
+    "sourceUrl": "https://www.asr.nl/hallo-klant-van-aegon/welkom-bij-hypotheek-van-asr",
+    "status": "verified"
+   }
+  }
+ },
+ {
+  "slug": "obvion",
+  "name": "Obvion",
+  "active": true,
+  "activeNote": "Actief per 29-09-2026: verstrekt nieuwe hypotheken (Woon Hypotheek) uitsluitend via onafhankelijke adviseurs; 100% dochter van Rabobank sinds 2012, kantoor Heerlen. Renteverhoging 23-09-2026 gepubliceerd, product- en acceptatiekaart september 2026. Geen aankondiging gevonden van opgaan in Rabobank; wel gezamenlijk beleid (aflossingsvrij 30%) en combikorting met Rabobank-betaalrekening.",
+  "maxLtvPct": 100,
+  "maxInterestOnlyPctOfValue": 30,
+  "meeneemregeling": true,
+  "verhuisregeling": true,
+  "accepts": {
+   "permanentContract": true,
+   "intentieverklaring": true,
+   "flexIBL": true,
+   "perspectiefverklaring": true,
+   "benefits": true,
+   "pension": true
+  },
+  "entrepreneur": {
+   "minYearsFigures": 1,
+   "acceptsForecastForStarters": false,
+   "ivoPolicy": "required",
+   "calcMethod": "ivo",
+   "acceptedLegalForms": null,
+   "dgaTreatment": "ivo",
+   "minSolvencyPct": null,
+   "minCurrentRatio": null,
+   "countsManagementFee": null,
+   "dgaThresholdPct": null,
+   "allowsLoanNextToOwnBv": null,
+   "guaranteesTreatment": null,
+   "maxLtvPct": null,
+   "maxInterestOnlyPct": null
+  },
+  "bridgeLoanMaxMonths": 24,
+  "restschuldFinancing": true,
+  "penaltyFreeRepaymentPct": 10,
+  "rentemiddeling": false,
+  "energyLabelDiscounts": {
+   "A++++": 0.2,
+   "A++++EPG": 0.2,
+   "A": 0.15,
+   "A+": 0.15,
+   "A++": 0.15,
+   "A+++": 0.15,
+   "B": 0.08
+  },
+  "closingCostsEur": null,
+  "bouwdepot": true,
+  "allowsConsumptiveRelease": null,
+  "allowsBusinessRelease": null,
+  "sources": {
+   "maxLtvPct": {
+    "sourceUrl": "https://obvion.nl/media/kxudk0d2/product-en-acceptatiekaart.pdf",
+    "status": "verified"
+   },
+   "maxInterestOnlyPctOfValue": {
+    "sourceUrl": "https://obvion.nl/hypotheek/vorm/aflossingsvrij/beleid-aflossingsvrij/",
+    "status": "verified"
+   },
+   "meeneemregeling": {
+    "sourceUrl": "https://obvion.nl/media/kxudk0d2/product-en-acceptatiekaart.pdf",
+    "status": "verified"
+   },
+   "verhuisregeling": {
+    "sourceUrl": "https://obvion.nl/media/kxudk0d2/product-en-acceptatiekaart.pdf",
+    "status": "verified"
+   },
+   "acceptsPermanentContract": {
+    "sourceUrl": "https://obvion.nl/media/cneljkrz/acceptatiebeleid.pdf",
+    "status": "verified"
+   },
+   "acceptsIntentieverklaring": {
+    "sourceUrl": "https://obvion.nl/media/cneljkrz/acceptatiebeleid.pdf",
+    "status": "verified"
+   },
+   "acceptsFlexIBL": {
+    "sourceUrl": "https://obvion.nl/media/cneljkrz/acceptatiebeleid.pdf",
+    "status": "verified"
+   },
+   "acceptsPerspectiefverklaring": {
+    "sourceUrl": "https://obvion.nl/media/cneljkrz/acceptatiebeleid.pdf",
+    "status": "verified"
+   },
+   "acceptsBenefits": {
+    "sourceUrl": "https://obvion.nl/media/cneljkrz/acceptatiebeleid.pdf",
+    "status": "verified"
+   },
+   "acceptsPension": {
+    "sourceUrl": "https://obvion.nl/media/cneljkrz/acceptatiebeleid.pdf",
+    "status": "verified"
+   },
+   "entMinYearsFigures": {
+    "sourceUrl": "https://obvion.nl/adviseur/doelgroep/werken/ondernemers/",
+    "status": "verified"
+   },
+   "entAcceptsForecastForStarters": {
+    "sourceUrl": "https://obvion.nl/media/cneljkrz/acceptatiebeleid.pdf",
+    "status": "verified"
+   },
+   "entIvoPolicy": {
+    "sourceUrl": "https://obvion.nl/media/cneljkrz/acceptatiebeleid.pdf",
+    "status": "verified"
+   },
+   "entCalcMethod": {
+    "sourceUrl": "https://obvion.nl/media/cneljkrz/acceptatiebeleid.pdf",
+    "status": "verified"
+   },
+   "entAcceptedLegalForms": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaTreatment": {
+    "sourceUrl": "https://obvion.nl/media/cneljkrz/acceptatiebeleid.pdf",
+    "status": "verified"
+   },
+   "entMinSolvencyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinCurrentRatio": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entCountsManagementFee": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaThresholdPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entAllowsLoanNextToOwnBv": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entGuaranteesTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxLtvPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxInterestOnlyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanMaxMonths": {
+    "sourceUrl": "https://obvion.nl/hypotheek/afsluiten/overbruggingskrediet/",
+    "status": "verified"
+   },
+   "bridgeLoanConditions": {
+    "sourceUrl": "https://obvion.nl/hypotheek/afsluiten/overbruggingskrediet/",
+    "status": "verified"
+   },
+   "oversluitenVerhogenConditions": {
+    "sourceUrl": "https://obvion.nl/hypotheek/wijzigen/verhogen/",
+    "status": "verified"
+   },
+   "bouwdepot": {
+    "sourceUrl": "https://obvion.nl/media/kxudk0d2/product-en-acceptatiekaart.pdf",
+    "status": "verified"
+   },
+   "duurzaamheidsdepot": {
+    "sourceUrl": "https://obvion.nl/media/kxudk0d2/product-en-acceptatiekaart.pdf",
+    "status": "verified"
+   },
+   "restschuldFinancing": {
+    "sourceUrl": "https://obvion.nl/media/kxudk0d2/product-en-acceptatiekaart.pdf",
+    "status": "verified"
+   },
+   "penaltyFreeRepaymentPct": {
+    "sourceUrl": "https://obvion.nl/media/kxudk0d2/product-en-acceptatiekaart.pdf",
+    "status": "verified"
+   },
+   "renteverlenging": {
+    "sourceUrl": "https://obvion.nl/hypotheek/wijzigen/einde-rentevaste-periode/",
+    "status": "verified"
+   },
+   "rentemiddeling": {
+    "sourceUrl": "https://obvion.nl/media/kxudk0d2/product-en-acceptatiekaart.pdf",
+    "status": "verified"
+   },
+   "energyLabelDiscount": {
+    "sourceUrl": "https://obvion.nl/media/t2pjl2jb/rentetarieven-obvion-woon-hypotheek-23-september-2026.pdf",
+    "status": "verified"
+   },
+   "closingCostsEur": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "specials": {
+    "sourceUrl": "https://obvion.nl/media/kxudk0d2/product-en-acceptatiekaart.pdf",
+    "status": "verified"
+   }
+  }
+ },
+ {
+  "slug": "florius",
+  "name": "Florius",
+  "active": true,
+  "activeNote": "Actief via onafhankelijke adviseurs (hypotheekmerk van ABN AMRO). Per 10 oktober 2026 gaan hypotheken over naar de nieuwe juridische entiteit Florius B.V.; product/voorwaarden wijzigen daardoor niet. Verzilver Hypotheek sinds 13 juni 2026 niet meer voor nieuwe klanten. Florius publiceert geen openbare acceptatiegids (adviseursinformatie via FAN/mijnFAN, login), daarom zijn veel acceptatievelden 'unknown'.",
+  "maxLtvPct": 100,
+  "maxInterestOnlyPctOfValue": 30,
+  "meeneemregeling": true,
+  "verhuisregeling": true,
+  "accepts": {
+   "permanentContract": true,
+   "intentieverklaring": true,
+   "flexIBL": null,
+   "perspectiefverklaring": true,
+   "benefits": null,
+   "pension": null
+  },
+  "entrepreneur": {
+   "minYearsFigures": 1,
+   "acceptsForecastForStarters": false,
+   "ivoPolicy": "accepted",
+   "calcMethod": "avg3_capped_by_last",
+   "acceptedLegalForms": null,
+   "dgaTreatment": null,
+   "minSolvencyPct": null,
+   "minCurrentRatio": null,
+   "countsManagementFee": null,
+   "dgaThresholdPct": null,
+   "allowsLoanNextToOwnBv": null,
+   "guaranteesTreatment": null,
+   "maxLtvPct": null,
+   "maxInterestOnlyPct": null
+  },
+  "bridgeLoanMaxMonths": null,
+  "restschuldFinancing": null,
+  "penaltyFreeRepaymentPct": 10,
+  "rentemiddeling": true,
+  "energyLabelDiscounts": {
+   "A": 0.15,
+   "A+": 0.15,
+   "A++": 0.15,
+   "A+++": 0.15,
+   "A++++": 0.15,
+   "A++++EPG": 0.15,
+   "B": 0.07,
+   "C": 0.04,
+   "D": 0.03
+  },
+  "closingCostsEur": null,
+  "bouwdepot": true,
+  "allowsConsumptiveRelease": null,
+  "allowsBusinessRelease": null,
+  "sources": {
+   "maxLtvPct": {
+    "sourceUrl": "https://www.florius.nl/-/media/florius/files/rentepagina/renteblad-florius-profijt-drie-plus-drie-hypotheek.pdf",
+    "status": "verified"
+   },
+   "maxInterestOnlyPctOfValue": {
+    "sourceUrl": "https://www.banken.nl/nieuws/26956/abn-amro-en-florius-beperken-aflossingsvrije-hypotheek-tot-30-procent-van-woningwaarde",
+    "status": "verified"
+   },
+   "meeneemregeling": {
+    "sourceUrl": "https://www.florius.nl/-/media/florius/files/formulieren/voorwaarden/fl-vw02-profijt-hypotheek-per-1-oktober-2025.pdf",
+    "status": "verified"
+   },
+   "verhuisregeling": {
+    "sourceUrl": "https://www.florius.nl/-/media/florius/files/formulieren/voorwaarden/fl-vw02-profijt-hypotheek-per-1-oktober-2025.pdf",
+    "status": "verified"
+   },
+   "acceptsPermanentContract": {
+    "sourceUrl": "https://www.florius.nl/situatie-wijzigt/hypotheek-zonder-vast-contract",
+    "status": "verified"
+   },
+   "acceptsIntentieverklaring": {
+    "sourceUrl": "https://www.florius.nl/situatie-wijzigt/hypotheek-zonder-vast-contract",
+    "status": "verified"
+   },
+   "acceptsFlexIBL": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsPerspectiefverklaring": {
+    "sourceUrl": "https://www.florius.nl/adviseurs/speciaal-voor/flexibele-inkomens/perspectiefverklaring",
+    "status": "verified"
+   },
+   "acceptsBenefits": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsPension": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinYearsFigures": {
+    "sourceUrl": "https://www.florius.nl/hypotheek/hypotheek-ondernemers",
+    "status": "verified"
+   },
+   "entAcceptsForecastForStarters": {
+    "sourceUrl": "https://www.florius.nl/hypotheek/hypotheek-ondernemers",
+    "status": "verified"
+   },
+   "entIvoPolicy": {
+    "sourceUrl": "https://www.florius.nl/hypotheek/hypotheek-ondernemers",
+    "status": "verified"
+   },
+   "entCalcMethod": {
+    "sourceUrl": "https://www.florius.nl/hypotheek/hypotheek-ondernemers",
+    "status": "verified"
+   },
+   "entAcceptedLegalForms": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinSolvencyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinCurrentRatio": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entCountsManagementFee": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaThresholdPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entAllowsLoanNextToOwnBv": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entGuaranteesTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxLtvPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxInterestOnlyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanMaxMonths": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanConditions": {
+    "sourceUrl": "https://www.florius.nl/-/media/florius/files/formulieren/voorwaarden/fl-vw02-profijt-hypotheek-per-1-oktober-2025.pdf",
+    "status": "verified"
+   },
+   "oversluitenVerhogenConditions": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bouwdepot": {
+    "sourceUrl": "https://www.florius.nl/-/media/florius/files/formulieren/voorwaarden/fl-vw02-profijt-hypotheek-per-1-oktober-2025.pdf",
+    "status": "verified"
+   },
+   "duurzaamheidsdepot": {
+    "sourceUrl": "https://www.florius.nl/hypotheekrente",
+    "status": "verified"
+   },
+   "restschuldFinancing": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "penaltyFreeRepaymentPct": {
+    "sourceUrl": "https://www.florius.nl/-/media/florius/files/formulieren/voorwaarden/fl-vw02-profijt-hypotheek-per-1-oktober-2025.pdf",
+    "status": "verified"
+   },
+   "renteverlenging": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "rentemiddeling": {
+    "sourceUrl": "https://www.florius.nl/hypotheekrente/renteafkoop-en-rentemiddeling",
+    "status": "verified"
+   },
+   "energyLabelDiscount": {
+    "sourceUrl": "https://www.florius.nl/-/media/florius/files/rentepagina/renteblad-florius-profijt-drie-plus-drie-hypotheek.pdf",
+    "status": "verified"
+   },
+   "closingCostsEur": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "specials": {
+    "sourceUrl": "https://www.florius.nl/hypotheekrente",
+    "status": "verified"
+   }
+  }
+ },
+ {
+  "slug": "allianz",
+  "name": "Allianz",
+  "active": true,
+  "activeNote": "Verstrekker: Allianz Vermogen B.V.; alleen via (execution-only) adviseurs. Max leenbedrag non-NHG EUR 1.000.000.",
+  "maxLtvPct": 100,
+  "maxInterestOnlyPctOfValue": 50,
+  "meeneemregeling": true,
+  "verhuisregeling": true,
+  "accepts": {
+   "permanentContract": true,
+   "intentieverklaring": true,
+   "flexIBL": true,
+   "perspectiefverklaring": null,
+   "benefits": true,
+   "pension": true
+  },
+  "entrepreneur": {
+   "minYearsFigures": null,
+   "acceptsForecastForStarters": null,
+   "ivoPolicy": "required",
+   "calcMethod": "ivo",
+   "acceptedLegalForms": null,
+   "dgaTreatment": "ivo",
+   "minSolvencyPct": null,
+   "minCurrentRatio": null,
+   "countsManagementFee": null,
+   "dgaThresholdPct": 5,
+   "allowsLoanNextToOwnBv": null,
+   "guaranteesTreatment": null,
+   "maxLtvPct": null,
+   "maxInterestOnlyPct": null
+  },
+  "bridgeLoanMaxMonths": 24,
+  "restschuldFinancing": null,
+  "penaltyFreeRepaymentPct": 10,
+  "rentemiddeling": true,
+  "energyLabelDiscounts": {},
+  "closingCostsEur": null,
+  "bouwdepot": true,
+  "allowsConsumptiveRelease": true,
+  "allowsBusinessRelease": null,
+  "sources": {
+   "maxLtvPct": {
+    "sourceUrl": "https://www.allianz.nl/content/dam/onemarketing/benelu/allianz-nl/local/5/500083-47.pdf",
+    "status": "verified"
+   },
+   "maxInterestOnlyPctOfValue": {
+    "sourceUrl": "https://www.allianz.nl/content/dam/onemarketing/benelu/allianz-nl/local/5/500083-47.pdf",
+    "status": "verified"
+   },
+   "meeneemregeling": {
+    "sourceUrl": "https://www.allianz.nl/content/dam/onemarketing/benelu/allianz-nl/local/5/500083-47.pdf",
+    "status": "verified"
+   },
+   "verhuisregeling": {
+    "sourceUrl": "https://www.allianz.nl/content/dam/onemarketing/benelu/allianz-nl/local/5/500083-47.pdf",
+    "status": "verified"
+   },
+   "acceptsPermanentContract": {
+    "sourceUrl": "https://www.allianz.nl/content/dam/onemarketing/benelu/allianz-nl/local/5/500083-47.pdf",
+    "status": "verified"
+   },
+   "acceptsIntentieverklaring": {
+    "sourceUrl": "https://www.allianz.nl/content/dam/onemarketing/benelu/allianz-nl/local/5/500083-47.pdf",
+    "status": "verified"
+   },
+   "acceptsFlexIBL": {
+    "sourceUrl": "https://www.allianz.nl/content/dam/onemarketing/benelu/allianz-nl/local/5/500083-47.pdf",
+    "status": "verified"
+   },
+   "acceptsPerspectiefverklaring": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsBenefits": {
+    "sourceUrl": "https://www.allianz.nl/content/dam/onemarketing/benelu/allianz-nl/local/5/500083-47.pdf",
+    "status": "verified"
+   },
+   "acceptsPension": {
+    "sourceUrl": "https://www.allianz.nl/content/dam/onemarketing/benelu/allianz-nl/local/5/500083-47.pdf",
+    "status": "verified"
+   },
+   "entMinYearsFigures": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entAcceptsForecastForStarters": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entIvoPolicy": {
+    "sourceUrl": "https://www.allianz.nl/content/dam/onemarketing/benelu/allianz-nl/local/5/500083-47.pdf",
+    "status": "verified"
+   },
+   "entCalcMethod": {
+    "sourceUrl": "https://www.allianz.nl/content/dam/onemarketing/benelu/allianz-nl/local/5/500083-47.pdf",
+    "status": "verified"
+   },
+   "entAcceptedLegalForms": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaTreatment": {
+    "sourceUrl": "https://www.allianz.nl/content/dam/onemarketing/benelu/allianz-nl/local/5/500083-47.pdf",
+    "status": "verified"
+   },
+   "entMinSolvencyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinCurrentRatio": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entCountsManagementFee": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaThresholdPct": {
+    "sourceUrl": "https://www.allianz.nl/content/dam/onemarketing/benelu/allianz-nl/local/5/500083-47.pdf",
+    "status": "verified"
+   },
+   "entAllowsLoanNextToOwnBv": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entGuaranteesTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxLtvPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxInterestOnlyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanMaxMonths": {
+    "sourceUrl": "https://www.allianz.nl/content/dam/onemarketing/benelu/allianz-nl/local/5/500083-47.pdf",
+    "status": "verified"
+   },
+   "bridgeLoanConditions": {
+    "sourceUrl": "https://www.allianz.nl/content/dam/onemarketing/benelu/allianz-nl/local/5/500083-47.pdf",
+    "status": "verified"
+   },
+   "oversluitenVerhogenConditions": {
+    "sourceUrl": "https://www.allianz.nl/content/dam/onemarketing/benelu/allianz-nl/local/5/500083-47.pdf",
+    "status": "verified"
+   },
+   "bouwdepot": {
+    "sourceUrl": "https://www.allianz.nl/content/dam/onemarketing/benelu/allianz-nl/local/5/500083-47.pdf",
+    "status": "verified"
+   },
+   "duurzaamheidsdepot": {
+    "sourceUrl": "https://www.allianz.nl/content/dam/onemarketing/benelu/allianz-nl/local/5/500083-47.pdf",
+    "status": "verified"
+   },
+   "restschuldFinancing": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "penaltyFreeRepaymentPct": {
+    "sourceUrl": "https://www.allianz.nl/content/dam/onemarketing/benelu/allianz-nl/local/5/500083-46.pdf",
+    "status": "verified"
+   },
+   "renteverlenging": {
+    "sourceUrl": "https://www.allianz.nl/content/dam/onemarketing/benelu/allianz-nl/local/5/500083-46.pdf",
+    "status": "verified"
+   },
+   "rentemiddeling": {
+    "sourceUrl": "https://www.allianz.nl/content/dam/onemarketing/benelu/allianz-nl/local/5/500083-46.pdf",
+    "status": "verified"
+   },
+   "energyLabelDiscount": {
+    "sourceUrl": "https://www.allianz.nl/content/dam/onemarketing/benelu/allianz-nl/local/5/500083-49.pdf",
+    "status": "verified"
+   },
+   "closingCostsEur": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "specials": {
+    "sourceUrl": "https://www.allianz.nl/content/dam/onemarketing/benelu/allianz-nl/local/5/500083-47.pdf",
+    "status": "verified"
+   }
+  }
+ },
+ {
+  "slug": "asr",
+  "name": "a.s.r.",
+  "active": true,
+  "activeNote": "Acceptatievelden gebaseerd op a.s.r. Hypotheekgids juni 2025 (a.s.r.-document, gehost door HypotheekCompany; nieuwere gids mei 2026 op asr.nl gaf 404). Productkaart april 2026 van a.s.r. gebruikt waar mogelijk. Beleid geldt ook voor Aegon-label (overgenomen door a.s.r.).",
+  "maxLtvPct": 100,
+  "maxInterestOnlyPctOfValue": 50,
+  "meeneemregeling": true,
+  "verhuisregeling": true,
+  "accepts": {
+   "permanentContract": true,
+   "intentieverklaring": true,
+   "flexIBL": true,
+   "perspectiefverklaring": true,
+   "benefits": true,
+   "pension": true
+  },
+  "entrepreneur": {
+   "minYearsFigures": null,
+   "acceptsForecastForStarters": null,
+   "ivoPolicy": "required",
+   "calcMethod": "ivo",
+   "acceptedLegalForms": null,
+   "dgaTreatment": "ivo",
+   "minSolvencyPct": null,
+   "minCurrentRatio": null,
+   "countsManagementFee": null,
+   "dgaThresholdPct": 5,
+   "allowsLoanNextToOwnBv": null,
+   "guaranteesTreatment": null,
+   "maxLtvPct": null,
+   "maxInterestOnlyPct": null
+  },
+  "bridgeLoanMaxMonths": 12,
+  "restschuldFinancing": true,
+  "penaltyFreeRepaymentPct": 10,
+  "rentemiddeling": false,
+  "energyLabelDiscounts": {},
+  "closingCostsEur": null,
+  "bouwdepot": true,
+  "allowsConsumptiveRelease": null,
+  "allowsBusinessRelease": null,
+  "sources": {
+   "maxLtvPct": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/06/Hypotheekgids-juni-2025.pdf",
+    "status": "verified"
+   },
+   "maxInterestOnlyPctOfValue": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/06/Hypotheekgids-juni-2025.pdf",
+    "status": "verified"
+   },
+   "meeneemregeling": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/06/Hypotheekgids-juni-2025.pdf",
+    "status": "verified"
+   },
+   "verhuisregeling": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/06/Hypotheekgids-juni-2025.pdf",
+    "status": "verified"
+   },
+   "acceptsPermanentContract": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/06/Hypotheekgids-juni-2025.pdf",
+    "status": "verified"
+   },
+   "acceptsIntentieverklaring": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/06/Hypotheekgids-juni-2025.pdf",
+    "status": "verified"
+   },
+   "acceptsFlexIBL": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/06/Hypotheekgids-juni-2025.pdf",
+    "status": "verified"
+   },
+   "acceptsPerspectiefverklaring": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/06/Hypotheekgids-juni-2025.pdf",
+    "status": "verified"
+   },
+   "acceptsBenefits": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/06/Hypotheekgids-juni-2025.pdf",
+    "status": "verified"
+   },
+   "acceptsPension": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/06/Hypotheekgids-juni-2025.pdf",
+    "status": "verified"
+   },
+   "entMinYearsFigures": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entAcceptsForecastForStarters": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entIvoPolicy": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/06/Hypotheekgids-juni-2025.pdf",
+    "status": "verified"
+   },
+   "entCalcMethod": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/06/Hypotheekgids-juni-2025.pdf",
+    "status": "verified"
+   },
+   "entAcceptedLegalForms": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaTreatment": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/06/Hypotheekgids-juni-2025.pdf",
+    "status": "verified"
+   },
+   "entMinSolvencyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinCurrentRatio": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entCountsManagementFee": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaThresholdPct": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/06/Hypotheekgids-juni-2025.pdf",
+    "status": "verified"
+   },
+   "entAllowsLoanNextToOwnBv": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entGuaranteesTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxLtvPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxInterestOnlyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanMaxMonths": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/06/Hypotheekgids-juni-2025.pdf",
+    "status": "verified"
+   },
+   "bridgeLoanConditions": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/06/Hypotheekgids-juni-2025.pdf",
+    "status": "verified"
+   },
+   "oversluitenVerhogenConditions": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/06/Hypotheekgids-juni-2025.pdf",
+    "status": "verified"
+   },
+   "bouwdepot": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/06/Hypotheekgids-juni-2025.pdf",
+    "status": "verified"
+   },
+   "duurzaamheidsdepot": {
+    "sourceUrl": "https://www.asr.nl/asr/api/asrnl/pod/getpdf?uri=/POD/r/Pdf/asr-renteblad.pdf",
+    "status": "verified"
+   },
+   "restschuldFinancing": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/06/Hypotheekgids-juni-2025.pdf",
+    "status": "verified"
+   },
+   "penaltyFreeRepaymentPct": {
+    "sourceUrl": "https://www.asrnederland.nl/-/media/files/asrnederland-nl/nieuws-en-pers/2026/20260430-asr-hypotheekproduct-en-contactkaart.pdf",
+    "status": "verified"
+   },
+   "renteverlenging": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/06/Hypotheekgids-juni-2025.pdf",
+    "status": "verified"
+   },
+   "rentemiddeling": {
+    "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/06/Hypotheekgids-juni-2025.pdf",
+    "status": "verified"
+   },
+   "energyLabelDiscount": {
+    "sourceUrl": "https://www.asr.nl/asr/api/asrnl/pod/getpdf?uri=/POD/r/Pdf/asr-renteblad.pdf",
+    "status": "verified"
+   },
+   "closingCostsEur": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "specials": {
+    "sourceUrl": "https://www.asrnederland.nl/-/media/files/asrnederland-nl/nieuws-en-pers/2026/20260430-asr-hypotheekproduct-en-contactkaart.pdf",
+    "status": "verified"
+   }
+  }
+ },
+ {
+  "slug": "centraal-beheer",
+  "name": "Centraal Beheer",
+  "active": true,
+  "activeNote": "Handelsnaam van Achmea Hypotheken B.V. Alleen de Leef Hypotheek is nieuw af te sluiten (via adviseur).",
+  "maxLtvPct": 100,
+  "maxInterestOnlyPctOfValue": 50,
+  "meeneemregeling": true,
+  "verhuisregeling": true,
+  "accepts": {
+   "permanentContract": true,
+   "intentieverklaring": true,
+   "flexIBL": true,
+   "perspectiefverklaring": null,
+   "benefits": true,
+   "pension": true
+  },
+  "entrepreneur": {
+   "minYearsFigures": 1,
+   "acceptsForecastForStarters": false,
+   "ivoPolicy": "accepted",
+   "calcMethod": "avg3_capped_by_last",
+   "acceptedLegalForms": [
+    "eenmanszaak",
+    "maatschap",
+    "cv",
+    "vof",
+    "bv",
+    "bv_holding"
+   ],
+   "dgaTreatment": null,
+   "minSolvencyPct": null,
+   "minCurrentRatio": null,
+   "countsManagementFee": null,
+   "dgaThresholdPct": 5,
+   "allowsLoanNextToOwnBv": true,
+   "guaranteesTreatment": null,
+   "maxLtvPct": null,
+   "maxInterestOnlyPct": null
+  },
+  "bridgeLoanMaxMonths": 12,
+  "restschuldFinancing": null,
+  "penaltyFreeRepaymentPct": 10,
+  "rentemiddeling": true,
+  "energyLabelDiscounts": {
+   "A+": 0.05,
+   "A++": 0.05,
+   "A+++": 0.05,
+   "A++++": 0.05,
+   "A++++EPG": 0.05
+  },
+  "closingCostsEur": null,
+  "bouwdepot": true,
+  "allowsConsumptiveRelease": null,
+  "allowsBusinessRelease": null,
+  "sources": {
+   "maxLtvPct": {
+    "sourceUrl": "https://www.centraalbeheer.nl/-/media/files/voor-adviseurs/acceptatiegids-leef-hypotheek.pdf",
+    "status": "verified"
+   },
+   "maxInterestOnlyPctOfValue": {
+    "sourceUrl": "https://www.centraalbeheer.nl/-/media/files/voor-adviseurs/acceptatiegids-leef-hypotheek.pdf",
+    "status": "verified"
+   },
+   "meeneemregeling": {
+    "sourceUrl": "https://www.centraalbeheer.nl/-/media/files/voor-adviseurs/acceptatiegids-leef-hypotheek.pdf",
+    "status": "verified"
+   },
+   "verhuisregeling": {
+    "sourceUrl": "https://www.centraalbeheer.nl/-/media/files/voor-adviseurs/acceptatiegids-leef-hypotheek.pdf",
+    "status": "verified"
+   },
+   "acceptsPermanentContract": {
+    "sourceUrl": "https://www.centraalbeheer.nl/-/media/files/voor-adviseurs/acceptatiegids-leef-hypotheek.pdf",
+    "status": "verified"
+   },
+   "acceptsIntentieverklaring": {
+    "sourceUrl": "https://www.centraalbeheer.nl/-/media/files/voor-adviseurs/acceptatiegids-leef-hypotheek.pdf",
+    "status": "verified"
+   },
+   "acceptsFlexIBL": {
+    "sourceUrl": "https://www.centraalbeheer.nl/-/media/files/voor-adviseurs/acceptatiegids-leef-hypotheek.pdf",
+    "status": "verified"
+   },
+   "acceptsPerspectiefverklaring": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsBenefits": {
+    "sourceUrl": "https://www.centraalbeheer.nl/-/media/files/voor-adviseurs/acceptatiegids-leef-hypotheek.pdf",
+    "status": "verified"
+   },
+   "acceptsPension": {
+    "sourceUrl": "https://www.centraalbeheer.nl/-/media/files/voor-adviseurs/acceptatiegids-leef-hypotheek.pdf",
+    "status": "verified"
+   },
+   "entMinYearsFigures": {
+    "sourceUrl": "https://www.centraalbeheer.nl/-/media/files/voor-adviseurs/acceptatiegids-leef-hypotheek.pdf",
+    "status": "verified"
+   },
+   "entAcceptsForecastForStarters": {
+    "sourceUrl": "https://www.centraalbeheer.nl/-/media/files/voor-adviseurs/acceptatiegids-leef-hypotheek.pdf",
+    "status": "verified"
+   },
+   "entIvoPolicy": {
+    "sourceUrl": "https://www.centraalbeheer.nl/-/media/files/voor-adviseurs/acceptatiegids-leef-hypotheek.pdf",
+    "status": "verified"
+   },
+   "entCalcMethod": {
+    "sourceUrl": "https://www.centraalbeheer.nl/-/media/files/voor-adviseurs/acceptatiegids-leef-hypotheek.pdf",
+    "status": "verified"
+   },
+   "entAcceptedLegalForms": {
+    "sourceUrl": "https://www.centraalbeheer.nl/-/media/files/voor-adviseurs/acceptatiegids-leef-hypotheek.pdf",
+    "status": "verified"
+   },
+   "entDgaTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinSolvencyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinCurrentRatio": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entCountsManagementFee": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaThresholdPct": {
+    "sourceUrl": "https://www.centraalbeheer.nl/-/media/files/voor-adviseurs/acceptatiegids-leef-hypotheek.pdf",
+    "status": "verified"
+   },
+   "entAllowsLoanNextToOwnBv": {
+    "sourceUrl": "https://www.centraalbeheer.nl/-/media/files/voor-adviseurs/acceptatiegids-leef-hypotheek.pdf",
+    "status": "verified"
+   },
+   "entGuaranteesTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxLtvPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxInterestOnlyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanMaxMonths": {
+    "sourceUrl": "https://www.centraalbeheer.nl/-/media/files/voor-adviseurs/acceptatiegids-leef-hypotheek.pdf",
+    "status": "verified"
+   },
+   "bridgeLoanConditions": {
+    "sourceUrl": "https://www.centraalbeheer.nl/-/media/files/voor-adviseurs/acceptatiegids-leef-hypotheek.pdf",
+    "status": "verified"
+   },
+   "oversluitenVerhogenConditions": {
+    "sourceUrl": "https://www.centraalbeheer.nl/-/media/files/voor-adviseurs/acceptatiegids-leef-hypotheek.pdf",
+    "status": "verified"
+   },
+   "bouwdepot": {
+    "sourceUrl": "https://www.centraalbeheer.nl/-/media/files/voor-adviseurs/acceptatiegids-leef-hypotheek.pdf",
+    "status": "verified"
+   },
+   "duurzaamheidsdepot": {
+    "sourceUrl": "https://www.centraalbeheer.nl/-/media/files/voor-adviseurs/acceptatiegids-leef-hypotheek.pdf",
+    "status": "verified"
+   },
+   "restschuldFinancing": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "penaltyFreeRepaymentPct": {
+    "sourceUrl": "https://www.centraalbeheer.nl/-/media/files/voor-adviseurs/acceptatiegids-leef-hypotheek.pdf",
+    "status": "verified"
+   },
+   "renteverlenging": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "rentemiddeling": {
+    "sourceUrl": "https://www.centraalbeheer.nl/-/media/files/voor-adviseurs/acceptatiegids-leef-hypotheek.pdf",
+    "status": "verified"
+   },
+   "energyLabelDiscount": {
+    "sourceUrl": "https://www.centraalbeheer.nl/-/media/files/prive/hypotheek/rentelijsten/actueel/rentelijst-leef-hypotheek.pdf",
+    "status": "verified"
+   },
+   "closingCostsEur": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "specials": {
+    "sourceUrl": "https://www.centraalbeheer.nl/-/media/files/voor-adviseurs/acceptatiegids-leef-hypotheek.pdf",
+    "status": "verified"
+   }
+  }
+ },
+ {
+  "slug": "argenta",
+  "name": "Argenta",
+  "active": true,
+  "activeNote": "Actief via adviseurs. Hypotheekgids augustus 2026.",
+  "maxLtvPct": 100,
+  "maxInterestOnlyPctOfValue": 30,
+  "meeneemregeling": true,
+  "verhuisregeling": true,
+  "accepts": {
+   "permanentContract": true,
+   "intentieverklaring": true,
+   "flexIBL": true,
+   "perspectiefverklaring": true,
+   "benefits": true,
+   "pension": true
+  },
+  "entrepreneur": {
+   "minYearsFigures": 1,
+   "acceptsForecastForStarters": null,
+   "ivoPolicy": "accepted",
+   "calcMethod": null,
+   "acceptedLegalForms": null,
+   "dgaTreatment": null,
+   "minSolvencyPct": null,
+   "minCurrentRatio": null,
+   "countsManagementFee": null,
+   "dgaThresholdPct": null,
+   "allowsLoanNextToOwnBv": null,
+   "guaranteesTreatment": null,
+   "maxLtvPct": 100,
+   "maxInterestOnlyPct": null
+  },
+  "bridgeLoanMaxMonths": 24,
+  "restschuldFinancing": null,
+  "penaltyFreeRepaymentPct": null,
+  "rentemiddeling": false,
+  "energyLabelDiscounts": {
+   "A": 0.1,
+   "A+": 0.1,
+   "A++": 0.1,
+   "A+++": 0.1,
+   "A++++": 0.1,
+   "A++++EPG": 0.1,
+   "B": 0.05
+  },
+  "closingCostsEur": null,
+  "bouwdepot": true,
+  "allowsConsumptiveRelease": true,
+  "allowsBusinessRelease": null,
+  "sources": {
+   "maxLtvPct": {
+    "sourceUrl": "https://www.argenta.nl/sites/default/files/documents/Argenta_Hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "maxInterestOnlyPctOfValue": {
+    "sourceUrl": "https://www.argenta.nl/sites/default/files/documents/Argenta_Hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "meeneemregeling": {
+    "sourceUrl": "https://www.argenta.nl/sites/default/files/documents/Argenta_Hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "verhuisregeling": {
+    "sourceUrl": "https://www.argenta.nl/sites/default/files/documents/Argenta_Hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "acceptsPermanentContract": {
+    "sourceUrl": "https://www.argenta.nl/sites/default/files/documents/Argenta_Hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "acceptsIntentieverklaring": {
+    "sourceUrl": "https://www.argenta.nl/sites/default/files/documents/Argenta_Hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "acceptsFlexIBL": {
+    "sourceUrl": "https://www.argenta.nl/sites/default/files/documents/Argenta_Hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "acceptsPerspectiefverklaring": {
+    "sourceUrl": "https://www.argenta.nl/sites/default/files/documents/Argenta_Hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "acceptsBenefits": {
+    "sourceUrl": "https://www.argenta.nl/sites/default/files/documents/Argenta_Hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "acceptsPension": {
+    "sourceUrl": "https://www.argenta.nl/sites/default/files/documents/Argenta_Hypotheekkaart.pdf",
+    "status": "verified"
+   },
+   "entMinYearsFigures": {
+    "sourceUrl": "https://www.argenta.nl/sites/default/files/documents/Argenta_Hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "entAcceptsForecastForStarters": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entIvoPolicy": {
+    "sourceUrl": "https://www.argenta.nl/sites/default/files/documents/Argenta_Hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "entCalcMethod": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entAcceptedLegalForms": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinSolvencyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinCurrentRatio": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entCountsManagementFee": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaThresholdPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entAllowsLoanNextToOwnBv": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entGuaranteesTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxLtvPct": {
+    "sourceUrl": "https://www.argenta.nl/sites/default/files/documents/Argenta_Hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "entMaxInterestOnlyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanMaxMonths": {
+    "sourceUrl": "https://www.argenta.nl/sites/default/files/documents/Argenta_Hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "bridgeLoanConditions": {
+    "sourceUrl": "https://www.argenta.nl/sites/default/files/documents/Argenta_Hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "oversluitenVerhogenConditions": {
+    "sourceUrl": "https://www.argenta.nl/sites/default/files/documents/Argenta_Hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "bouwdepot": {
+    "sourceUrl": "https://www.argenta.nl/sites/default/files/documents/Argenta_Hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "duurzaamheidsdepot": {
+    "sourceUrl": "https://www.argenta.nl/sites/default/files/documents/Argenta_Hypotheekkaart.pdf",
+    "status": "verified"
+   },
+   "restschuldFinancing": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "penaltyFreeRepaymentPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "renteverlenging": {
+    "sourceUrl": "https://www.argenta.nl/sites/default/files/documents/Argenta_Hypotheekkaart.pdf",
+    "status": "verified"
+   },
+   "rentemiddeling": {
+    "sourceUrl": "https://www.argenta.nl/contact/veelgestelde-vragen/hypotheek/heeft-argenta-rentemiddeling-of-rentebedenktijd",
+    "status": "verified"
+   },
+   "energyLabelDiscount": {
+    "sourceUrl": "https://www.argenta.nl/hypotheek-argenta/hypotheekrente-overzicht",
+    "status": "verified"
+   },
+   "closingCostsEur": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "specials": {
+    "sourceUrl": "https://www.argenta.nl/sites/default/files/documents/Argenta_Hypotheekgids.pdf",
+    "status": "verified"
+   }
+  }
+ },
+ {
+  "slug": "munt",
+  "name": "MUNT Hypotheken",
+  "active": true,
+  "activeNote": "Actief via adviseurs/serviceproviders. Hypotheekgids 2026 versie 2026.002.",
+  "maxLtvPct": 100,
+  "maxInterestOnlyPctOfValue": 50,
+  "meeneemregeling": true,
+  "verhuisregeling": true,
+  "accepts": {
+   "permanentContract": true,
+   "intentieverklaring": true,
+   "flexIBL": true,
+   "perspectiefverklaring": true,
+   "benefits": true,
+   "pension": true
+  },
+  "entrepreneur": {
+   "minYearsFigures": 1,
+   "acceptsForecastForStarters": null,
+   "ivoPolicy": "required",
+   "calcMethod": "ivo",
+   "acceptedLegalForms": null,
+   "dgaTreatment": "ivo",
+   "minSolvencyPct": 10,
+   "minCurrentRatio": null,
+   "countsManagementFee": null,
+   "dgaThresholdPct": 5,
+   "allowsLoanNextToOwnBv": null,
+   "guaranteesTreatment": null,
+   "maxLtvPct": null,
+   "maxInterestOnlyPct": null
+  },
+  "bridgeLoanMaxMonths": 30,
+  "restschuldFinancing": true,
+  "penaltyFreeRepaymentPct": null,
+  "rentemiddeling": null,
+  "energyLabelDiscounts": {},
+  "closingCostsEur": 0,
+  "bouwdepot": true,
+  "allowsConsumptiveRelease": null,
+  "allowsBusinessRelease": null,
+  "sources": {
+   "maxLtvPct": {
+    "sourceUrl": "https://www.munthypotheken.nl/site/assets/files/2893/munt_hypotheekgids_2026-2.pdf",
+    "status": "verified"
+   },
+   "maxInterestOnlyPctOfValue": {
+    "sourceUrl": "https://www.munthypotheken.nl/site/assets/files/2893/munt_hypotheekgids_2026-2.pdf",
+    "status": "verified"
+   },
+   "meeneemregeling": {
+    "sourceUrl": "https://www.munthypotheken.nl/site/assets/files/2893/munt_hypotheekgids_2026-2.pdf",
+    "status": "verified"
+   },
+   "verhuisregeling": {
+    "sourceUrl": "https://www.munthypotheken.nl/site/assets/files/2893/munt_hypotheekgids_2026-2.pdf",
+    "status": "verified"
+   },
+   "acceptsPermanentContract": {
+    "sourceUrl": "https://www.munthypotheken.nl/site/assets/files/2893/munt_hypotheekgids_2026-2.pdf",
+    "status": "verified"
+   },
+   "acceptsIntentieverklaring": {
+    "sourceUrl": "https://www.munthypotheken.nl/site/assets/files/2893/munt_hypotheekgids_2026-2.pdf",
+    "status": "verified"
+   },
+   "acceptsFlexIBL": {
+    "sourceUrl": "https://www.munthypotheken.nl/site/assets/files/2893/munt_hypotheekgids_2026-2.pdf",
+    "status": "verified"
+   },
+   "acceptsPerspectiefverklaring": {
+    "sourceUrl": "https://www.munthypotheken.nl/site/assets/files/2893/munt_hypotheekgids_2026-2.pdf",
+    "status": "verified"
+   },
+   "acceptsBenefits": {
+    "sourceUrl": "https://www.munthypotheken.nl/site/assets/files/2893/munt_hypotheekgids_2026-2.pdf",
+    "status": "verified"
+   },
+   "acceptsPension": {
+    "sourceUrl": "https://www.munthypotheken.nl/site/assets/files/2893/munt_hypotheekgids_2026-2.pdf",
+    "status": "verified"
+   },
+   "entMinYearsFigures": {
+    "sourceUrl": "https://www.munthypotheken.nl/site/assets/files/2893/munt_hypotheekgids_2026-2.pdf",
+    "status": "verified"
+   },
+   "entAcceptsForecastForStarters": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entIvoPolicy": {
+    "sourceUrl": "https://www.munthypotheken.nl/site/assets/files/2893/munt_hypotheekgids_2026-2.pdf",
+    "status": "verified"
+   },
+   "entCalcMethod": {
+    "sourceUrl": "https://www.munthypotheken.nl/site/assets/files/2893/munt_hypotheekgids_2026-2.pdf",
+    "status": "verified"
+   },
+   "entAcceptedLegalForms": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaTreatment": {
+    "sourceUrl": "https://www.munthypotheken.nl/site/assets/files/2893/munt_hypotheekgids_2026-2.pdf",
+    "status": "verified"
+   },
+   "entMinSolvencyPct": {
+    "sourceUrl": "https://www.munthypotheken.nl/site/assets/files/2893/munt_hypotheekgids_2026-2.pdf",
+    "status": "verified"
+   },
+   "entMinCurrentRatio": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entCountsManagementFee": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaThresholdPct": {
+    "sourceUrl": "https://www.munthypotheken.nl/site/assets/files/2893/munt_hypotheekgids_2026-2.pdf",
+    "status": "verified"
+   },
+   "entAllowsLoanNextToOwnBv": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entGuaranteesTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxLtvPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxInterestOnlyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanMaxMonths": {
+    "sourceUrl": "https://www.munthypotheken.nl/site/assets/files/2893/munt_hypotheekgids_2026-2.pdf",
+    "status": "verified"
+   },
+   "bridgeLoanConditions": {
+    "sourceUrl": "https://www.munthypotheken.nl/site/assets/files/2893/munt_hypotheekgids_2026-2.pdf",
+    "status": "verified"
+   },
+   "oversluitenVerhogenConditions": {
+    "sourceUrl": "https://www.munthypotheken.nl/site/assets/files/2893/munt_hypotheekgids_2026-2.pdf",
+    "status": "verified"
+   },
+   "bouwdepot": {
+    "sourceUrl": "https://www.munthypotheken.nl/site/assets/files/2893/munt_hypotheekgids_2026-2.pdf",
+    "status": "verified"
+   },
+   "duurzaamheidsdepot": {
+    "sourceUrl": "https://www.munthypotheken.nl/site/assets/files/2893/munt_hypotheekgids_2026-2.pdf",
+    "status": "verified"
+   },
+   "restschuldFinancing": {
+    "sourceUrl": "https://www.munthypotheken.nl/site/assets/files/2893/munt_hypotheekgids_2026-2.pdf",
+    "status": "verified"
+   },
+   "penaltyFreeRepaymentPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "renteverlenging": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "rentemiddeling": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "energyLabelDiscount": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "closingCostsEur": {
+    "sourceUrl": "https://www.munthypotheken.nl/site/assets/files/2893/munt_hypotheekgids_2026-2.pdf",
+    "status": "verified"
+   },
+   "specials": {
+    "sourceUrl": "https://www.munthypotheken.nl/rente/",
+    "status": "verified"
+   }
+  }
+ },
+ {
+  "slug": "lot",
+  "name": "Lot Hypotheken",
+  "active": true,
+  "activeNote": "Alleen via hypotheekadviseur. Hypotheekgids januari 2026.",
+  "maxLtvPct": 100,
+  "maxInterestOnlyPctOfValue": 50,
+  "meeneemregeling": true,
+  "verhuisregeling": true,
+  "accepts": {
+   "permanentContract": true,
+   "intentieverklaring": true,
+   "flexIBL": true,
+   "perspectiefverklaring": true,
+   "benefits": true,
+   "pension": true
+  },
+  "entrepreneur": {
+   "minYearsFigures": 1,
+   "acceptsForecastForStarters": null,
+   "ivoPolicy": "required",
+   "calcMethod": "ivo",
+   "acceptedLegalForms": null,
+   "dgaTreatment": "ivo",
+   "minSolvencyPct": null,
+   "minCurrentRatio": null,
+   "countsManagementFee": null,
+   "dgaThresholdPct": 5,
+   "allowsLoanNextToOwnBv": null,
+   "guaranteesTreatment": null,
+   "maxLtvPct": 100,
+   "maxInterestOnlyPct": null
+  },
+  "bridgeLoanMaxMonths": 24,
+  "restschuldFinancing": null,
+  "penaltyFreeRepaymentPct": 15,
+  "rentemiddeling": null,
+  "energyLabelDiscounts": {
+   "A": 0.1,
+   "A+": 0.1,
+   "A++": 0.1,
+   "A+++": 0.1,
+   "A++++": 0.1,
+   "A++++EPG": 0.1
+  },
+  "energyLabelDiscountsAbove10y": {
+   "A": 0.03,
+   "A+": 0.03,
+   "A++": 0.03,
+   "A+++": 0.03,
+   "A++++": 0.03,
+   "A++++EPG": 0.03
+  },
+  "closingCostsEur": null,
+  "bouwdepot": true,
+  "allowsConsumptiveRelease": null,
+  "allowsBusinessRelease": null,
+  "sources": {
+   "maxLtvPct": {
+    "sourceUrl": "https://adviseur.lothypotheken.nl/media/koxceg2q/hypotheekgids-lot-hypotheken-versie-januari-2026.pdf",
+    "status": "verified"
+   },
+   "maxInterestOnlyPctOfValue": {
+    "sourceUrl": "https://adviseur.lothypotheken.nl/media/koxceg2q/hypotheekgids-lot-hypotheken-versie-januari-2026.pdf",
+    "status": "verified"
+   },
+   "meeneemregeling": {
+    "sourceUrl": "https://adviseur.lothypotheken.nl/media/koxceg2q/hypotheekgids-lot-hypotheken-versie-januari-2026.pdf",
+    "status": "verified"
+   },
+   "verhuisregeling": {
+    "sourceUrl": "https://adviseur.lothypotheken.nl/media/koxceg2q/hypotheekgids-lot-hypotheken-versie-januari-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsPermanentContract": {
+    "sourceUrl": "https://adviseur.lothypotheken.nl/media/koxceg2q/hypotheekgids-lot-hypotheken-versie-januari-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsIntentieverklaring": {
+    "sourceUrl": "https://adviseur.lothypotheken.nl/media/koxceg2q/hypotheekgids-lot-hypotheken-versie-januari-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsFlexIBL": {
+    "sourceUrl": "https://adviseur.lothypotheken.nl/media/koxceg2q/hypotheekgids-lot-hypotheken-versie-januari-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsPerspectiefverklaring": {
+    "sourceUrl": "https://adviseur.lothypotheken.nl/media/koxceg2q/hypotheekgids-lot-hypotheken-versie-januari-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsBenefits": {
+    "sourceUrl": "https://adviseur.lothypotheken.nl/media/koxceg2q/hypotheekgids-lot-hypotheken-versie-januari-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsPension": {
+    "sourceUrl": "https://adviseur.lothypotheken.nl/media/koxceg2q/hypotheekgids-lot-hypotheken-versie-januari-2026.pdf",
+    "status": "verified"
+   },
+   "entMinYearsFigures": {
+    "sourceUrl": "https://adviseur.lothypotheken.nl/media/koxceg2q/hypotheekgids-lot-hypotheken-versie-januari-2026.pdf",
+    "status": "verified"
+   },
+   "entAcceptsForecastForStarters": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entIvoPolicy": {
+    "sourceUrl": "https://adviseur.lothypotheken.nl/media/koxceg2q/hypotheekgids-lot-hypotheken-versie-januari-2026.pdf",
+    "status": "verified"
+   },
+   "entCalcMethod": {
+    "sourceUrl": "https://adviseur.lothypotheken.nl/media/koxceg2q/hypotheekgids-lot-hypotheken-versie-januari-2026.pdf",
+    "status": "verified"
+   },
+   "entAcceptedLegalForms": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaTreatment": {
+    "sourceUrl": "https://adviseur.lothypotheken.nl/media/koxceg2q/hypotheekgids-lot-hypotheken-versie-januari-2026.pdf",
+    "status": "verified"
+   },
+   "entMinSolvencyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinCurrentRatio": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entCountsManagementFee": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaThresholdPct": {
+    "sourceUrl": "https://adviseur.lothypotheken.nl/media/koxceg2q/hypotheekgids-lot-hypotheken-versie-januari-2026.pdf",
+    "status": "verified"
+   },
+   "entAllowsLoanNextToOwnBv": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entGuaranteesTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxLtvPct": {
+    "sourceUrl": "https://adviseur.lothypotheken.nl/media/koxceg2q/hypotheekgids-lot-hypotheken-versie-januari-2026.pdf",
+    "status": "verified"
+   },
+   "entMaxInterestOnlyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanMaxMonths": {
+    "sourceUrl": "https://adviseur.lothypotheken.nl/media/koxceg2q/hypotheekgids-lot-hypotheken-versie-januari-2026.pdf",
+    "status": "verified"
+   },
+   "bridgeLoanConditions": {
+    "sourceUrl": "https://adviseur.lothypotheken.nl/media/koxceg2q/hypotheekgids-lot-hypotheken-versie-januari-2026.pdf",
+    "status": "verified"
+   },
+   "oversluitenVerhogenConditions": {
+    "sourceUrl": "https://adviseur.lothypotheken.nl/media/koxceg2q/hypotheekgids-lot-hypotheken-versie-januari-2026.pdf",
+    "status": "verified"
+   },
+   "bouwdepot": {
+    "sourceUrl": "https://adviseur.lothypotheken.nl/media/koxceg2q/hypotheekgids-lot-hypotheken-versie-januari-2026.pdf",
+    "status": "verified"
+   },
+   "duurzaamheidsdepot": {
+    "sourceUrl": "https://adviseur.lothypotheken.nl/media/koxceg2q/hypotheekgids-lot-hypotheken-versie-januari-2026.pdf",
+    "status": "verified"
+   },
+   "restschuldFinancing": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "penaltyFreeRepaymentPct": {
+    "sourceUrl": "https://adviseur.lothypotheken.nl/media/koxceg2q/hypotheekgids-lot-hypotheken-versie-januari-2026.pdf",
+    "status": "verified"
+   },
+   "renteverlenging": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "rentemiddeling": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "energyLabelDiscount": {
+    "sourceUrl": "https://www.lothypotheken.nl/consument/hypotheek/hypotheekrentes",
+    "status": "verified"
+   },
+   "closingCostsEur": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "specials": {
+    "sourceUrl": "https://adviseur.lothypotheken.nl/media/koxceg2q/hypotheekgids-lot-hypotheken-versie-januari-2026.pdf",
+    "status": "verified"
+   }
+  }
+ },
+ {
+  "slug": "tulp",
+  "name": "Tulp Hypotheken",
+  "active": true,
+  "activeNote": "Active: new rate sheets published for Tulp Riant (24-09-2026) and Tulp Compleet (18-09-2026); rates apply to new offers. Older 'Tulp Hypotheek' (Euribor-based) is a legacy product.",
+  "maxLtvPct": 106,
+  "maxInterestOnlyPctOfValue": 50,
+  "meeneemregeling": true,
+  "verhuisregeling": true,
+  "accepts": {
+   "permanentContract": true,
+   "intentieverklaring": true,
+   "flexIBL": true,
+   "perspectiefverklaring": null,
+   "benefits": true,
+   "pension": true
+  },
+  "entrepreneur": {
+   "minYearsFigures": 1,
+   "acceptsForecastForStarters": null,
+   "ivoPolicy": "required",
+   "calcMethod": "ivo",
+   "acceptedLegalForms": null,
+   "dgaTreatment": "ivo",
+   "minSolvencyPct": null,
+   "minCurrentRatio": null,
+   "countsManagementFee": null,
+   "dgaThresholdPct": 5,
+   "allowsLoanNextToOwnBv": null,
+   "guaranteesTreatment": null,
+   "maxLtvPct": null,
+   "maxInterestOnlyPct": null
+  },
+  "bridgeLoanMaxMonths": 12,
+  "restschuldFinancing": null,
+  "penaltyFreeRepaymentPct": 10,
+  "rentemiddeling": null,
+  "energyLabelDiscounts": {},
+  "closingCostsEur": null,
+  "bouwdepot": null,
+  "allowsConsumptiveRelease": true,
+  "allowsBusinessRelease": null,
+  "sources": {
+   "maxLtvPct": {
+    "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/03/Productkaart-Tulp-riant-1.pdf",
+    "status": "verified"
+   },
+   "maxInterestOnlyPctOfValue": {
+    "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf",
+    "status": "verified"
+   },
+   "meeneemregeling": {
+    "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf",
+    "status": "verified"
+   },
+   "verhuisregeling": {
+    "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/03/Productkaart-Tulp-riant-1.pdf",
+    "status": "verified"
+   },
+   "acceptsPermanentContract": {
+    "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/03/Productkaart-Tulp-riant-1.pdf",
+    "status": "verified"
+   },
+   "acceptsIntentieverklaring": {
+    "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsFlexIBL": {
+    "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsPerspectiefverklaring": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsBenefits": {
+    "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsPension": {
+    "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf",
+    "status": "verified"
+   },
+   "entMinYearsFigures": {
+    "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf",
+    "status": "verified"
+   },
+   "entAcceptsForecastForStarters": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entIvoPolicy": {
+    "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf",
+    "status": "verified"
+   },
+   "entCalcMethod": {
+    "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf",
+    "status": "verified"
+   },
+   "entAcceptedLegalForms": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaTreatment": {
+    "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf",
+    "status": "verified"
+   },
+   "entMinSolvencyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinCurrentRatio": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entCountsManagementFee": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaThresholdPct": {
+    "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf",
+    "status": "verified"
+   },
+   "entAllowsLoanNextToOwnBv": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entGuaranteesTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxLtvPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxInterestOnlyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanMaxMonths": {
+    "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/03/Productkaart-Tulp-riant-1.pdf",
+    "status": "verified"
+   },
+   "bridgeLoanConditions": {
+    "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/03/Productkaart-Tulp-riant-1.pdf",
+    "status": "verified"
+   },
+   "oversluitenVerhogenConditions": {
+    "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/03/Productkaart-Tulp-riant-1.pdf",
+    "status": "verified"
+   },
+   "bouwdepot": {
+    "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/03/Productkaart-Tulp-riant-1.pdf",
+    "status": "verified"
+   },
+   "duurzaamheidsdepot": {
+    "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf",
+    "status": "verified"
+   },
+   "restschuldFinancing": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "penaltyFreeRepaymentPct": {
+    "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf",
+    "status": "verified"
+   },
+   "renteverlenging": {
+    "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf",
+    "status": "verified"
+   },
+   "rentemiddeling": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "energyLabelDiscount": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "closingCostsEur": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "specials": {
+    "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/03/Productkaart-Tulp-riant-1.pdf",
+    "status": "verified"
+   }
+  }
+ },
+ {
+  "slug": "venn",
+  "name": "Venn Hypotheken",
+  "active": true,
+  "activeNote": "Active: rate sheets published weekly in Sept 2026 (2, 9, 16, 23 Sept). Own website blocks automated access (Cloudflare 403); data taken from adviser service-provider (Home Invest) copies of Venn documents.",
+  "maxLtvPct": 100,
+  "maxInterestOnlyPctOfValue": 50,
+  "meeneemregeling": true,
+  "verhuisregeling": true,
+  "accepts": {
+   "permanentContract": true,
+   "intentieverklaring": null,
+   "flexIBL": true,
+   "perspectiefverklaring": null,
+   "benefits": true,
+   "pension": null
+  },
+  "entrepreneur": {
+   "minYearsFigures": 3,
+   "acceptsForecastForStarters": null,
+   "ivoPolicy": "required",
+   "calcMethod": "weighted",
+   "acceptedLegalForms": null,
+   "dgaTreatment": null,
+   "minSolvencyPct": null,
+   "minCurrentRatio": null,
+   "countsManagementFee": null,
+   "dgaThresholdPct": null,
+   "allowsLoanNextToOwnBv": null,
+   "guaranteesTreatment": null,
+   "maxLtvPct": 100,
+   "maxInterestOnlyPct": null
+  },
+  "bridgeLoanMaxMonths": 24,
+  "restschuldFinancing": null,
+  "penaltyFreeRepaymentPct": 15,
+  "rentemiddeling": null,
+  "energyLabelDiscounts": {},
+  "closingCostsEur": null,
+  "bouwdepot": null,
+  "allowsConsumptiveRelease": null,
+  "allowsBusinessRelease": null,
+  "sources": {
+   "maxLtvPct": {
+    "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+    "status": "verified"
+   },
+   "maxInterestOnlyPctOfValue": {
+    "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+    "status": "verified"
+   },
+   "meeneemregeling": {
+    "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+    "status": "verified"
+   },
+   "verhuisregeling": {
+    "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+    "status": "verified"
+   },
+   "acceptsPermanentContract": {
+    "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+    "status": "verified"
+   },
+   "acceptsIntentieverklaring": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsFlexIBL": {
+    "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+    "status": "verified"
+   },
+   "acceptsPerspectiefverklaring": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsBenefits": {
+    "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+    "status": "verified"
+   },
+   "acceptsPension": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinYearsFigures": {
+    "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+    "status": "verified"
+   },
+   "entAcceptsForecastForStarters": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entIvoPolicy": {
+    "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+    "status": "verified"
+   },
+   "entCalcMethod": {
+    "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+    "status": "verified"
+   },
+   "entAcceptedLegalForms": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinSolvencyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinCurrentRatio": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entCountsManagementFee": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaThresholdPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entAllowsLoanNextToOwnBv": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entGuaranteesTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxLtvPct": {
+    "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+    "status": "verified"
+   },
+   "entMaxInterestOnlyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanMaxMonths": {
+    "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+    "status": "verified"
+   },
+   "bridgeLoanConditions": {
+    "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+    "status": "verified"
+   },
+   "oversluitenVerhogenConditions": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bouwdepot": {
+    "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+    "status": "verified"
+   },
+   "duurzaamheidsdepot": {
+    "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+    "status": "verified"
+   },
+   "restschuldFinancing": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "penaltyFreeRepaymentPct": {
+    "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+    "status": "verified"
+   },
+   "renteverlenging": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "rentemiddeling": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "energyLabelDiscount": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "closingCostsEur": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "specials": {
+    "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+    "status": "verified"
+   }
+  }
+ },
+ {
+  "slug": "blg-wonen",
+  "name": "BLG Wonen",
+  "active": false,
+  "activeNote": "BLG Wonen officially became ASN Bank on 1 March 2026 (last de Volksbank brand merged). New mortgages are offered under ASN Bank (ASN Hypotheek / Bespaarhypotheek); existing BLG customers are serviced by ASN Bank. Source: https://newsroom.asnbank.nl/blg-wonen-nu-ook-officieel-asn-bank/",
+  "maxLtvPct": null,
+  "maxInterestOnlyPctOfValue": null,
+  "meeneemregeling": null,
+  "verhuisregeling": null,
+  "accepts": {
+   "permanentContract": null,
+   "intentieverklaring": null,
+   "flexIBL": null,
+   "perspectiefverklaring": null,
+   "benefits": null,
+   "pension": null
+  },
+  "entrepreneur": {
+   "minYearsFigures": null,
+   "acceptsForecastForStarters": null,
+   "ivoPolicy": null,
+   "calcMethod": null,
+   "acceptedLegalForms": null,
+   "dgaTreatment": null,
+   "minSolvencyPct": null,
+   "minCurrentRatio": null,
+   "countsManagementFee": null,
+   "dgaThresholdPct": null,
+   "allowsLoanNextToOwnBv": null,
+   "guaranteesTreatment": null,
+   "maxLtvPct": null,
+   "maxInterestOnlyPct": null
+  },
+  "bridgeLoanMaxMonths": null,
+  "restschuldFinancing": null,
+  "penaltyFreeRepaymentPct": null,
+  "rentemiddeling": null,
+  "energyLabelDiscounts": {},
+  "closingCostsEur": null,
+  "bouwdepot": null,
+  "allowsConsumptiveRelease": null,
+  "allowsBusinessRelease": null,
+  "sources": {
+   "maxLtvPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "maxInterestOnlyPctOfValue": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "meeneemregeling": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "verhuisregeling": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsPermanentContract": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsIntentieverklaring": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsFlexIBL": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsPerspectiefverklaring": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsBenefits": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsPension": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinYearsFigures": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entAcceptsForecastForStarters": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entIvoPolicy": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entCalcMethod": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entAcceptedLegalForms": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinSolvencyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinCurrentRatio": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entCountsManagementFee": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaThresholdPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entAllowsLoanNextToOwnBv": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entGuaranteesTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxLtvPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxInterestOnlyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanMaxMonths": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanConditions": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "oversluitenVerhogenConditions": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bouwdepot": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "duurzaamheidsdepot": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "restschuldFinancing": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "penaltyFreeRepaymentPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "renteverlenging": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "rentemiddeling": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "energyLabelDiscount": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "closingCostsEur": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "specials": {
+    "sourceUrl": "https://newsroom.asnbank.nl/blg-wonen-nu-ook-officieel-asn-bank/",
+    "status": "verified"
+   }
+  }
+ },
+ {
+  "slug": "hypotrust",
+  "name": "Hypotrust",
+  "active": true,
+  "activeNote": "Hypotrust is active with the Elan Plus Hypotheek (rates 18-09-2026). The original 'Hypotrust Elan (Woning)hypotheek' is INACTIVE: no longer offered to new customers (rates only for existing clients). Data below is for Elan Plus.",
+  "maxLtvPct": 106,
+  "maxInterestOnlyPctOfValue": 50,
+  "meeneemregeling": true,
+  "verhuisregeling": true,
+  "accepts": {
+   "permanentContract": true,
+   "intentieverklaring": true,
+   "flexIBL": true,
+   "perspectiefverklaring": false,
+   "benefits": true,
+   "pension": true
+  },
+  "entrepreneur": {
+   "minYearsFigures": 3,
+   "acceptsForecastForStarters": false,
+   "ivoPolicy": "required",
+   "calcMethod": "ivo",
+   "acceptedLegalForms": null,
+   "dgaTreatment": null,
+   "minSolvencyPct": null,
+   "minCurrentRatio": null,
+   "countsManagementFee": null,
+   "dgaThresholdPct": null,
+   "allowsLoanNextToOwnBv": null,
+   "guaranteesTreatment": null,
+   "maxLtvPct": null,
+   "maxInterestOnlyPct": null
+  },
+  "bridgeLoanMaxMonths": 12,
+  "restschuldFinancing": false,
+  "penaltyFreeRepaymentPct": 10,
+  "rentemiddeling": false,
+  "energyLabelDiscounts": {},
+  "closingCostsEur": null,
+  "bouwdepot": null,
+  "allowsConsumptiveRelease": true,
+  "allowsBusinessRelease": null,
+  "sources": {
+   "maxLtvPct": {
+    "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+    "status": "verified"
+   },
+   "maxInterestOnlyPctOfValue": {
+    "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+    "status": "verified"
+   },
+   "meeneemregeling": {
+    "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+    "status": "verified"
+   },
+   "verhuisregeling": {
+    "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsPermanentContract": {
+    "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsIntentieverklaring": {
+    "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsFlexIBL": {
+    "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsPerspectiefverklaring": {
+    "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsBenefits": {
+    "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsPension": {
+    "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+    "status": "verified"
+   },
+   "entMinYearsFigures": {
+    "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+    "status": "verified"
+   },
+   "entAcceptsForecastForStarters": {
+    "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+    "status": "verified"
+   },
+   "entIvoPolicy": {
+    "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+    "status": "verified"
+   },
+   "entCalcMethod": {
+    "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+    "status": "verified"
+   },
+   "entAcceptedLegalForms": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinSolvencyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinCurrentRatio": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entCountsManagementFee": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaThresholdPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entAllowsLoanNextToOwnBv": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entGuaranteesTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxLtvPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxInterestOnlyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanMaxMonths": {
+    "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+    "status": "verified"
+   },
+   "bridgeLoanConditions": {
+    "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+    "status": "verified"
+   },
+   "oversluitenVerhogenConditions": {
+    "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+    "status": "verified"
+   },
+   "bouwdepot": {
+    "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+    "status": "verified"
+   },
+   "duurzaamheidsdepot": {
+    "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+    "status": "verified"
+   },
+   "restschuldFinancing": {
+    "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+    "status": "verified"
+   },
+   "penaltyFreeRepaymentPct": {
+    "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+    "status": "verified"
+   },
+   "renteverlenging": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "rentemiddeling": {
+    "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+    "status": "verified"
+   },
+   "energyLabelDiscount": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "closingCostsEur": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "specials": {
+    "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+    "status": "verified"
+   }
+  }
+ },
+ {
+  "slug": "woonfonds",
+  "name": "Woonfonds",
+  "active": false,
+  "activeNote": "Brand discontinued: on 24-25 March 2025 all ~30,000 Woonfonds mortgages moved to Centraal Beheer (Achmea). No new Woonfonds mortgages. Source: https://www.vvponline.nl/nieuws/centraal-beheer-neemt-woonfonds-klanten-over-en-groeit-fors-in-hypotheken ; woonfonds.nl no longer resolves.",
+  "maxLtvPct": null,
+  "maxInterestOnlyPctOfValue": null,
+  "meeneemregeling": null,
+  "verhuisregeling": null,
+  "accepts": {
+   "permanentContract": null,
+   "intentieverklaring": null,
+   "flexIBL": null,
+   "perspectiefverklaring": null,
+   "benefits": null,
+   "pension": null
+  },
+  "entrepreneur": {
+   "minYearsFigures": null,
+   "acceptsForecastForStarters": null,
+   "ivoPolicy": null,
+   "calcMethod": null,
+   "acceptedLegalForms": null,
+   "dgaTreatment": null,
+   "minSolvencyPct": null,
+   "minCurrentRatio": null,
+   "countsManagementFee": null,
+   "dgaThresholdPct": null,
+   "allowsLoanNextToOwnBv": null,
+   "guaranteesTreatment": null,
+   "maxLtvPct": null,
+   "maxInterestOnlyPct": null
+  },
+  "bridgeLoanMaxMonths": null,
+  "restschuldFinancing": null,
+  "penaltyFreeRepaymentPct": null,
+  "rentemiddeling": null,
+  "energyLabelDiscounts": {},
+  "closingCostsEur": null,
+  "bouwdepot": null,
+  "allowsConsumptiveRelease": null,
+  "allowsBusinessRelease": null,
+  "sources": {
+   "maxLtvPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "maxInterestOnlyPctOfValue": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "meeneemregeling": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "verhuisregeling": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsPermanentContract": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsIntentieverklaring": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsFlexIBL": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsPerspectiefverklaring": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsBenefits": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsPension": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinYearsFigures": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entAcceptsForecastForStarters": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entIvoPolicy": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entCalcMethod": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entAcceptedLegalForms": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinSolvencyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinCurrentRatio": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entCountsManagementFee": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaThresholdPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entAllowsLoanNextToOwnBv": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entGuaranteesTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxLtvPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxInterestOnlyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanMaxMonths": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanConditions": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "oversluitenVerhogenConditions": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bouwdepot": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "duurzaamheidsdepot": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "restschuldFinancing": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "penaltyFreeRepaymentPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "renteverlenging": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "rentemiddeling": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "energyLabelDiscount": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "closingCostsEur": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "specials": {
+    "sourceUrl": "https://infinance.nl/artikel/merk-woonfonds-na-52-jaar-verleden-tijd/",
+    "status": "verified"
+   }
+  }
+ },
+ {
+  "slug": "bijbouwe",
+  "name": "bijBouwe",
+  "active": true,
+  "activeNote": "Active (rates 25-09-2026; acceptatiehandleiding September 2026). NOT a successor of MoneYou: bijBouwe is a label of Dynamic Credit Hypotheken B.V. (independent, funded by institutional investors), not ABN AMRO. It is MoneYou-like in that consumers can take the mortgage online execution-only ('Zelf afsluiten') as well as via bijBouwe advisers or independent advisers. bijBouwe Basis is closed to new clients; Vooruit is the current product.",
+  "maxLtvPct": 106,
+  "maxInterestOnlyPctOfValue": 50,
+  "meeneemregeling": true,
+  "verhuisregeling": true,
+  "accepts": {
+   "permanentContract": true,
+   "intentieverklaring": true,
+   "flexIBL": true,
+   "perspectiefverklaring": false,
+   "benefits": true,
+   "pension": true
+  },
+  "entrepreneur": {
+   "minYearsFigures": 3,
+   "acceptsForecastForStarters": false,
+   "ivoPolicy": "required",
+   "calcMethod": "ivo",
+   "acceptedLegalForms": [
+    "eenmanszaak",
+    "vof",
+    "maatschap",
+    "bv"
+   ],
+   "dgaTreatment": "ivo",
+   "minSolvencyPct": null,
+   "minCurrentRatio": null,
+   "countsManagementFee": null,
+   "dgaThresholdPct": 5,
+   "allowsLoanNextToOwnBv": null,
+   "guaranteesTreatment": null,
+   "maxLtvPct": null,
+   "maxInterestOnlyPct": null
+  },
+  "bridgeLoanMaxMonths": null,
+  "restschuldFinancing": false,
+  "penaltyFreeRepaymentPct": 10,
+  "rentemiddeling": false,
+  "energyLabelDiscounts": {},
+  "closingCostsEur": 950,
+  "bouwdepot": null,
+  "allowsConsumptiveRelease": true,
+  "allowsBusinessRelease": null,
+  "sources": {
+   "maxLtvPct": {
+    "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/5oye1v1jrbu3/productkaart-bijbouwe-vooruit-042026.pdf",
+    "status": "verified"
+   },
+   "maxInterestOnlyPctOfValue": {
+    "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/5oye1v1jrbu3/productkaart-bijbouwe-vooruit-042026.pdf",
+    "status": "verified"
+   },
+   "meeneemregeling": {
+    "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+    "status": "verified"
+   },
+   "verhuisregeling": {
+    "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsPermanentContract": {
+    "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsIntentieverklaring": {
+    "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsFlexIBL": {
+    "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsPerspectiefverklaring": {
+    "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsBenefits": {
+    "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+    "status": "verified"
+   },
+   "acceptsPension": {
+    "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+    "status": "verified"
+   },
+   "entMinYearsFigures": {
+    "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+    "status": "verified"
+   },
+   "entAcceptsForecastForStarters": {
+    "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+    "status": "verified"
+   },
+   "entIvoPolicy": {
+    "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+    "status": "verified"
+   },
+   "entCalcMethod": {
+    "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+    "status": "verified"
+   },
+   "entAcceptedLegalForms": {
+    "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+    "status": "verified"
+   },
+   "entDgaTreatment": {
+    "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+    "status": "verified"
+   },
+   "entMinSolvencyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinCurrentRatio": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entCountsManagementFee": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaThresholdPct": {
+    "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+    "status": "verified"
+   },
+   "entAllowsLoanNextToOwnBv": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entGuaranteesTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxLtvPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxInterestOnlyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanMaxMonths": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanConditions": {
+    "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/5oye1v1jrbu3/productkaart-bijbouwe-vooruit-042026.pdf",
+    "status": "verified"
+   },
+   "oversluitenVerhogenConditions": {
+    "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/5oye1v1jrbu3/productkaart-bijbouwe-vooruit-042026.pdf",
+    "status": "verified"
+   },
+   "bouwdepot": {
+    "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+    "status": "verified"
+   },
+   "duurzaamheidsdepot": {
+    "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/5oye1v1jrbu3/productkaart-bijbouwe-vooruit-042026.pdf",
+    "status": "verified"
+   },
+   "restschuldFinancing": {
+    "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/5oye1v1jrbu3/productkaart-bijbouwe-vooruit-042026.pdf",
+    "status": "verified"
+   },
+   "penaltyFreeRepaymentPct": {
+    "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/5oye1v1jrbu3/productkaart-bijbouwe-vooruit-042026.pdf",
+    "status": "verified"
+   },
+   "renteverlenging": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "rentemiddeling": {
+    "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/5oye1v1jrbu3/productkaart-bijbouwe-vooruit-042026.pdf",
+    "status": "verified"
+   },
+   "energyLabelDiscount": {
+    "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+    "status": "verified"
+   },
+   "closingCostsEur": {
+    "sourceUrl": "https://bijbouwe.nl/",
+    "status": "verified"
+   },
+   "specials": {
+    "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/5oye1v1jrbu3/productkaart-bijbouwe-vooruit-042026.pdf",
+    "status": "verified"
+   }
+  }
+ },
+ {
+  "slug": "moneyou",
+  "name": "Moneyou",
+  "active": false,
+  "activeNote": "Since 12 November 2025 no new Moneyou Hypotheek can be taken out by new customers (purchase or refinance). Existing customers keep service: rate changes, increases, verhuisregeling. Moneyou remains part of ABN AMRO Hypotheken Groep; no successor brand named (bijBouwe is NOT a successor). Source: https://www.moneyou.nl/vragen",
+  "maxLtvPct": null,
+  "maxInterestOnlyPctOfValue": null,
+  "meeneemregeling": null,
+  "verhuisregeling": null,
+  "accepts": {
+   "permanentContract": null,
+   "intentieverklaring": null,
+   "flexIBL": null,
+   "perspectiefverklaring": null,
+   "benefits": null,
+   "pension": null
+  },
+  "entrepreneur": {
+   "minYearsFigures": null,
+   "acceptsForecastForStarters": null,
+   "ivoPolicy": null,
+   "calcMethod": null,
+   "acceptedLegalForms": null,
+   "dgaTreatment": null,
+   "minSolvencyPct": null,
+   "minCurrentRatio": null,
+   "countsManagementFee": null,
+   "dgaThresholdPct": null,
+   "allowsLoanNextToOwnBv": null,
+   "guaranteesTreatment": null,
+   "maxLtvPct": null,
+   "maxInterestOnlyPct": null
+  },
+  "bridgeLoanMaxMonths": null,
+  "restschuldFinancing": null,
+  "penaltyFreeRepaymentPct": null,
+  "rentemiddeling": null,
+  "energyLabelDiscounts": {},
+  "closingCostsEur": null,
+  "bouwdepot": null,
+  "allowsConsumptiveRelease": null,
+  "allowsBusinessRelease": null,
+  "sources": {
+   "maxLtvPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "maxInterestOnlyPctOfValue": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "meeneemregeling": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "verhuisregeling": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsPermanentContract": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsIntentieverklaring": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsFlexIBL": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsPerspectiefverklaring": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsBenefits": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsPension": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinYearsFigures": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entAcceptsForecastForStarters": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entIvoPolicy": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entCalcMethod": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entAcceptedLegalForms": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinSolvencyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMinCurrentRatio": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entCountsManagementFee": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaThresholdPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entAllowsLoanNextToOwnBv": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entGuaranteesTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxLtvPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxInterestOnlyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanMaxMonths": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanConditions": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "oversluitenVerhogenConditions": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bouwdepot": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "duurzaamheidsdepot": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "restschuldFinancing": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "penaltyFreeRepaymentPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "renteverlenging": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "rentemiddeling": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "energyLabelDiscount": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "closingCostsEur": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "specials": {
+    "sourceUrl": "https://www.moneyou.nl/vragen",
+    "status": "verified"
+   }
+  }
+ },
+ {
+  "slug": "lloyds-bank",
+  "name": "Lloyds Bank",
+  "active": true,
+  "activeNote": "Added as MoneYou-like direct lender: offers mortgages directly online on an execution-only basis as well as via advisers (Consumentenbond lists ABN AMRO, bijBouwe, Centraal Beheer, Lloyds Bank and Moneyou as direct execution-only providers). Active: rates valid from 18-09-2026; hypotheekgids February 2026. Other MoneYou-like brands that stopped: Woonnu (NN) stopped new mortgages from 1 May 2026 (https://www.nn.nl/nieuws/nationale-nederlanden-bank-stopt-met-nieuwe-woonnu-hypotheken/).",
+  "maxLtvPct": 106,
+  "maxInterestOnlyPctOfValue": 50,
+  "meeneemregeling": true,
+  "verhuisregeling": null,
+  "accepts": {
+   "permanentContract": true,
+   "intentieverklaring": true,
+   "flexIBL": true,
+   "perspectiefverklaring": false,
+   "benefits": true,
+   "pension": true
+  },
+  "entrepreneur": {
+   "minYearsFigures": 2,
+   "acceptsForecastForStarters": null,
+   "ivoPolicy": "required",
+   "calcMethod": "avg3_capped_by_last",
+   "acceptedLegalForms": null,
+   "dgaTreatment": "ivo",
+   "minSolvencyPct": 0,
+   "minCurrentRatio": null,
+   "countsManagementFee": null,
+   "dgaThresholdPct": 5,
+   "allowsLoanNextToOwnBv": null,
+   "guaranteesTreatment": null,
+   "maxLtvPct": null,
+   "maxInterestOnlyPct": null
+  },
+  "bridgeLoanMaxMonths": 12,
+  "restschuldFinancing": null,
+  "penaltyFreeRepaymentPct": 10,
+  "rentemiddeling": null,
+  "energyLabelDiscounts": {
+   "A": 0.05,
+   "A+": 0.05,
+   "A++": 0.05,
+   "A+++": 0.05,
+   "A++++": 0.05,
+   "A++++EPG": 0.05
+  },
+  "closingCostsEur": null,
+  "bouwdepot": null,
+  "allowsConsumptiveRelease": null,
+  "allowsBusinessRelease": null,
+  "sources": {
+   "maxLtvPct": {
+    "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "maxInterestOnlyPctOfValue": {
+    "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "meeneemregeling": {
+    "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "verhuisregeling": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "acceptsPermanentContract": {
+    "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "acceptsIntentieverklaring": {
+    "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "acceptsFlexIBL": {
+    "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "acceptsPerspectiefverklaring": {
+    "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "acceptsBenefits": {
+    "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "acceptsPension": {
+    "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "entMinYearsFigures": {
+    "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "entAcceptsForecastForStarters": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entIvoPolicy": {
+    "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "entCalcMethod": {
+    "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "entAcceptedLegalForms": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaTreatment": {
+    "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "entMinSolvencyPct": {
+    "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "entMinCurrentRatio": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entCountsManagementFee": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entDgaThresholdPct": {
+    "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "entAllowsLoanNextToOwnBv": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entGuaranteesTreatment": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxLtvPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "entMaxInterestOnlyPct": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bridgeLoanMaxMonths": {
+    "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "bridgeLoanConditions": {
+    "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "oversluitenVerhogenConditions": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "bouwdepot": {
+    "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "duurzaamheidsdepot": {
+    "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "restschuldFinancing": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "penaltyFreeRepaymentPct": {
+    "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+    "status": "verified"
+   },
+   "renteverlenging": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "rentemiddeling": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "energyLabelDiscount": {
+    "sourceUrl": "https://www.lloydsbank.nl/hypotheken/actuele-rentes-hypotheken",
+    "status": "verified"
+   },
+   "closingCostsEur": {
+    "sourceUrl": null,
+    "status": "unknown"
+   },
+   "specials": {
+    "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+    "status": "verified"
+   }
+  }
+ }
+]

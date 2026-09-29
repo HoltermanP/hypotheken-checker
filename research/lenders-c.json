@@ -1,0 +1,2313 @@
+{
+ "generatedAt": "2026-09-29",
+ "lenders": [
+  {
+   "slug": "tulp",
+   "name": "Tulp Hypotheken",
+   "brands": [
+    "Tulp Riant Hypotheek",
+    "Tulp Compleet Hypotheek"
+   ],
+   "website": "https://tulphypotheken.nl",
+   "active": true,
+   "activeNote": "Active: new rate sheets published for Tulp Riant (24-09-2026) and Tulp Compleet (18-09-2026); rates apply to new offers. Older 'Tulp Hypotheek' (Euribor-based) is a legacy product.",
+   "fields": {
+    "maxLtvPct": {
+     "value": 106,
+     "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/03/Productkaart-Tulp-riant-1.pdf",
+     "note": "100% of market value; up to 106% only when the part above 100% is spent on energiebesparende voorzieningen (Tulp Riant)."
+    },
+    "maxInterestOnlyPctOfValue": {
+     "value": 50,
+     "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf",
+     "note": "Max 50% of market value aflossingsvrij; box 1 requires proof of eigenwoningschuld per 31-12-2012."
+    },
+    "meeneemregeling": {
+     "value": true,
+     "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf",
+     "note": "Verhuisregeling: existing loan can be taken to new home; must be reported >=1 month before repayment; new rate offer within 3 months after repayment (if old home sold first)."
+    },
+    "verhuisregeling": {
+     "value": true,
+     "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/03/Productkaart-Tulp-riant-1.pdf",
+     "note": "Productkaart: 'Mogelijk, zie voorwaarden in de acceptatiegids'."
+    },
+    "acceptsPermanentContract": {
+     "value": true,
+     "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/03/Productkaart-Tulp-riant-1.pdf"
+    },
+    "acceptsIntentieverklaring": {
+     "value": true,
+     "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf",
+     "note": "Temporary contract with intentieverklaring (NHG model) treated as permanent. AIOS/ANIOS and promovendi without intentieverklaring also treated as permanent."
+    },
+    "acceptsFlexIBL": {
+     "value": true,
+     "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf",
+     "note": "IBL accepted (plus recent payslip and UWV verzekeringsbericht). Flex/temporary without intention: average of last 3 years, capped at last year or current income; must have current employment."
+    },
+    "acceptsPerspectiefverklaring": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "acceptsBenefits": {
+     "value": true,
+     "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf",
+     "note": "Social benefits for indefinite period count; proof via uitkeringsbesluit."
+    },
+    "acceptsPension": {
+     "value": true,
+     "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf",
+     "note": "(Pre)pension income counts fully for duration of payment; lifelong lijfrente counts."
+    },
+    "entMinYearsFigures": {
+     "value": 1,
+     "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf",
+     "note": "Starting entrepreneurs: minimum 12 months active. Income = average of first business year and two preceding employment years, capped at last year."
+    },
+    "entAcceptsForecastForStarters": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entIvoPolicy": {
+     "value": "required",
+     "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf",
+     "note": "Toetsinkomen from an inkomenscertificaat by an authorised institute: Raadhuys, Zakelijk Inkomen, Overviewz, Pentrax, Viiz."
+    },
+    "entCalcMethod": {
+     "value": "ivo",
+     "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf",
+     "note": "Tulp follows the income on the certificate; 1-2-3 method allowed. For 1-year starters: avg of 3 years (incl. 2 employment years) capped by last year."
+    },
+    "entAcceptedLegalForms": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entDgaTreatment": {
+     "value": "ivo",
+     "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf",
+     "note": "DGA with >=5% aanmerkelijk belang treated as self-employed (income via certificate)."
+    },
+    "entMinSolvencyPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMinCurrentRatio": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entCountsManagementFee": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entDgaThresholdPct": {
+     "value": 5,
+     "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf"
+    },
+    "entAllowsLoanNextToOwnBv": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entGuaranteesTreatment": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Not found. Note: excluded sectors include horeca, drugs, sex, weapons, gambling, real-estate trading, agriculture, car trade, money transfer."
+    },
+    "entMaxLtvPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMaxInterestOnlyPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "bridgeLoanMaxMonths": {
+     "value": 12,
+     "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/03/Productkaart-Tulp-riant-1.pdf"
+    },
+    "bridgeLoanConditions": {
+     "value": "Sold: 100% of sale price after ontbindende voorwaarden expired minus remaining debt. Unsold: 90% of expected market value minus outstanding mortgage. Bridge rate Riant 4.55% (24-09-2026). Double housing costs must be covered by own funds; min. 6 months if period unknown.",
+     "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/03/Productkaart-Tulp-riant-1.pdf"
+    },
+    "oversluitenVerhogenConditions": {
+     "value": "Verhoging min. EUR 15,000, tested against current rates/criteria; already repaid amounts cannot be re-drawn. Consumptive use up to 90% LTV without amount limit; above 90% max EUR 40,000. 'Tulp zuiver oversluiten' (non-NHG): may test on actual costs if lower than current, no change in debtors/collateral. Desktop valuation (Calcasa/NRVT) allowed for oversluitingen up to 90% LTV.",
+     "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/03/Productkaart-Tulp-riant-1.pdf"
+    },
+    "bouwdepot": {
+     "value": "Verbouwing 9 months (+6 extension); nieuwbouw 18 months (+6); interest on depot equals mortgage rate; no interest compensation during extension. Self-build not allowed.",
+     "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/03/Productkaart-Tulp-riant-1.pdf"
+    },
+    "duurzaamheidsdepot": {
+     "value": "EBV costs may be co-financed up to 106% of value and are held in the bouwdepot.",
+     "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf"
+    },
+    "restschuldFinancing": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Acceptatiegids only covers how charges of an existing restschuldfinanciering count in the affordability test; no statement on co-financing a restschuld found."
+    },
+    "penaltyFreeRepaymentPct": {
+     "value": 10,
+     "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf",
+     "note": "Unlimited penalty-free from own funds; 10% of original principal per calendar year when repaying with another loan."
+    },
+    "renteverlenging": {
+     "value": "At least 3 months before end of fixed period the client receives a proposal for the same fixed period (other periods possible); if no response, mortgage is automatically renewed at the original fixed period.",
+     "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/01/Acceptatiegids-Tulp-Riant-Hypotheek-januari-2026.pdf"
+    },
+    "rentemiddeling": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "energyLabelDiscount": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "No energy-label rate discount shown on Tulp Riant/Compleet rate sheets."
+    },
+    "closingCostsEur": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "specials": {
+     "value": "Automatic rate reduction when (extra) repayment moves loan into lower LTV class; offer rate = passing rate; offer valid 4 months, cannot be extended; no cancellation costs; seniorenpropositie with/without NHG; kennismigranten (30% ruling) up to 95% LTV; min. loan EUR 70,000, max EUR 1,000,000; max term 30 years; BKR/SFH codes not allowed.",
+     "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/03/Productkaart-Tulp-riant-1.pdf"
+    }
+   },
+   "rates": {
+    "date": "2026-09-24",
+    "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/09/Rentewijziging-Tulp-Riant-Hypotheek-per-24-september-2026.pdf",
+    "status": "verified",
+    "annuity": [
+     {
+      "fixedYears": 5,
+      "nhg": 4.4,
+      "ltv60": 4.5,
+      "ltv70": 4.65,
+      "ltv80": 4.86,
+      "ltv90": 5.23,
+      "ltv100": 5.23
+     },
+     {
+      "fixedYears": 10,
+      "nhg": 4.45,
+      "ltv60": 4.75,
+      "ltv70": 4.9,
+      "ltv80": 5.08,
+      "ltv90": 5.31,
+      "ltv100": 5.31
+     },
+     {
+      "fixedYears": 15,
+      "nhg": 4.53,
+      "ltv60": 4.68,
+      "ltv70": 4.79,
+      "ltv80": 4.95,
+      "ltv90": 5.36,
+      "ltv100": 5.36
+     },
+     {
+      "fixedYears": 20,
+      "nhg": 4.46,
+      "ltv60": 4.71,
+      "ltv70": 4.81,
+      "ltv80": 5.04,
+      "ltv90": 5.45,
+      "ltv100": 5.45
+     },
+     {
+      "fixedYears": 25,
+      "nhg": 4.5,
+      "ltv60": 4.81,
+      "ltv70": 4.93,
+      "ltv80": 5.08,
+      "ltv90": 5.35,
+      "ltv100": 5.35
+     },
+     {
+      "fixedYears": 30,
+      "nhg": 4.5,
+      "ltv60": 4.82,
+      "ltv70": 4.93,
+      "ltv80": 4.98,
+      "ltv90": 5.35,
+      "ltv100": 5.35
+     }
+    ],
+    "interestOnly": [
+     {
+      "fixedYears": 5,
+      "nhg": 4.55,
+      "ltv60": 4.65,
+      "ltv70": 4.8,
+      "ltv80": 5.01,
+      "ltv90": 5.38,
+      "ltv100": 5.38
+     },
+     {
+      "fixedYears": 10,
+      "nhg": 4.6,
+      "ltv60": 4.9,
+      "ltv70": 5.05,
+      "ltv80": 5.23,
+      "ltv90": 5.46,
+      "ltv100": 5.46
+     },
+     {
+      "fixedYears": 15,
+      "nhg": 4.68,
+      "ltv60": 4.83,
+      "ltv70": 4.94,
+      "ltv80": 5.1,
+      "ltv90": 5.51,
+      "ltv100": 5.51
+     },
+     {
+      "fixedYears": 20,
+      "nhg": 4.61,
+      "ltv60": 4.86,
+      "ltv70": 4.96,
+      "ltv80": 5.19,
+      "ltv90": 5.6,
+      "ltv100": 5.6
+     },
+     {
+      "fixedYears": 25,
+      "nhg": 4.65,
+      "ltv60": 4.96,
+      "ltv70": 5.08,
+      "ltv80": 5.23,
+      "ltv90": 5.5,
+      "ltv100": 5.5
+     },
+     {
+      "fixedYears": 30,
+      "nhg": 4.65,
+      "ltv60": 4.97,
+      "ltv70": 5.08,
+      "ltv80": 5.13,
+      "ltv90": 5.5,
+      "ltv100": 5.5
+     }
+    ],
+    "energyLabelDiscount": "None listed on rate sheet.",
+    "note": "Tulp Riant Hypotheek, annuity/linear and aflossingsvrij tables. Classes: NHG, t/m 60%, t/m 70%, t/m 80%, t/m 85%, t/m 100%, t/m 106% MW. Mapping = rate applicable at that LTV: ltv90 and ltv100 both use the 't/m 100%' class (85-100%). t/m 85% rates (annuity 5y 4.96, 10y 5.16, 15y 5.00, 20y 5.09, 25y 5.13, 30y 5.03) and t/m 106% class not mapped. Bridge rate 4.55%. Tulp Compleet (18-09-2026) in otherProducts.",
+    "otherProducts": [
+     {
+      "product": "Tulp Compleet Hypotheek",
+      "date": "2026-09-18",
+      "sourceUrl": "https://tulphypotheken.nl/wp-content/uploads/2026/09/Rentewijziging-Tulp-Compleet-Hypotheek-per-18-september-2026.pdf",
+      "status": "verified",
+      "annuity": [
+       {
+        "fixedYears": 1,
+        "nhg": 4.83,
+        "ltv60": 4.83,
+        "ltv70": 4.85,
+        "ltv80": 4.85,
+        "ltv90": 4.87,
+        "ltv100": 4.94
+       },
+       {
+        "fixedYears": 5,
+        "nhg": 4.4,
+        "ltv60": 4.4,
+        "ltv70": 4.42,
+        "ltv80": 4.42,
+        "ltv90": 4.44,
+        "ltv100": 4.51
+       },
+       {
+        "fixedYears": 10,
+        "nhg": 4.59,
+        "ltv60": 4.59,
+        "ltv70": 4.61,
+        "ltv80": 4.61,
+        "ltv90": 4.63,
+        "ltv100": 4.7
+       },
+       {
+        "fixedYears": 15,
+        "nhg": 4.91,
+        "ltv60": 4.91,
+        "ltv70": 4.93,
+        "ltv80": 4.93,
+        "ltv90": 4.95,
+        "ltv100": 5.02
+       },
+       {
+        "fixedYears": 20,
+        "nhg": 4.96,
+        "ltv60": 4.96,
+        "ltv70": 4.98,
+        "ltv80": 4.98,
+        "ltv90": 5.0,
+        "ltv100": 5.07
+       },
+       {
+        "fixedYears": 25,
+        "nhg": 5.01,
+        "ltv60": 5.01,
+        "ltv70": 5.03,
+        "ltv80": 5.03,
+        "ltv90": 5.05,
+        "ltv100": 5.12
+       },
+       {
+        "fixedYears": 30,
+        "nhg": 5.03,
+        "ltv60": 5.03,
+        "ltv70": 5.05,
+        "ltv80": 5.05,
+        "ltv90": 5.07,
+        "ltv100": 5.14
+       }
+      ],
+      "interestOnly": [
+       {
+        "fixedYears": 1,
+        "nhg": 5.03,
+        "ltv60": 5.03,
+        "ltv70": 5.05,
+        "ltv80": 5.05,
+        "ltv90": 5.07,
+        "ltv100": 5.14
+       },
+       {
+        "fixedYears": 5,
+        "nhg": 4.6,
+        "ltv60": 4.6,
+        "ltv70": 4.62,
+        "ltv80": 4.62,
+        "ltv90": 4.64,
+        "ltv100": 4.71
+       },
+       {
+        "fixedYears": 10,
+        "nhg": 4.79,
+        "ltv60": 4.79,
+        "ltv70": 4.81,
+        "ltv80": 4.81,
+        "ltv90": 4.83,
+        "ltv100": 4.9
+       },
+       {
+        "fixedYears": 15,
+        "nhg": 5.16,
+        "ltv60": 5.16,
+        "ltv70": 5.18,
+        "ltv80": 5.18,
+        "ltv90": 5.2,
+        "ltv100": 5.27
+       },
+       {
+        "fixedYears": 20,
+        "nhg": 5.21,
+        "ltv60": 5.21,
+        "ltv70": 5.23,
+        "ltv80": 5.23,
+        "ltv90": 5.25,
+        "ltv100": 5.32
+       },
+       {
+        "fixedYears": 25,
+        "nhg": 5.36,
+        "ltv60": 5.36,
+        "ltv70": 5.38,
+        "ltv80": 5.38,
+        "ltv90": 5.4,
+        "ltv100": 5.47
+       },
+       {
+        "fixedYears": 30,
+        "nhg": 5.38,
+        "ltv60": 5.38,
+        "ltv70": 5.4,
+        "ltv80": 5.4,
+        "ltv90": 5.42,
+        "ltv100": 5.49
+       }
+      ],
+      "note": "Classes NHG, t/m 60, t/m 80, t/m 90, t/m 95, t/m 100, t/m 106% MW. ltv70 and ltv80 use 't/m 80%'. Bridge rate 5.20%."
+     }
+    ]
+   }
+  },
+  {
+   "slug": "venn",
+   "name": "Venn Hypotheken",
+   "brands": [
+    "Venn Hypotheek",
+    "Gemakkelijk Groen"
+   ],
+   "website": "https://www.vennhypotheken.nl",
+   "active": true,
+   "activeNote": "Active: rate sheets published weekly in Sept 2026 (2, 9, 16, 23 Sept). Own website blocks automated access (Cloudflare 403); data taken from adviser service-provider (Home Invest) copies of Venn documents.",
+   "fields": {
+    "maxLtvPct": {
+     "value": 100,
+     "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+     "note": "Productkaart April 2025 (may be outdated): 100% MW, also for temporary income, self-employed and permanent social benefits."
+    },
+    "maxInterestOnlyPctOfValue": {
+     "value": 50,
+     "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+     "note": "Productkaart April 2025."
+    },
+    "meeneemregeling": {
+     "value": true,
+     "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+     "note": "Old home must be sold and transferred first; new offer within 6 months after repayment (April 2025 productkaart)."
+    },
+    "verhuisregeling": {
+     "value": true,
+     "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+     "note": "Same as meeneemregeling (April 2025 productkaart)."
+    },
+    "acceptsPermanentContract": {
+     "value": true,
+     "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+     "note": "Werkgeversverklaring or IBL."
+    },
+    "acceptsIntentieverklaring": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "acceptsFlexIBL": {
+     "value": true,
+     "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+     "note": "IBL accepted; temporary income: average of last 3 years capped at last year or current income if lower (April 2025)."
+    },
+    "acceptsPerspectiefverklaring": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "acceptsBenefits": {
+     "value": true,
+     "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+     "note": "'Blijvende sociale uitkering' up to 100% MW (April 2025)."
+    },
+    "acceptsPension": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMinYearsFigures": {
+     "value": 3,
+     "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+     "note": "Non-NHG: >=36 months self-employed. NHG: follows NHG norms (April 2025)."
+    },
+    "entAcceptsForecastForStarters": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entIvoPolicy": {
+     "value": "required",
+     "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+     "note": "Toetsinkomen zelfstandigen: Inkomensverklaring."
+    },
+    "entCalcMethod": {
+     "value": "weighted",
+     "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+     "note": "Weighted average (1-2-3 regeling) capped at last year's income (non-NHG); NHG: NHG-volgend."
+    },
+    "entAcceptedLegalForms": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entDgaTreatment": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMinSolvencyPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMinCurrentRatio": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entCountsManagementFee": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entDgaThresholdPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entAllowsLoanNextToOwnBv": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entGuaranteesTreatment": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMaxLtvPct": {
+     "value": 100,
+     "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+     "note": "Max 100% MW also for self-employed (April 2025)."
+    },
+    "entMaxInterestOnlyPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "bridgeLoanMaxMonths": {
+     "value": 24,
+     "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+     "note": "April 2025 productkaart."
+    },
+    "bridgeLoanConditions": {
+     "value": "Unsold: max 80% of overwaarde. Sold: sale price minus remaining mortgage. Saldering spaarpolis possible. Bridge rate 4.67% (3-month variable, 23-09-2026).",
+     "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf"
+    },
+    "oversluitenVerhogenConditions": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "bouwdepot": {
+     "value": "Existing build max 18 months; new build max 24 months; interest compensation = mortgage rate minus 1%.",
+     "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf"
+    },
+    "duurzaamheidsdepot": {
+     "value": "Leningdeel 'Gemakkelijk Groen': EUR 5,000-10,000 for energy-saving measures (no prior specification needed), not counted in LTV class; rate 4.72% (23-09-2026).",
+     "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf"
+    },
+    "restschuldFinancing": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "penaltyFreeRepaymentPct": {
+     "value": 15,
+     "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf",
+     "note": "15% of original principal per year (April 2025)."
+    },
+    "renteverlenging": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "rentemiddeling": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "energyLabelDiscount": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "closingCostsEur": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "specials": {
+     "value": "Automatic rate decrease when lower LTV class is reached via repayment or higher market value; offer rate = passing rate; offer valid 4 months, free 2-month extension; no cancellation or commitment fee; seniorenpropositie with/without NHG (purchase up to 100% MW, refinance non-NHG up to 80%); min loan EUR 75,000, max EUR 1,000,000 incl. bridge; fixed periods 1-30 years combinable.",
+     "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2025/03/Venn-productkaart_april-2025.pdf"
+    }
+   },
+   "rates": {
+    "date": "2026-09-23",
+    "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2026/09/venn-rentetarieven-23-09-2026.pdf",
+    "status": "needs_verification",
+    "annuity": [
+     {
+      "fixedYears": 1,
+      "nhg": 4.31,
+      "ltv60": 4.31,
+      "ltv70": 4.32,
+      "ltv80": 4.33,
+      "ltv90": 4.35,
+      "ltv100": 4.43
+     },
+     {
+      "fixedYears": 2,
+      "nhg": 4.48,
+      "ltv60": 4.48,
+      "ltv70": 4.5,
+      "ltv80": 4.52,
+      "ltv90": 4.54,
+      "ltv100": 4.56
+     },
+     {
+      "fixedYears": 3,
+      "nhg": 4.54,
+      "ltv60": 4.53,
+      "ltv70": 4.55,
+      "ltv80": 4.57,
+      "ltv90": 4.59,
+      "ltv100": 4.62
+     },
+     {
+      "fixedYears": 5,
+      "nhg": 4.55,
+      "ltv60": 4.51,
+      "ltv70": 4.53,
+      "ltv80": 4.55,
+      "ltv90": 4.57,
+      "ltv100": 4.6
+     },
+     {
+      "fixedYears": 6,
+      "nhg": 4.56,
+      "ltv60": 4.49,
+      "ltv70": 4.5,
+      "ltv80": 4.52,
+      "ltv90": 4.54,
+      "ltv100": 4.57
+     },
+     {
+      "fixedYears": 7,
+      "nhg": 4.57,
+      "ltv60": 4.49,
+      "ltv70": 4.5,
+      "ltv80": 4.51,
+      "ltv90": 4.53,
+      "ltv100": 4.55
+     },
+     {
+      "fixedYears": 10,
+      "nhg": 4.58,
+      "ltv60": 4.46,
+      "ltv70": 4.47,
+      "ltv80": 4.48,
+      "ltv90": 4.49,
+      "ltv100": 4.54
+     },
+     {
+      "fixedYears": 12,
+      "nhg": 4.59,
+      "ltv60": 4.59,
+      "ltv70": 4.6,
+      "ltv80": 4.61,
+      "ltv90": 4.63,
+      "ltv100": 4.74
+     },
+     {
+      "fixedYears": 15,
+      "nhg": 4.62,
+      "ltv60": 4.6,
+      "ltv70": 4.61,
+      "ltv80": 4.62,
+      "ltv90": 4.65,
+      "ltv100": 4.73
+     },
+     {
+      "fixedYears": 20,
+      "nhg": 4.65,
+      "ltv60": 4.64,
+      "ltv70": 4.65,
+      "ltv80": 4.66,
+      "ltv90": 4.68,
+      "ltv100": 4.75
+     },
+     {
+      "fixedYears": 30,
+      "nhg": 5.03,
+      "ltv60": 4.72,
+      "ltv70": 4.73,
+      "ltv80": 4.74,
+      "ltv90": 4.75,
+      "ltv100": 5.32
+     }
+    ],
+    "interestOnly": [
+     {
+      "fixedYears": 1,
+      "nhg": 4.61,
+      "ltv60": 4.61,
+      "ltv70": 4.62,
+      "ltv80": 4.63,
+      "ltv90": 4.65,
+      "ltv100": 4.73
+     },
+     {
+      "fixedYears": 2,
+      "nhg": 4.78,
+      "ltv60": 4.78,
+      "ltv70": 4.8,
+      "ltv80": 4.82,
+      "ltv90": 4.84,
+      "ltv100": 4.86
+     },
+     {
+      "fixedYears": 3,
+      "nhg": 4.84,
+      "ltv60": 4.83,
+      "ltv70": 4.85,
+      "ltv80": 4.87,
+      "ltv90": 4.89,
+      "ltv100": 4.92
+     },
+     {
+      "fixedYears": 5,
+      "nhg": 4.85,
+      "ltv60": 4.81,
+      "ltv70": 4.83,
+      "ltv80": 4.85,
+      "ltv90": 4.87,
+      "ltv100": 4.9
+     },
+     {
+      "fixedYears": 6,
+      "nhg": 4.86,
+      "ltv60": 4.79,
+      "ltv70": 4.8,
+      "ltv80": 4.82,
+      "ltv90": 4.84,
+      "ltv100": 4.87
+     },
+     {
+      "fixedYears": 7,
+      "nhg": 4.87,
+      "ltv60": 4.79,
+      "ltv70": 4.8,
+      "ltv80": 4.81,
+      "ltv90": 4.83,
+      "ltv100": 4.85
+     },
+     {
+      "fixedYears": 10,
+      "nhg": 4.88,
+      "ltv60": 4.76,
+      "ltv70": 4.77,
+      "ltv80": 4.78,
+      "ltv90": 4.79,
+      "ltv100": 4.84
+     },
+     {
+      "fixedYears": 12,
+      "nhg": 4.89,
+      "ltv60": 4.89,
+      "ltv70": 4.9,
+      "ltv80": 4.91,
+      "ltv90": 4.93,
+      "ltv100": 5.04
+     },
+     {
+      "fixedYears": 15,
+      "nhg": 4.92,
+      "ltv60": 4.9,
+      "ltv70": 4.91,
+      "ltv80": 4.92,
+      "ltv90": 4.95,
+      "ltv100": 5.03
+     },
+     {
+      "fixedYears": 20,
+      "nhg": 4.95,
+      "ltv60": 4.94,
+      "ltv70": 4.95,
+      "ltv80": 4.96,
+      "ltv90": 4.98,
+      "ltv100": 5.05
+     },
+     {
+      "fixedYears": 30,
+      "nhg": 5.33,
+      "ltv60": 5.02,
+      "ltv70": 5.03,
+      "ltv80": 5.04,
+      "ltv90": 5.05,
+      "ltv100": 5.62
+     }
+    ],
+    "energyLabelDiscount": "No energy-label discount on rate sheet; separate 'Gemakkelijk Groen' loan part at 4.72%.",
+    "note": "Venn renteblad 23-09-2026 (week 2026/43), copy hosted by service provider Home Invest; vennhypotheken.nl/rente blocked automated access. Classes NHG, 0-60, t/m 70, t/m 80, t/m 90, t/m 95, t/m 100% MW; t/m 95% not mapped (e.g. 10y annuity 4.52). Bridge 4.67%."
+   }
+  },
+  {
+   "slug": "blg-wonen",
+   "name": "BLG Wonen",
+   "brands": [],
+   "website": "https://www.asnbank.nl/blg-wonen.html",
+   "active": false,
+   "activeNote": "BLG Wonen officially became ASN Bank on 1 March 2026 (last de Volksbank brand merged). New mortgages are offered under ASN Bank (ASN Hypotheek / Bespaarhypotheek); existing BLG customers are serviced by ASN Bank. Source: https://newsroom.asnbank.nl/blg-wonen-nu-ook-officieel-asn-bank/",
+   "fields": {
+    "maxLtvPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "maxInterestOnlyPctOfValue": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "meeneemregeling": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "verhuisregeling": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "acceptsPermanentContract": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "acceptsIntentieverklaring": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "acceptsFlexIBL": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "acceptsPerspectiefverklaring": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "acceptsBenefits": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "acceptsPension": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMinYearsFigures": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entAcceptsForecastForStarters": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entIvoPolicy": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entCalcMethod": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entAcceptedLegalForms": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entDgaTreatment": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMinSolvencyPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMinCurrentRatio": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entCountsManagementFee": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entDgaThresholdPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entAllowsLoanNextToOwnBv": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entGuaranteesTreatment": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMaxLtvPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMaxInterestOnlyPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "bridgeLoanMaxMonths": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "bridgeLoanConditions": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "oversluitenVerhogenConditions": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "bouwdepot": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "duurzaamheidsdepot": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "restschuldFinancing": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "penaltyFreeRepaymentPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "renteverlenging": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "rentemiddeling": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "energyLabelDiscount": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "closingCostsEur": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "specials": {
+     "value": "Brand discontinued 1 March 2026; use ASN Bank for acceptance criteria and rates.",
+     "sourceUrl": "https://newsroom.asnbank.nl/blg-wonen-nu-ook-officieel-asn-bank/"
+    }
+   },
+   "rates": {
+    "date": null,
+    "sourceUrl": null,
+    "status": "needs_verification",
+    "annuity": [],
+    "interestOnly": [],
+    "energyLabelDiscount": "unknown",
+    "note": "No BLG Wonen rates published after merger into ASN Bank (1 March 2026)."
+   }
+  },
+  {
+   "slug": "hypotrust",
+   "name": "Hypotrust",
+   "brands": [
+    "Hypotrust Elan Plus Hypotheek",
+    "Vrij Leven Hypotheek"
+   ],
+   "website": "https://www.hypotrust.nl",
+   "active": true,
+   "activeNote": "Hypotrust is active with the Elan Plus Hypotheek (rates 18-09-2026). The original 'Hypotrust Elan (Woning)hypotheek' is INACTIVE: no longer offered to new customers (rates only for existing clients). Data below is for Elan Plus.",
+   "fields": {
+    "maxLtvPct": {
+     "value": 106,
+     "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+     "note": "Max 100% MW for purchase/refinance; 106% with EBV/EBB. NHG not possible."
+    },
+    "maxInterestOnlyPctOfValue": {
+     "value": 50,
+     "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf"
+    },
+    "meeneemregeling": {
+     "value": true,
+     "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+     "note": "Meeneemregeling (verhuisregeling): mogelijk. Doorgeefregeling not possible."
+    },
+    "verhuisregeling": {
+     "value": true,
+     "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf"
+    },
+    "acceptsPermanentContract": {
+     "value": true,
+     "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf"
+    },
+    "acceptsIntentieverklaring": {
+     "value": true,
+     "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+     "note": "Intentieverklaring meeting NHG norms."
+    },
+    "acceptsFlexIBL": {
+     "value": true,
+     "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+     "note": "Flex income accepted: average of last 3 calendar years capped at last year and current income. NOTE: Inkomensbepaling Loondienst (SV-loon/IBL) is NOT accepted - werkgeversverklaring leading."
+    },
+    "acceptsPerspectiefverklaring": {
+     "value": false,
+     "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+     "note": "Perspectiefverklaring and arbeidsmarktscan not allowed."
+    },
+    "acceptsBenefits": {
+     "value": true,
+     "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+     "note": "Fixed IVA/WAO/WAZ count; WW, bijstand, WGA and Wajong do not count."
+    },
+    "acceptsPension": {
+     "value": true,
+     "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf"
+    },
+    "entMinYearsFigures": {
+     "value": 3,
+     "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+     "note": "At least 36 months self-employed; income from same company/activities; company in NL."
+    },
+    "entAcceptsForecastForStarters": {
+     "value": false,
+     "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+     "note": "36 months minimum excludes starters."
+    },
+    "entIvoPolicy": {
+     "value": "required",
+     "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+     "note": "Inkomensverklaring Ondernemer conform NHG norms with exceptions."
+    },
+    "entCalcMethod": {
+     "value": "ivo",
+     "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+     "note": "Income per Inkomensverklaring Ondernemer (NHG norms)."
+    },
+    "entAcceptedLegalForms": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entDgaTreatment": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMinSolvencyPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMinCurrentRatio": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entCountsManagementFee": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entDgaThresholdPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entAllowsLoanNextToOwnBv": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entGuaranteesTreatment": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Not found. Excluded: horeca, drugs- and sex-industry related."
+    },
+    "entMaxLtvPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMaxInterestOnlyPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "bridgeLoanMaxMonths": {
+     "value": 12,
+     "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+     "note": "No extension."
+    },
+    "bridgeLoanConditions": {
+     "value": "Sold: sale price minus current loan minus 2% of sale price. Unsold: max 88% of expected sale price minus current loan; expected sale term max 12 months. Min EUR 10,000; purpose: own funds, repaying credits, renovation. 3-month variable rate (5.24% per 18-09-2026).",
+     "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf"
+    },
+    "oversluitenVerhogenConditions": {
+     "value": "Refinance with validated valuation (desktop valuation up to 90% MW, value max EUR 750,000). Minimum increase EUR 12,500; consumptive part possible. Second mortgage behind another lender not possible. Max EUR 1,250,000 excl. bridge.",
+     "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf"
+    },
+    "bouwdepot": {
+     "value": "Existing build: 9 months with interest compensation (= mortgage rate); 2x6 months extension without compensation; max 20% of value / EUR 125,000. New build financing not possible.",
+     "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf"
+    },
+    "duurzaamheidsdepot": {
+     "value": "EBV / energiebespaarbudget possible conform NHG/TRHK, max EUR 9,000.",
+     "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf"
+    },
+    "restschuldFinancing": {
+     "value": false,
+     "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf",
+     "note": "'Meefinancieren restschuld: Niet mogelijk'."
+    },
+    "penaltyFreeRepaymentPct": {
+     "value": 10,
+     "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf"
+    },
+    "renteverlenging": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "rentemiddeling": {
+     "value": false,
+     "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf"
+    },
+    "energyLabelDiscount": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "No energy-label discount shown on Elan Plus rate sheet."
+    },
+    "closingCostsEur": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "specials": {
+     "value": "No NHG possible (ever). Max 2 debtors. Min loan EUR 37,500. Risk class can be adjusted after value increase only at end of fixed period. Max term 30 years, no extension. Rate table applies to annuity, linear and interest-only alike.",
+     "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Acceptatiekader-Hypotrust-Elan-Plus-januari-2026.pdf"
+    }
+   },
+   "rates": {
+    "date": "2026-09-18",
+    "sourceUrl": "https://www.hypotrust.nl/uploads/hypotrust/files/Rentelijsten/Week-38-Elan-Plus-per-18-09-2026.pdf",
+    "status": "verified",
+    "annuity": [
+     {
+      "fixedYears": 1,
+      "nhg": null,
+      "ltv60": 4.69,
+      "ltv70": 4.73,
+      "ltv80": 4.77,
+      "ltv90": 4.79,
+      "ltv100": 4.81
+     },
+     {
+      "fixedYears": 3,
+      "nhg": null,
+      "ltv60": 4.77,
+      "ltv70": 4.81,
+      "ltv80": 4.85,
+      "ltv90": 4.91,
+      "ltv100": 4.92
+     },
+     {
+      "fixedYears": 5,
+      "nhg": null,
+      "ltv60": 4.84,
+      "ltv70": 4.85,
+      "ltv80": 4.89,
+      "ltv90": 4.91,
+      "ltv100": 4.95
+     },
+     {
+      "fixedYears": 7,
+      "nhg": null,
+      "ltv60": 4.96,
+      "ltv70": 5.01,
+      "ltv80": 5.04,
+      "ltv90": 5.08,
+      "ltv100": 5.1
+     },
+     {
+      "fixedYears": 10,
+      "nhg": null,
+      "ltv60": 4.88,
+      "ltv70": 4.94,
+      "ltv80": 4.95,
+      "ltv90": 4.99,
+      "ltv100": 5.01
+     },
+     {
+      "fixedYears": 15,
+      "nhg": null,
+      "ltv60": 5.09,
+      "ltv70": 5.14,
+      "ltv80": 5.15,
+      "ltv90": 5.27,
+      "ltv100": 5.29
+     },
+     {
+      "fixedYears": 20,
+      "nhg": null,
+      "ltv60": 5.22,
+      "ltv70": 5.27,
+      "ltv80": 5.28,
+      "ltv90": 5.42,
+      "ltv100": 5.49
+     },
+     {
+      "fixedYears": 30,
+      "nhg": null,
+      "ltv60": 5.38,
+      "ltv70": 5.39,
+      "ltv80": 5.4,
+      "ltv90": 5.58,
+      "ltv100": 5.6
+     }
+    ],
+    "interestOnly": [
+     {
+      "fixedYears": 1,
+      "nhg": null,
+      "ltv60": 4.69,
+      "ltv70": 4.73,
+      "ltv80": 4.77,
+      "ltv90": 4.79,
+      "ltv100": 4.81
+     },
+     {
+      "fixedYears": 3,
+      "nhg": null,
+      "ltv60": 4.77,
+      "ltv70": 4.81,
+      "ltv80": 4.85,
+      "ltv90": 4.91,
+      "ltv100": 4.92
+     },
+     {
+      "fixedYears": 5,
+      "nhg": null,
+      "ltv60": 4.84,
+      "ltv70": 4.85,
+      "ltv80": 4.89,
+      "ltv90": 4.91,
+      "ltv100": 4.95
+     },
+     {
+      "fixedYears": 7,
+      "nhg": null,
+      "ltv60": 4.96,
+      "ltv70": 5.01,
+      "ltv80": 5.04,
+      "ltv90": 5.08,
+      "ltv100": 5.1
+     },
+     {
+      "fixedYears": 10,
+      "nhg": null,
+      "ltv60": 4.88,
+      "ltv70": 4.94,
+      "ltv80": 4.95,
+      "ltv90": 4.99,
+      "ltv100": 5.01
+     },
+     {
+      "fixedYears": 15,
+      "nhg": null,
+      "ltv60": 5.09,
+      "ltv70": 5.14,
+      "ltv80": 5.15,
+      "ltv90": 5.27,
+      "ltv100": 5.29
+     },
+     {
+      "fixedYears": 20,
+      "nhg": null,
+      "ltv60": 5.22,
+      "ltv70": 5.27,
+      "ltv80": 5.28,
+      "ltv90": 5.42,
+      "ltv100": 5.49
+     },
+     {
+      "fixedYears": 30,
+      "nhg": null,
+      "ltv60": 5.38,
+      "ltv70": 5.39,
+      "ltv80": 5.4,
+      "ltv90": 5.58,
+      "ltv100": 5.6
+     }
+    ],
+    "energyLabelDiscount": "None listed.",
+    "note": "Elan Plus Hypotheek; one table for annuïtair, lineair and aflossingsvrij. Classes t/m 45%, t/m 60%, t/m 70%, t/m 80%, t/m 90%, >90% MW (up to 106%). No NHG class (nhg=null). t/m 45% rates not mapped (e.g. 10y 4.87). 3-month variable 4.80-5.08%. Bridge 5.24%."
+   }
+  },
+  {
+   "slug": "woonfonds",
+   "name": "Woonfonds",
+   "brands": [],
+   "website": "https://www.centraalbeheer.nl",
+   "active": false,
+   "activeNote": "Brand discontinued: on 24-25 March 2025 all ~30,000 Woonfonds mortgages moved to Centraal Beheer (Achmea). No new Woonfonds mortgages. Source: https://www.vvponline.nl/nieuws/centraal-beheer-neemt-woonfonds-klanten-over-en-groeit-fors-in-hypotheken ; woonfonds.nl no longer resolves.",
+   "fields": {
+    "maxLtvPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "maxInterestOnlyPctOfValue": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "meeneemregeling": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "verhuisregeling": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "acceptsPermanentContract": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "acceptsIntentieverklaring": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "acceptsFlexIBL": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "acceptsPerspectiefverklaring": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "acceptsBenefits": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "acceptsPension": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMinYearsFigures": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entAcceptsForecastForStarters": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entIvoPolicy": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entCalcMethod": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entAcceptedLegalForms": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entDgaTreatment": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMinSolvencyPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMinCurrentRatio": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entCountsManagementFee": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entDgaThresholdPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entAllowsLoanNextToOwnBv": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entGuaranteesTreatment": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMaxLtvPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMaxInterestOnlyPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "bridgeLoanMaxMonths": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "bridgeLoanConditions": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "oversluitenVerhogenConditions": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "bouwdepot": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "duurzaamheidsdepot": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "restschuldFinancing": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "penaltyFreeRepaymentPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "renteverlenging": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "rentemiddeling": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "energyLabelDiscount": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "closingCostsEur": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "specials": {
+     "value": "Brand discontinued March 2025; existing clients serviced by Centraal Beheer (Achmea).",
+     "sourceUrl": "https://infinance.nl/artikel/merk-woonfonds-na-52-jaar-verleden-tijd/"
+    }
+   },
+   "rates": {
+    "date": null,
+    "sourceUrl": null,
+    "status": "needs_verification",
+    "annuity": [],
+    "interestOnly": [],
+    "energyLabelDiscount": "unknown",
+    "note": "No current Woonfonds rates (brand discontinued)."
+   }
+  },
+  {
+   "slug": "bijbouwe",
+   "name": "bijBouwe",
+   "brands": [
+    "bijBouwe Vooruit Hypotheek",
+    "bijBouwe (Basis) Hypotheek"
+   ],
+   "website": "https://bijbouwe.nl",
+   "active": true,
+   "activeNote": "Active (rates 25-09-2026; acceptatiehandleiding September 2026). NOT a successor of MoneYou: bijBouwe is a label of Dynamic Credit Hypotheken B.V. (independent, funded by institutional investors), not ABN AMRO. It is MoneYou-like in that consumers can take the mortgage online execution-only ('Zelf afsluiten') as well as via bijBouwe advisers or independent advisers. bijBouwe Basis is closed to new clients; Vooruit is the current product.",
+   "fields": {
+    "maxLtvPct": {
+     "value": 106,
+     "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/5oye1v1jrbu3/productkaart-bijbouwe-vooruit-042026.pdf",
+     "note": "100% of (post-renovation) value; 106% when used for verduurzaming meeting conditions."
+    },
+    "maxInterestOnlyPctOfValue": {
+     "value": 50,
+     "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/5oye1v1jrbu3/productkaart-bijbouwe-vooruit-042026.pdf"
+    },
+    "meeneemregeling": {
+     "value": true,
+     "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+     "note": "Meeneemregeling = verhuisregeling; take outstanding balance and rate terms per loan part; new deed within 6 months after repayment; notify >=30 days before. Productkaart: 'vooraf of uiterlijk < 6 maanden na verkoop'."
+    },
+    "verhuisregeling": {
+     "value": true,
+     "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf"
+    },
+    "acceptsPermanentContract": {
+     "value": true,
+     "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf"
+    },
+    "acceptsIntentieverklaring": {
+     "value": true,
+     "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+     "note": "Unconditional intentieverklaring -> treated as permanent."
+    },
+    "acceptsFlexIBL": {
+     "value": true,
+     "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+     "note": "Flex/no intention: lowest of 3-year average, last year, or current employment. IBL used for 36-month calculation with NHG."
+    },
+    "acceptsPerspectiefverklaring": {
+     "value": false,
+     "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+     "note": "No income based on perspectiefverklaring or arbeidsmarktscan; treated as flex income."
+    },
+    "acceptsBenefits": {
+     "value": true,
+     "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+     "note": "Only structural/fixed benefits without re-examination (e.g. IVA, WAO, WAZ); otherwise only for period of certainty."
+    },
+    "acceptsPension": {
+     "value": true,
+     "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+     "note": "Current and future pension (if within 10 years of AOW age) taken into account."
+    },
+    "entMinYearsFigures": {
+     "value": 3,
+     "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+     "note": "At least 36 months active after KvK registration (or joined an existing >=36-month company >=12 months ago)."
+    },
+    "entAcceptsForecastForStarters": {
+     "value": false,
+     "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+     "note": "36-month minimum."
+    },
+    "entIvoPolicy": {
+     "value": "required",
+     "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+     "note": "Business income assessed via an inkomensverklaring from an accepted external party (see bijbouwe.nl/inkomensverklaring); max 6 months old."
+    },
+    "entCalcMethod": {
+     "value": "ivo",
+     "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf"
+    },
+    "entAcceptedLegalForms": {
+     "value": [
+      "eenmanszaak",
+      "vof",
+      "maatschap",
+      "bv"
+     ],
+     "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+     "note": "Inferred: handleiding accepts IB-ondernemers and DGA's of a BV/NV (>=5% shares); specific IB legal forms not enumerated."
+    },
+    "entDgaTreatment": {
+     "value": "ivo",
+     "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf",
+     "note": "DGA (>=5% of shares in BV/NV) assessed as niet-IB-ondernemer via inkomensverklaring."
+    },
+    "entMinSolvencyPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMinCurrentRatio": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entCountsManagementFee": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entDgaThresholdPct": {
+     "value": 5,
+     "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf"
+    },
+    "entAllowsLoanNextToOwnBv": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entGuaranteesTreatment": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Not found. Excluded sectors: horeca, tobacco/drugs, sex, gambling, fur, ivory, exotic animals, weapons, crypto trade, scrap, art & antiques, money exchange, pawnshops, sports agents."
+    },
+    "entMaxLtvPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMaxInterestOnlyPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "bridgeLoanMaxMonths": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "bridgeLoanConditions": {
+     "value": "Unsold: 90% of value minus mortgage debt, double costs 12 months to be demonstrated. Sold: (100% - 2%) of value minus mortgage debt. Bridge rate 4.25% (25-09-2026).",
+     "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/5oye1v1jrbu3/productkaart-bijbouwe-vooruit-042026.pdf"
+    },
+    "oversluitenVerhogenConditions": {
+     "value": "Oversluiten: full income and collateral test; no NHG 'zuiver oversluiten' relief and no term extension. Verhoging min EUR 5,000, max term 30 yrs; consumer increase up to total EUR 1,000,000; consumptive use allowed up to 100% MW without NHG. Calcasa desktop valuation up to 90% LTV.",
+     "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/5oye1v1jrbu3/productkaart-bijbouwe-vooruit-042026.pdf"
+    },
+    "bouwdepot": {
+     "value": "Standard term: new build 24 months, existing build (renovation) 12 months; two extensions of 6 months each; interest compensation equals mortgage rate.",
+     "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf"
+    },
+    "duurzaamheidsdepot": {
+     "value": "Groen leningdeel with separate (lower) rate for verduurzaming; up to 106% LTV; unspent amounts held in bouwdepot.",
+     "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/5oye1v1jrbu3/productkaart-bijbouwe-vooruit-042026.pdf"
+    },
+    "restschuldFinancing": {
+     "value": false,
+     "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/5oye1v1jrbu3/productkaart-bijbouwe-vooruit-042026.pdf"
+    },
+    "penaltyFreeRepaymentPct": {
+     "value": 10,
+     "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/5oye1v1jrbu3/productkaart-bijbouwe-vooruit-042026.pdf",
+     "note": "From overwaarde unlimited, otherwise max 10% of original principal per year."
+    },
+    "renteverlenging": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "rentemiddeling": {
+     "value": false,
+     "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/5oye1v1jrbu3/productkaart-bijbouwe-vooruit-042026.pdf"
+    },
+    "energyLabelDiscount": {
+     "value": "For properties with energy label C or better a rate discount on the whole loan may apply; plus separate green loan-part rates (e.g. 10y NHG 4.19%).",
+     "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/2926eb8qexqw/acceptatiehandleiding-bijbouwe-vooruit-september-2026.pdf"
+    },
+    "closingCostsEur": {
+     "value": 950,
+     "sourceUrl": "https://bijbouwe.nl/",
+     "note": "'Zelf afsluiten' (execution-only) fixed closing costs EUR 950, temporarily 40% discount (EUR 570) for new mortgages. With bijBouwe adviser: from EUR 1,750."
+    },
+    "specials": {
+     "value": "Execution-only online option; automatic monthly risk-class decrease; rate fixed on application day (offerterente) and bijBouwe guarantees rate before bid; combination of fixed periods; offer valid 4 months (+2 existing / +8 new build); max 2 applicants; max loan EUR 1,000,000; starterslening only with NHG; indicative offer within 1 working day.",
+     "sourceUrl": "https://dynamic-credit-xmn7.files.prepr.io/5oye1v1jrbu3/productkaart-bijbouwe-vooruit-042026.pdf"
+    }
+   },
+   "rates": {
+    "date": "2026-09-25",
+    "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2026/09/bijbouwe-rentetarieven-25-09-2026.pdf",
+    "status": "needs_verification",
+    "annuity": [
+     {
+      "fixedYears": 1,
+      "nhg": 4.07,
+      "ltv60": 4.28,
+      "ltv70": 4.36,
+      "ltv80": 4.4,
+      "ltv90": 4.4,
+      "ltv100": 4.4
+     },
+     {
+      "fixedYears": 5,
+      "nhg": 4.23,
+      "ltv60": 4.43,
+      "ltv70": 4.49,
+      "ltv80": 4.53,
+      "ltv90": 4.54,
+      "ltv100": 4.55
+     },
+     {
+      "fixedYears": 7,
+      "nhg": 4.26,
+      "ltv60": 4.48,
+      "ltv70": 4.49,
+      "ltv80": 4.53,
+      "ltv90": 4.54,
+      "ltv100": 4.58
+     },
+     {
+      "fixedYears": 10,
+      "nhg": 4.26,
+      "ltv60": 4.48,
+      "ltv70": 4.49,
+      "ltv80": 4.53,
+      "ltv90": 4.54,
+      "ltv100": 4.58
+     },
+     {
+      "fixedYears": 15,
+      "nhg": 4.59,
+      "ltv60": 4.62,
+      "ltv70": 4.62,
+      "ltv80": 4.66,
+      "ltv90": 4.7,
+      "ltv100": 4.78
+     },
+     {
+      "fixedYears": 20,
+      "nhg": 4.69,
+      "ltv60": 4.72,
+      "ltv70": 4.72,
+      "ltv80": 4.72,
+      "ltv90": 4.77,
+      "ltv100": 4.85
+     },
+     {
+      "fixedYears": 30,
+      "nhg": 4.93,
+      "ltv60": 4.83,
+      "ltv70": 4.83,
+      "ltv80": 4.83,
+      "ltv90": 4.83,
+      "ltv100": 4.86
+     }
+    ],
+    "interestOnly": [
+     {
+      "fixedYears": 1,
+      "nhg": 4.42,
+      "ltv60": 4.58,
+      "ltv70": 4.66,
+      "ltv80": 4.66,
+      "ltv90": 4.66,
+      "ltv100": 4.66
+     },
+     {
+      "fixedYears": 5,
+      "nhg": 4.58,
+      "ltv60": 4.73,
+      "ltv70": 4.79,
+      "ltv80": 4.79,
+      "ltv90": 4.8,
+      "ltv100": 4.81
+     },
+     {
+      "fixedYears": 7,
+      "nhg": 4.61,
+      "ltv60": 4.78,
+      "ltv70": 4.79,
+      "ltv80": 4.83,
+      "ltv90": 4.84,
+      "ltv100": 4.86
+     },
+     {
+      "fixedYears": 10,
+      "nhg": 4.61,
+      "ltv60": 4.78,
+      "ltv70": 4.79,
+      "ltv80": 4.83,
+      "ltv90": 4.84,
+      "ltv100": 4.86
+     },
+     {
+      "fixedYears": 15,
+      "nhg": 4.94,
+      "ltv60": 4.92,
+      "ltv70": 4.92,
+      "ltv80": 4.95,
+      "ltv90": 4.95,
+      "ltv100": 4.95
+     },
+     {
+      "fixedYears": 20,
+      "nhg": 5.04,
+      "ltv60": 5.02,
+      "ltv70": 5.02,
+      "ltv80": 5.02,
+      "ltv90": 5.02,
+      "ltv100": 5.02
+     },
+     {
+      "fixedYears": 30,
+      "nhg": 5.28,
+      "ltv60": 5.13,
+      "ltv70": 5.13,
+      "ltv80": 5.13,
+      "ltv90": 5.13,
+      "ltv100": 5.13
+     }
+    ],
+    "energyLabelDiscount": "Groen leningdeel (Vooruit) e.g. 5y NHG 3.86%, 10y NHG 4.19%, 10y <=60% 4.22%; label C+ discount may apply (amount not on sheet).",
+    "note": "bijBouwe renteblad per 25-09-2026 (Vooruit and Basis identical tables), copy hosted by service provider Home Invest; own rate page bijbouwe.nl/adviseurs/rente not parsed. Classes NHG, <=60, >60-75, >75-85, >85-90, >90-95, >95-100, >100-106. Mapping = rate applicable at that LTV: ltv70 = >60-75; ltv80 = >75-85; ltv90 = >85-90; ltv100 = >95-100. Variable rate 4.14% (NHG). Bridge 4.25%."
+   }
+  },
+  {
+   "slug": "moneyou",
+   "name": "Moneyou",
+   "brands": [],
+   "website": "https://www.moneyou.nl",
+   "active": false,
+   "activeNote": "Since 12 November 2025 no new Moneyou Hypotheek can be taken out by new customers (purchase or refinance). Existing customers keep service: rate changes, increases, verhuisregeling. Moneyou remains part of ABN AMRO Hypotheken Groep; no successor brand named (bijBouwe is NOT a successor). Source: https://www.moneyou.nl/vragen",
+   "fields": {
+    "maxLtvPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "maxInterestOnlyPctOfValue": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "meeneemregeling": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "verhuisregeling": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "acceptsPermanentContract": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "acceptsIntentieverklaring": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "acceptsFlexIBL": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "acceptsPerspectiefverklaring": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "acceptsBenefits": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "acceptsPension": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMinYearsFigures": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entAcceptsForecastForStarters": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entIvoPolicy": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entCalcMethod": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entAcceptedLegalForms": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entDgaTreatment": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMinSolvencyPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMinCurrentRatio": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entCountsManagementFee": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entDgaThresholdPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entAllowsLoanNextToOwnBv": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entGuaranteesTreatment": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMaxLtvPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMaxInterestOnlyPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "bridgeLoanMaxMonths": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "bridgeLoanConditions": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "oversluitenVerhogenConditions": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "bouwdepot": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "duurzaamheidsdepot": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "restschuldFinancing": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "penaltyFreeRepaymentPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "renteverlenging": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "rentemiddeling": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "energyLabelDiscount": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "closingCostsEur": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "specials": {
+     "value": "Closed to new customers since 12-11-2025.",
+     "sourceUrl": "https://www.moneyou.nl/vragen"
+    }
+   },
+   "rates": {
+    "date": null,
+    "sourceUrl": null,
+    "status": "needs_verification",
+    "annuity": [],
+    "interestOnly": [],
+    "energyLabelDiscount": "unknown",
+    "note": "Moneyou still publishes rates for existing customers (renteherziening/verhoging); not collected since no new mortgages."
+   }
+  },
+  {
+   "slug": "lloyds-bank",
+   "name": "Lloyds Bank",
+   "brands": [
+    "Lloyds Bank Hypotheek",
+    "Verduurzamingshypotheek"
+   ],
+   "website": "https://www.lloydsbank.nl/hypotheken",
+   "active": true,
+   "activeNote": "Added as MoneYou-like direct lender: offers mortgages directly online on an execution-only basis as well as via advisers (Consumentenbond lists ABN AMRO, bijBouwe, Centraal Beheer, Lloyds Bank and Moneyou as direct execution-only providers). Active: rates valid from 18-09-2026; hypotheekgids February 2026. Other MoneYou-like brands that stopped: Woonnu (NN) stopped new mortgages from 1 May 2026 (https://www.nn.nl/nieuws/nationale-nederlanden-bank-stopt-met-nieuwe-woonnu-hypotheken/).",
+   "fields": {
+    "maxLtvPct": {
+     "value": 106,
+     "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+     "note": "Without NHG max 100% MW; with NHG incl. verduurzamingshypotheek up to 106% after renovation; loans > EUR 1,000,000 max 90%."
+    },
+    "maxInterestOnlyPctOfValue": {
+     "value": 50,
+     "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+     "note": "Also limited based on (expected) pension income."
+    },
+    "meeneemregeling": {
+     "value": true,
+     "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+     "note": "Meeneemhypotheek exists (rate of running loan converts to variable in double-cost test context). Not possible for the verduurzamingshypotheek loan part."
+    },
+    "verhuisregeling": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "acceptsPermanentContract": {
+     "value": true,
+     "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf"
+    },
+    "acceptsIntentieverklaring": {
+     "value": true,
+     "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf"
+    },
+    "acceptsFlexIBL": {
+     "value": true,
+     "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+     "note": "IBL accepted with and without NHG; flex: average of last 3 calendar years capped by last year."
+    },
+    "acceptsPerspectiefverklaring": {
+     "value": false,
+     "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+     "note": "Financing based on perspectiefverklaring or arbeidsmarktscan not possible."
+    },
+    "acceptsBenefits": {
+     "value": true,
+     "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+     "note": "Only permanent social benefits."
+    },
+    "acceptsPension": {
+     "value": true,
+     "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+     "note": "AOW/pension/VUT count."
+    },
+    "entMinYearsFigures": {
+     "value": 2,
+     "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+     "note": "Without NHG min. 2 years self-employed; with NHG (NHG Inkomensverklaring Ondernemer) min. 1 year."
+    },
+    "entAcceptsForecastForStarters": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entIvoPolicy": {
+     "value": "required",
+     "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+     "note": "Inkomensverklaring Ondernemer from accepted rekenexpert, max 6 months old."
+    },
+    "entCalcMethod": {
+     "value": "avg3_capped_by_last",
+     "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+     "note": "Fiscal profit averaged over 3 calendar years; if last year lower, last year is used."
+    },
+    "entAcceptedLegalForms": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Guide mentions IB-ondernemers and BV (DGA); max four registered companies per applicant regardless of legal form."
+    },
+    "entDgaTreatment": {
+     "value": "ivo",
+     "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+     "note": "DGA (>=5%) via Inkomensverklaring: average salary plus dividend over 3 years capped by last year; dividend only counts if applicants own 100%."
+    },
+    "entMinSolvencyPct": {
+     "value": 0,
+     "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+     "note": "Solvency and liquidity must be positive (no minimum % stated); negative equity must be submitted for review."
+    },
+    "entMinCurrentRatio": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entCountsManagementFee": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entDgaThresholdPct": {
+     "value": 5,
+     "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf"
+    },
+    "entAllowsLoanNextToOwnBv": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entGuaranteesTreatment": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMaxLtvPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMaxInterestOnlyPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "bridgeLoanMaxMonths": {
+     "value": 12,
+     "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+     "note": "Existing build 12 months standard, once extendable by 6 months on request; new build no extension. Bridge only if new mortgage is also with Lloyds."
+    },
+    "bridgeLoanConditions": {
+     "value": "Bridge loan only when the new mortgage is also at Lloyds Bank; double costs incl. bridge must be affordable during max term; bridge rate 4.50% (18-09-2026).",
+     "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf"
+    },
+    "oversluitenVerhogenConditions": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "bouwdepot": {
+     "value": "Bouwdepot available; interest compensation equals average mortgage rate, also after extension.",
+     "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf"
+    },
+    "duurzaamheidsdepot": {
+     "value": "Energy-saving budget / verduurzamingshypotheek amounts are always deposited in a duurzaamheidsdepot.",
+     "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf"
+    },
+    "restschuldFinancing": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "penaltyFreeRepaymentPct": {
+     "value": 10,
+     "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf",
+     "note": "10% per loan part per calendar year."
+    },
+    "renteverlenging": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "rentemiddeling": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "energyLabelDiscount": {
+     "value": "0.05% discount on fixed rate for a valid registered energy label A or higher; verduurzamingshypotheek loan part has 0.10% discount (not combinable with label discount).",
+     "sourceUrl": "https://www.lloydsbank.nl/hypotheken/actuele-rentes-hypotheken"
+    },
+    "closingCostsEur": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Search snippet (homefinance) mentions EUR 490 execution-only vs EUR 995 with advice, not verified on lender site."
+    },
+    "specials": {
+     "value": "Direct execution-only application possible; rates same for new mortgages and rate changes of existing mortgages; bank guarantee up to 10% of purchase price.",
+     "sourceUrl": "https://www.lloydsbank.nl/dam/jcr:96a5a341-9ea6-4015-b53d-8bf87a36a681/hypotheekgids.pdf"
+    }
+   },
+   "rates": {
+    "date": "2026-09-18",
+    "sourceUrl": "https://www.lloydsbank.nl/hypotheken/actuele-rentes-hypotheken",
+    "status": "verified",
+    "annuity": [
+     {
+      "fixedYears": 1,
+      "nhg": 4.08,
+      "ltv60": 4.31,
+      "ltv70": 4.33,
+      "ltv80": 4.33,
+      "ltv90": 4.36,
+      "ltv100": 4.41
+     },
+     {
+      "fixedYears": 5,
+      "nhg": 4.19,
+      "ltv60": 4.36,
+      "ltv70": 4.38,
+      "ltv80": 4.38,
+      "ltv90": 4.41,
+      "ltv100": 4.46
+     },
+     {
+      "fixedYears": 6,
+      "nhg": 4.19,
+      "ltv60": 4.36,
+      "ltv70": 4.38,
+      "ltv80": 4.38,
+      "ltv90": 4.41,
+      "ltv100": 4.46
+     },
+     {
+      "fixedYears": 10,
+      "nhg": 4.24,
+      "ltv60": 4.51,
+      "ltv70": 4.53,
+      "ltv80": 4.53,
+      "ltv90": 4.56,
+      "ltv100": 4.61
+     },
+     {
+      "fixedYears": 15,
+      "nhg": 4.42,
+      "ltv60": 4.66,
+      "ltv70": 4.68,
+      "ltv80": 4.68,
+      "ltv90": 4.71,
+      "ltv100": 4.76
+     },
+     {
+      "fixedYears": 20,
+      "nhg": 4.52,
+      "ltv60": 4.68,
+      "ltv70": 4.7,
+      "ltv80": 4.7,
+      "ltv90": 4.73,
+      "ltv100": 4.78
+     },
+     {
+      "fixedYears": 30,
+      "nhg": 4.58,
+      "ltv60": 4.76,
+      "ltv70": 4.78,
+      "ltv80": 4.78,
+      "ltv90": 4.81,
+      "ltv100": 4.86
+     }
+    ],
+    "interestOnly": [
+     {
+      "fixedYears": 1,
+      "nhg": 4.26,
+      "ltv60": 4.49,
+      "ltv70": 4.51,
+      "ltv80": 4.51,
+      "ltv90": 4.54,
+      "ltv100": 4.59
+     },
+     {
+      "fixedYears": 5,
+      "nhg": 4.37,
+      "ltv60": 4.54,
+      "ltv70": 4.56,
+      "ltv80": 4.56,
+      "ltv90": 4.59,
+      "ltv100": 4.64
+     },
+     {
+      "fixedYears": 6,
+      "nhg": 4.37,
+      "ltv60": 4.54,
+      "ltv70": 4.56,
+      "ltv80": 4.56,
+      "ltv90": 4.59,
+      "ltv100": 4.64
+     },
+     {
+      "fixedYears": 10,
+      "nhg": 4.42,
+      "ltv60": 4.69,
+      "ltv70": 4.71,
+      "ltv80": 4.71,
+      "ltv90": 4.74,
+      "ltv100": 4.79
+     },
+     {
+      "fixedYears": 15,
+      "nhg": 4.6,
+      "ltv60": 4.84,
+      "ltv70": 4.86,
+      "ltv80": 4.86,
+      "ltv90": 4.89,
+      "ltv100": 4.94
+     },
+     {
+      "fixedYears": 20,
+      "nhg": 4.7,
+      "ltv60": 4.86,
+      "ltv70": 4.88,
+      "ltv80": 4.88,
+      "ltv90": 4.91,
+      "ltv100": 4.96
+     },
+     {
+      "fixedYears": 30,
+      "nhg": 4.76,
+      "ltv60": 4.94,
+      "ltv70": 4.96,
+      "ltv80": 4.96,
+      "ltv90": 4.99,
+      "ltv100": 5.04
+     }
+    ],
+    "energyLabelDiscount": "-0.05% on fixed rate for energy label A or better (rates shown excl. discount).",
+    "note": "Rates excl. energy label discount. Annuity/linear table and 'overige aflosvormen' (aflossingsvrij etc.) table. Classes NHG, t/m 65%, t/m 80%, t/m 90%, t/m 100%. ltv60 uses t/m 65%; ltv70 and ltv80 use t/m 80%. Variable: 3.60% NHG ... 3.75% t/m100. Bridge 4.50%. Verduurzamingshypotheek 10y: NHG 4.14%, without NHG 4.41%."
+   }
+  }
+ ],
+ "marketAverages": {
+  "date": "2026-09-20",
+  "sourceUrl": "https://www.vanbruggen.nl/actueel/nieuws/2026/rentebericht-week-39",
+  "source": "Van Bruggen Adviesgroep weekly average mortgage rates (rentebericht week 39, data per 20 September 2026 = week 38)",
+  "nhg": [
+   {
+    "fixedYears": 0,
+    "label": "variabel",
+    "rate": 3.9
+   },
+   {
+    "fixedYears": 5,
+    "rate": 4.28
+   },
+   {
+    "fixedYears": 10,
+    "rate": 4.38
+   },
+   {
+    "fixedYears": 20,
+    "rate": 4.69
+   },
+   {
+    "fixedYears": 30,
+    "rate": 4.8
+   }
+  ],
+  "withoutNhg": [
+   {
+    "fixedYears": 0,
+    "label": "variabel",
+    "rate": 4.32
+   },
+   {
+    "fixedYears": 5,
+    "rate": 4.59
+   },
+   {
+    "fixedYears": 10,
+    "rate": 4.73
+   },
+   {
+    "fixedYears": 20,
+    "rate": 5.05
+   },
+   {
+    "fixedYears": 30,
+    "rate": 5.17
+   }
+  ],
+  "ltv100": null,
+  "latestUpdate": {
+   "date": "2026-09-27",
+   "sourceUrl": "https://www.vanbruggen.nl/actueel/nieuws/2026/rentebericht-week40",
+   "nhg10y": 4.42,
+   "note": "10y fixed NHG average rose to 4.42% per 27 September 2026 (highest of 2026); other periods only in chart."
+  },
+  "note": "'withoutNhg' is Van Bruggen's average without NHG (not specifically 100% LTV); no published 100%-LTV average found, so ltv100=null. hypotheekrente.nl blocked automated access (Cloudflare)."
+ }
+}

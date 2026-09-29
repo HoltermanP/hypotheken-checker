@@ -1,0 +1,2934 @@
+{
+ "generatedAt": "2026-09-29",
+ "lenders": [
+  {
+   "slug": "abn-amro",
+   "name": "ABN AMRO",
+   "brands": [],
+   "website": "https://www.abnamro.nl",
+   "active": true,
+   "activeNote": "",
+   "fields": {
+    "maxLtvPct": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "ABN rate table has a '>90%' class but the lender's max LTV was not stated on pages consulted (statutory LTV limit is 100%, excl. energy-saving extras)"
+    },
+    "maxInterestOnlyPctOfValue": {
+     "value": 30,
+     "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/hypotheek-afsluiten/hypotheekvormen/aflossingsvrije-hypotheek/index.html",
+     "note": "Since 1 June 2026: max 30% of woningwaarde (previously 50%), plus absolute cap: woningwaarde < EUR 1m -> max EUR 150.000; EUR 1-2m -> EUR 250.000; >= EUR 2m -> EUR 500.000. Lowest of the two applies."
+    },
+    "meeneemregeling": {
+     "value": true,
+     "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/huis-kopen/verhuizen/index.html",
+     "note": "Existing hypotheekvorm (incl. aflossingsvrij, subject to assessment) can often be taken to the new home."
+    },
+    "verhuisregeling": {
+     "value": true,
+     "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/huis-kopen/verhuizen/index.html",
+     "note": "Verhuisregeling: take the basis of the existing fixed rate (without discounts/surcharges) to the new home; extra borrowing at current rates. Not applicable to the overbruggingshypotheek."
+    },
+    "acceptsPermanentContract": {
+     "value": true,
+     "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/hypotheek-berekenen/inkomen.html"
+    },
+    "acceptsIntentieverklaring": {
+     "value": true,
+     "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/hypotheek-berekenen/inkomen.html",
+     "note": "Temporary contract: current income used if employer gives 'verklaring voortzetting dienstverband'. Via intermediair site: for AIOS/advocaat-stagiair/PhD/kandidaat-notaris temporary income treated as fixed even without intentieverklaring."
+    },
+    "acceptsFlexIBL": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "ABN states flex income (seizoens/uitzend/oproep/invalwerk) counts at 90% of 3-year average or 90% of current income if lower (100% of 3y avg capped by last year with NHG); the pages did not explicitly mention the Inkomensbepaling Loondienst (IBL) tool."
+    },
+    "acceptsPerspectiefverklaring": {
+     "value": true,
+     "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/hypotheek-berekenen/inkomen-perspectiefverklaring.html",
+     "note": "Uitzendkracht with >=12 months at an agency affiliated with Stichting Perspectiefverklaring."
+    },
+    "acceptsBenefits": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Uitkering mentioned as possible income for huisbankkorting, but acceptance criteria for uitkering income not stated on the pages consulted."
+    },
+    "acceptsPension": {
+     "value": true,
+     "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/hypotheek-berekenen/inkomen.html",
+     "note": "AOW, aanvullend pensioen and lijfrente count; within 10 years of retirement the future pension income is tested."
+    },
+    "entMinYearsFigures": {
+     "value": 1,
+     "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/hypotheek-afsluiten/hypotheek-ondernemers.html",
+     "note": "'Al vanaf 1 jaar ondernemen'; with 1 year a percentage of income is used. Standard assessment uses figures of the last 3 years."
+    },
+    "entAcceptsForecastForStarters": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Documents requested include 'een prognose voor komend jaar van je accountant', and ABN says it may ask an expert for a forecast, but whether a forecast alone suffices for starters (<1 year) is not stated."
+    },
+    "entIvoPolicy": {
+     "value": "accepted",
+     "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/hypotheek-afsluiten/hypotheek-ondernemers.html",
+     "note": "Inkomensverklaring Ondernemer can be used when entrepreneur for >=1 year (covers last 3 years + future-proofness analysis); alternative is full jaarrekeningen + IB-aangiftes of 3 years."
+    },
+    "entCalcMethod": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "ABN says it uses figures of the last 3 years; exact formula (average/cap) not published on consumer pages."
+    },
+    "entAcceptedLegalForms": {
+     "value": [
+      "eenmanszaak",
+      "vof",
+      "maatschap",
+      "cv",
+      "bv"
+     ],
+     "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/hypotheek-afsluiten/hypotheek-ondernemers.html",
+     "note": "Eenmanszaak/zzp, maatschap, VOF, CV, BV and DGA all explicitly covered. Holding structures: 'meerdere ondernemingen onder je BV' are included in the analysis."
+    },
+    "entDgaTreatment": {
+     "value": "salary_plus_distributable_profit",
+     "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/hypotheek-afsluiten/hypotheek-ondernemers.html",
+     "note": "For BV owners ABN looks at salary paid plus any dividend and achieved profit (last 3 years), taking solvency and liquidity of the company into account."
+    },
+    "entMinSolvencyPct": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Solvency and liquidity are assessed, no threshold published."
+    },
+    "entMinCurrentRatio": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entCountsManagementFee": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entDgaThresholdPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entAllowsLoanNextToOwnBv": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entGuaranteesTreatment": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMaxLtvPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMaxInterestOnlyPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "bridgeLoanMaxMonths": {
+     "value": 24,
+     "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/huis-kopen/verhuizen/overbruggingshypotheek/index.html",
+     "note": "36 months for nieuwbouw."
+    },
+    "bridgeLoanConditions": {
+     "value": "Max term 24 months (36 for nieuwbouw); must be repaid in full at end of term even if old home unsold. Unknown selling costs assumed at 1.5% (lowered from 2.0%); actual costs used if known. Rate: variable or 1-year fixed (rates 2026-09-21: 4.75% variable, 5.40% 1-year fixed); huisbankkorting may apply. Double housing costs tested; (desktop)taxatie of old home required.",
+     "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/huis-kopen/verhuizen/overbruggingshypotheek/index.html"
+    },
+    "oversluitenVerhogenConditions": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Oversluiten page only gives generic info (vergoeding at old lender may apply; rate discount from energielabel B). Specific conditions for verhogen not found."
+    },
+    "bouwdepot": {
+     "value": true,
+     "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/hypotheek-afsluiten/bouwdepot/index.html"
+    },
+    "duurzaamheidsdepot": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "ABN offers a 'Duurzaam Wonen Hypotheek' product (seen in rate tool), but depot details not verified."
+    },
+    "restschuldFinancing": {
+     "value": true,
+     "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/mijn-hypotheek/restschuld/index.html",
+     "note": "Restschuld can be included in the mortgage for the new home; to be repaid within 15 years; extra repayment without costs."
+    },
+    "penaltyFreeRepaymentPct": {
+     "value": 10,
+     "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/mijn-hypotheek/extra-aflossen/index.html",
+     "note": "Usually 10% of original loan amount per year ('dit is meestal 10%'; check own voorwaarden). Rules on vergoedingsvrij aflossen changed since 1 Dec 2025."
+    },
+    "renteverlenging": {
+     "value": "Request a new mortgage/rentevaste periode about 6 months before the end of the fixed period; a rentebedenktijd variant lets you choose a new fixed period in the last 2 years without vergoeding (2-year rentebedenktijd variant: new period min. 3 years).",
+     "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/mijn-hypotheek/hypotheek-verlengen.html"
+    },
+    "rentemiddeling": {
+     "value": true,
+     "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/mijn-hypotheek/hypotheekrente-wijzigen/rentemiddeling.html",
+     "note": "Vergoeding spread via monthly rate surcharge."
+    },
+    "energyLabelDiscount": {
+     "value": "Since 1 April 2026 rates are priced per energielabel (no separate duurzaamheidskorting). Budget Hypotheek annuity 10y NHG on 2026-09-21: label A++++ 4.38%, A 4.42%, B 4.49%, C 4.54%, D 4.55%, G/no label 4.58% -> A++++ -0.20%, A -0.16%, B -0.09%, C -0.04%, D -0.03% vs G.",
+     "sourceUrl": "https://hypotheken.abnamro.nl/interest-rates/app/?lang=nl"
+    },
+    "closingCostsEur": {
+     "value": 750,
+     "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/hypotheek-afsluiten/hypotheekadvies/kosten.html",
+     "note": "Afhandelingskosten EUR 750 (digital document delivery) when taking a mortgage via ABN AMRO direct advice; advieskosten EUR 1.350 (starter) / 1.550 (expat) extra. Via independent adviser: unknown."
+    },
+    "specials": {
+     "value": "Huisbankkorting 0.20% if income is paid into an ABN AMRO betaalpakket account and mortgage is debited from it. Two products: Budget Hypotheek (0.15% lower) and Woning Hypotheek (rate in offer drops if lower on start date). Rentebedenktijd variants. Softer acceptance for medici (AIOS/ANIOS), expats, income in foreign currency. Bridging loan also with 1-year fixed rate.",
+     "sourceUrl": "https://www.abnamro.nl/nl/prive/hypotheken/actuele-hypotheekrente/index.html"
+    }
+   },
+   "rates": {
+    "date": "2026-09-21",
+    "sourceUrl": "https://hypotheken.abnamro.nl/interest-rates/app/?lang=nl",
+    "status": "verified",
+    "annuity": [
+     {
+      "fixedYears": 0,
+      "nhg": 4.1,
+      "ltv60": 4.15,
+      "ltv70": 4.3,
+      "ltv80": 4.3,
+      "ltv90": 4.45,
+      "ltv100": 4.55
+     },
+     {
+      "fixedYears": 1,
+      "nhg": 4.54,
+      "ltv60": 4.55,
+      "ltv70": 4.6,
+      "ltv80": 4.6,
+      "ltv90": 4.61,
+      "ltv100": 4.64
+     },
+     {
+      "fixedYears": 2,
+      "nhg": 4.51,
+      "ltv60": 4.6,
+      "ltv70": 4.65,
+      "ltv80": 4.65,
+      "ltv90": 4.66,
+      "ltv100": 4.68
+     },
+     {
+      "fixedYears": 3,
+      "nhg": 4.49,
+      "ltv60": 4.58,
+      "ltv70": 4.63,
+      "ltv80": 4.63,
+      "ltv90": 4.64,
+      "ltv100": 4.66
+     },
+     {
+      "fixedYears": 5,
+      "nhg": 4.49,
+      "ltv60": 4.58,
+      "ltv70": 4.63,
+      "ltv80": 4.63,
+      "ltv90": 4.64,
+      "ltv100": 4.66
+     },
+     {
+      "fixedYears": 6,
+      "nhg": 4.46,
+      "ltv60": 4.76,
+      "ltv70": 4.77,
+      "ltv80": 4.77,
+      "ltv90": 4.78,
+      "ltv100": 4.79
+     },
+     {
+      "fixedYears": 7,
+      "nhg": 4.42,
+      "ltv60": 4.72,
+      "ltv70": 4.74,
+      "ltv80": 4.74,
+      "ltv90": 4.76,
+      "ltv100": 4.78
+     },
+     {
+      "fixedYears": 10,
+      "nhg": 4.42,
+      "ltv60": 4.72,
+      "ltv70": 4.74,
+      "ltv80": 4.74,
+      "ltv90": 4.76,
+      "ltv100": 4.78
+     },
+     {
+      "fixedYears": 12,
+      "nhg": 4.65,
+      "ltv60": 4.9,
+      "ltv70": 4.91,
+      "ltv80": 4.91,
+      "ltv90": 4.92,
+      "ltv100": 4.93
+     },
+     {
+      "fixedYears": 15,
+      "nhg": 4.71,
+      "ltv60": 4.92,
+      "ltv70": 5.03,
+      "ltv80": 5.03,
+      "ltv90": 5.17,
+      "ltv100": 5.24
+     },
+     {
+      "fixedYears": 17,
+      "nhg": 4.81,
+      "ltv60": 4.97,
+      "ltv70": 5.08,
+      "ltv80": 5.08,
+      "ltv90": 5.22,
+      "ltv100": 5.29
+     },
+     {
+      "fixedYears": 20,
+      "nhg": 4.81,
+      "ltv60": 5.04,
+      "ltv70": 5.13,
+      "ltv80": 5.13,
+      "ltv90": 5.23,
+      "ltv100": 5.32
+     },
+     {
+      "fixedYears": 30,
+      "nhg": 5.03,
+      "ltv60": 5.17,
+      "ltv70": 5.24,
+      "ltv80": 5.24,
+      "ltv90": 5.31,
+      "ltv100": 5.37
+     }
+    ],
+    "interestOnly": [
+     {
+      "fixedYears": 0,
+      "nhg": 4.3,
+      "ltv60": 4.35,
+      "ltv70": 4.5,
+      "ltv80": 4.5,
+      "ltv90": 4.65,
+      "ltv100": 4.75
+     },
+     {
+      "fixedYears": 1,
+      "nhg": 5.04,
+      "ltv60": 5.05,
+      "ltv70": 5.1,
+      "ltv80": 5.1,
+      "ltv90": 5.11,
+      "ltv100": 5.14
+     },
+     {
+      "fixedYears": 2,
+      "nhg": 5.01,
+      "ltv60": 5.1,
+      "ltv70": 5.15,
+      "ltv80": 5.15,
+      "ltv90": 5.16,
+      "ltv100": 5.18
+     },
+     {
+      "fixedYears": 3,
+      "nhg": 4.99,
+      "ltv60": 5.08,
+      "ltv70": 5.13,
+      "ltv80": 5.13,
+      "ltv90": 5.14,
+      "ltv100": 5.16
+     },
+     {
+      "fixedYears": 5,
+      "nhg": 4.99,
+      "ltv60": 5.08,
+      "ltv70": 5.13,
+      "ltv80": 5.13,
+      "ltv90": 5.14,
+      "ltv100": 5.16
+     },
+     {
+      "fixedYears": 6,
+      "nhg": 4.96,
+      "ltv60": 5.26,
+      "ltv70": 5.27,
+      "ltv80": 5.27,
+      "ltv90": 5.28,
+      "ltv100": 5.29
+     },
+     {
+      "fixedYears": 7,
+      "nhg": 4.92,
+      "ltv60": 5.22,
+      "ltv70": 5.24,
+      "ltv80": 5.24,
+      "ltv90": 5.26,
+      "ltv100": 5.28
+     },
+     {
+      "fixedYears": 10,
+      "nhg": 4.92,
+      "ltv60": 5.22,
+      "ltv70": 5.24,
+      "ltv80": 5.24,
+      "ltv90": 5.26,
+      "ltv100": 5.28
+     },
+     {
+      "fixedYears": 12,
+      "nhg": 5.15,
+      "ltv60": 5.4,
+      "ltv70": 5.41,
+      "ltv80": 5.41,
+      "ltv90": 5.42,
+      "ltv100": 5.43
+     },
+     {
+      "fixedYears": 15,
+      "nhg": 5.21,
+      "ltv60": 5.42,
+      "ltv70": 5.53,
+      "ltv80": 5.53,
+      "ltv90": 5.67,
+      "ltv100": 5.74
+     },
+     {
+      "fixedYears": 17,
+      "nhg": 5.31,
+      "ltv60": 5.47,
+      "ltv70": 5.58,
+      "ltv80": 5.58,
+      "ltv90": 5.72,
+      "ltv100": 5.79
+     },
+     {
+      "fixedYears": 20,
+      "nhg": 5.31,
+      "ltv60": 5.54,
+      "ltv70": 5.63,
+      "ltv80": 5.63,
+      "ltv90": 5.73,
+      "ltv100": 5.82
+     },
+     {
+      "fixedYears": 30,
+      "nhg": 5.58,
+      "ltv60": 5.72,
+      "ltv70": 5.79,
+      "ltv80": 5.79,
+      "ltv90": 5.86,
+      "ltv100": 5.92
+     }
+    ],
+    "energyLabelDiscount": "Since 1 April 2026 rates are priced per energielabel (no separate duurzaamheidskorting). Budget Hypotheek annuity 10y NHG on 2026-09-21: label A++++ 4.38%, A 4.42%, B 4.49%, C 4.54%, D 4.55%, G/no label 4.58% -> A++++ -0.20%, A -0.16%, B -0.09%, C -0.04%, D -0.03% vs G.",
+    "note": "Source: ABN AMRO public rate tool API (renteblad 2026-09-21, fetched 2026-09-29). Rates = Budget Hypotheek, energielabel A, WITHOUT huisbankkorting (-0.20% with huisbankkorting). Woning Hypotheek is 0.15% higher. fixedYears 0 = variabel (1 month). A 17-year period also exists (fixedYears 17). LTV classes: NHG, <=65% (mapped to ltv60), >65%-<=85% (ltv70 and ltv80), >85%-<=90% (ltv90), >90% (ltv100)."
+   }
+  },
+  {
+   "slug": "ing",
+   "name": "ING",
+   "brands": [],
+   "website": "https://www.ing.nl",
+   "active": true,
+   "activeNote": "",
+   "fields": {
+    "maxLtvPct": {
+     "value": 100,
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+     "note": "Acceptatiebeleid v2026-1 §6.1: max 100% marktwaarde; exceptions: 106% incl. energiebesparende maatregelen (EBV/EBB), 115% bij restschuldfinanciering of oversluiten."
+    },
+    "maxInterestOnlyPctOfValue": {
+     "value": 30,
+     "sourceUrl": "https://www.banken.nl/nieuws/27131/ook-ing-scherpt-beleid-voor-aflossingsvrije-hypotheken-aan",
+     "note": "Since ING policy change (announced 3 Jun 2026; effective date reported as 23 Jul 2026 in search results, not confirmed on ing.nl because ing.nl blocks automated access): max 30% of woningwaarde aflossingsvrij for new loans/verhogingen/omzettingen, with absolute cap starting at EUR 150,000 for lower-priced homes and rising with value (reported: up to EUR 250,000 for homes up to EUR 2m). Existing clients may keep up to 50% on verlenging. Acceptatiebeleid Jan 2026 still said 50%."
+    },
+    "meeneemregeling": {
+     "value": true,
+     "sourceUrl": "https://www.ing.nl/particulier/hypotheek/huis-kopen/ander-huis-kopen/hypotheek-meenemen",
+     "note": "ING 'Verhuisregeling': take interest conditions of current ING mortgage to new ING mortgage. ing.nl page not fetchable (bot-block); confirmed via search snippet + hypotheekmeeneemregeling.nl (secondary)."
+    },
+    "verhuisregeling": {
+     "value": true,
+     "sourceUrl": "https://hypotheekmeeneemregeling.nl/verhuisregeling-ing/",
+     "note": "Per secondary source: new mortgage request within 6 months after aflossing old mortgage; new amount up to old schuldrest carries old rate; remaining RVP can be continued. Needs verification on ing.nl."
+    },
+    "acceptsPermanentContract": {
+     "value": true,
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+     "note": "§2.2.1: proeftijd verstreken, geen intentie tot beëindiging."
+    },
+    "acceptsIntentieverklaring": {
+     "value": true,
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+     "note": "§2.2.2: intentie voor onbepaalde tijd of voortzetting min. 36 maanden -> treated as vast dienstverband."
+    },
+    "acceptsFlexIBL": {
+     "value": true,
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+     "note": "§2.2.8: IBL (UWV verzekeringsbericht) is ING's preferred method for all active loondienst. Also Arbeidsmarktscan (score>=70) for flexwerkers (§2.2.9)."
+    },
+    "acceptsPerspectiefverklaring": {
+     "value": true,
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+     "note": "§2.2.4: uitzendkrachten; verklaring max 6 maanden oud op datum bindend aanbod."
+    },
+    "acceptsBenefits": {
+     "value": true,
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+     "note": "§2.6: IVA, WAO/WAZ, Wajong (no future herkeuring); bestendige uitkeringen (IOAW, IOW, AO, AOV, etc.) lopend tot AOW-datum."
+    },
+    "acceptsPension": {
+     "value": true,
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+     "note": "§2.4: pensioen + AOW + lijfrente; toekomstig pensioen getoetst als AOW/pensioen binnen 10 jaar."
+    },
+    "entMinYearsFigures": {
+     "value": "unknown",
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+     "note": "§2.3: standard income = average 3 boekjaren capped by last year; starters (<3 boekjaren) follow NHG toetskader inkomensverklaring ondernemers. No explicit minimum stated."
+    },
+    "entAcceptsForecastForStarters": {
+     "value": "unknown",
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+     "note": "§2.3.3: starters follow NHG toetskader inkomensverklaring ondernemers; forecast/prognose not explicitly mentioned."
+    },
+    "entIvoPolicy": {
+     "value": "accepted",
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+     "note": "§2.3: ING also accepts Inkomensverklaring Ondernemer by Raadhuys, Pentrax, Zakelijk Inkomen, Overviewz."
+    },
+    "entCalcMethod": {
+     "value": "avg3_capped_by_last",
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+     "note": "§2.3: gemiddelde netto winst laatste 3 boekjaren, max netto winst laatste boekjaar; may be corrected after financial analysis."
+    },
+    "entAcceptedLegalForms": {
+     "value": [
+      "eenmanszaak",
+      "vof",
+      "maatschap",
+      "bv",
+      "bv_holding"
+     ],
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+     "note": "§2.3.1 mentions eenmanszaak (ZZP), vof, maatschap; §2.3.2 DGA; personal holding with one werkmaatschappij mentioned (meervoudige BV-constructie requires geconsolideerde jaarrekening + organogram). CV not mentioned."
+    },
+    "entDgaTreatment": {
+     "value": "salary_plus_distributable_profit",
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+     "note": "§2.3.2: 100% of inkomsten uit arbeid uit onderneming, eventueel vermeerderd met uitkeerbare winst, based on IB-aangiftes + jaarrapporten 3 boekjaren."
+    },
+    "entMinSolvencyPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMinCurrentRatio": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entCountsManagementFee": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entDgaThresholdPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entAllowsLoanNextToOwnBv": {
+     "value": true,
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+     "note": "§3.1.3: loans without hypothecaire inschrijving from e.g. eigen BV for financing the own home are counted as financieringslast (so allowed, included in toets). §3.1.4: RC-directie counted at actual costs, min 3%/yr of limit; < EUR 17,500 may be ignored."
+    },
+    "entGuaranteesTreatment": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMaxLtvPct": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "No separate entrepreneur LTV found; general max 100%."
+    },
+    "entMaxInterestOnlyPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "bridgeLoanMaxMonths": {
+     "value": "unknown",
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+     "note": "Duration not stated in acceptatiebeleid."
+    },
+    "bridgeLoanConditions": {
+     "value": "Only if the new-home mortgage is with ING (min EUR 10,000); max = netto verkoopopbrengst minus schuld if sold, else 95% of marktwaarde (90% if verkooptijd >=9-12 mnd, value >= EUR 1.5m or Calcasa desktoptaxatie) minus schuld, plus 95%/80% of pledged savings/investments; max 1 overbrugging per aanvraag on 1 woning; no minimum amount. Rate 23-09-2026: 5.12% (1 jaar vast, monthly payment).",
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf"
+    },
+    "oversluitenVerhogenConditions": {
+     "value": "Oversluiten (herfinanciering eigen woning) up to 115% of marktwaarde if applicant keeps living there, amount <= aflossing bestaande hypotheek + afsluit- en aflossingskosten, and debtors unchanged. ING does not lend behind other lenders' mortgages (except overbrugging). No NHG-free add-on within 3 months after an NHG mortgage. Verhoging tested against current acceptatiebeleid.",
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf"
+    },
+    "bouwdepot": {
+     "value": true,
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf",
+     "note": "§4.5: looptijd 2 jaar (+1 jaar eenmalig); min EUR 15,000 without NHG."
+    },
+    "duurzaamheidsdepot": {
+     "value": "Yes - verduurzamingsdepot (EBV/EBB) up to 106% LTV; looptijd 2 jaar, eenmalig +1 jaar; payouts on invoices.",
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf"
+    },
+    "restschuldFinancing": {
+     "value": "Yes - up to 115% of marktwaarde, restschuld must have arisen < 1 year before application, max 15 years, annuïtair/lineair, separate loan part.",
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2025/12/ING-acc-beleid-jan-2026.pdf"
+    },
+    "penaltyFreeRepaymentPct": {
+     "value": 10,
+     "sourceUrl": "https://www.homefinance.nl/hypotheek/berekenen/ing/boetevrij-aflossen/",
+     "note": "10% of hoofdsom per jaar per secondary source (homefinance, via search snippet); ing.nl not fetchable. Needs verification."
+    },
+    "renteverlenging": {
+     "value": "At end of RVP choose new rate/period (ING rentevoorstel). Tussentijds rente aanpassen possible with afkoopvergoeding or rentemiddeling. Offerte: 2 weeks acceptance, valid 12 months after signing, extendable 12 months at verlengingsprovisie 0.20%/month; Dagrente option (+0.25%) gives lowest of offerte- and passeerrente.",
+     "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2026/09/ing-rentetarieven-23-09-2026.pdf",
+     "note": "Offerte/dagrente details from ING adviser rate sheet; renteverlenging timing details not verified on ing.nl."
+    },
+    "rentemiddeling": {
+     "value": true,
+     "sourceUrl": "https://www.ing.nl/particulier/hypotheek/jouw-hypotheek/tussentijds-aanpassen",
+     "note": "Via search snippet of ing.nl page (page itself blocked for bots)."
+    },
+    "energyLabelDiscount": {
+     "value": "Energielabel rentecomponent (fixed rates only, fixed for RVP): A++++/A+++ -0.20%, A++/A+/A -0.18%, B -0.10%, C -0.07%, D -0.03%, E/F/G/none 0.00%. Combinable with Actieve Betaalrekening Korting (0.25%).",
+     "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2026/09/ing-rentetarieven-23-09-2026.pdf"
+    },
+    "closingCostsEur": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "specials": {
+     "value": "Actieve Betaalrekening Korting 0.25% (without: +0.25%). Dagrente option (+0.25%). Variabele rente (1-maands, 4.86% per 15-09-2026) only for aflossingsvrij and max 25% of hoofdsom. RVPs 1-20 jaar. Max looptijd 30 jaar. Expatregeling brutering (not with NHG).",
+     "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2026/09/ing-rentetarieven-23-09-2026.pdf"
+    }
+   },
+   "rates": {
+    "date": "2026-09-23",
+    "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2026/09/ing-rentetarieven-23-09-2026.pdf",
+    "status": "needs_verification",
+    "annuity": [
+     {
+      "fixedYears": 1,
+      "nhg": 4.3,
+      "ltv60": 4.52,
+      "ltv70": 4.59,
+      "ltv80": 4.62,
+      "ltv90": 4.64,
+      "ltv100": 4.66
+     },
+     {
+      "fixedYears": 2,
+      "nhg": 4.31,
+      "ltv60": 4.53,
+      "ltv70": 4.6,
+      "ltv80": 4.63,
+      "ltv90": 4.65,
+      "ltv100": 4.67
+     },
+     {
+      "fixedYears": 3,
+      "nhg": 4.32,
+      "ltv60": 4.54,
+      "ltv70": 4.61,
+      "ltv80": 4.64,
+      "ltv90": 4.66,
+      "ltv100": 4.68
+     },
+     {
+      "fixedYears": 5,
+      "nhg": 4.33,
+      "ltv60": 4.6,
+      "ltv70": 4.62,
+      "ltv80": 4.65,
+      "ltv90": 4.67,
+      "ltv100": 4.69
+     },
+     {
+      "fixedYears": 6,
+      "nhg": 4.34,
+      "ltv60": 4.63,
+      "ltv70": 4.69,
+      "ltv80": 4.72,
+      "ltv90": 4.74,
+      "ltv100": 4.76
+     },
+     {
+      "fixedYears": 7,
+      "nhg": 4.35,
+      "ltv60": 4.64,
+      "ltv70": 4.7,
+      "ltv80": 4.73,
+      "ltv90": 4.75,
+      "ltv100": 4.77
+     },
+     {
+      "fixedYears": 10,
+      "nhg": 4.36,
+      "ltv60": 4.69,
+      "ltv70": 4.71,
+      "ltv80": 4.74,
+      "ltv90": 4.76,
+      "ltv100": 4.78
+     },
+     {
+      "fixedYears": 12,
+      "nhg": 4.55,
+      "ltv60": 4.81,
+      "ltv70": 4.86,
+      "ltv80": 4.91,
+      "ltv90": 4.93,
+      "ltv100": 4.95
+     },
+     {
+      "fixedYears": 15,
+      "nhg": 4.63,
+      "ltv60": 4.84,
+      "ltv70": 4.89,
+      "ltv80": 4.94,
+      "ltv90": 4.96,
+      "ltv100": 4.98
+     },
+     {
+      "fixedYears": 20,
+      "nhg": 4.71,
+      "ltv60": 4.95,
+      "ltv70": 5.02,
+      "ltv80": 5.04,
+      "ltv90": 5.11,
+      "ltv100": 5.15
+     }
+    ],
+    "interestOnly": [
+     {
+      "fixedYears": 0,
+      "nhg": 4.86,
+      "ltv60": 4.86,
+      "ltv70": 4.86,
+      "ltv80": 4.86,
+      "ltv90": 4.86,
+      "ltv100": 4.86
+     },
+     {
+      "fixedYears": 1,
+      "nhg": 4.83,
+      "ltv60": 5.05,
+      "ltv70": 5.12,
+      "ltv80": 5.15,
+      "ltv90": 5.17,
+      "ltv100": 5.19
+     },
+     {
+      "fixedYears": 2,
+      "nhg": 4.84,
+      "ltv60": 5.06,
+      "ltv70": 5.13,
+      "ltv80": 5.16,
+      "ltv90": 5.18,
+      "ltv100": 5.2
+     },
+     {
+      "fixedYears": 3,
+      "nhg": 4.85,
+      "ltv60": 5.07,
+      "ltv70": 5.14,
+      "ltv80": 5.17,
+      "ltv90": 5.19,
+      "ltv100": 5.21
+     },
+     {
+      "fixedYears": 5,
+      "nhg": 4.86,
+      "ltv60": 5.13,
+      "ltv70": 5.15,
+      "ltv80": 5.18,
+      "ltv90": 5.2,
+      "ltv100": 5.22
+     },
+     {
+      "fixedYears": 6,
+      "nhg": 4.87,
+      "ltv60": 5.16,
+      "ltv70": 5.22,
+      "ltv80": 5.25,
+      "ltv90": 5.27,
+      "ltv100": 5.29
+     },
+     {
+      "fixedYears": 7,
+      "nhg": 4.88,
+      "ltv60": 5.17,
+      "ltv70": 5.23,
+      "ltv80": 5.26,
+      "ltv90": 5.28,
+      "ltv100": 5.3
+     },
+     {
+      "fixedYears": 10,
+      "nhg": 4.89,
+      "ltv60": 5.22,
+      "ltv70": 5.24,
+      "ltv80": 5.27,
+      "ltv90": 5.29,
+      "ltv100": 5.31
+     },
+     {
+      "fixedYears": 12,
+      "nhg": 5.09,
+      "ltv60": 5.35,
+      "ltv70": 5.4,
+      "ltv80": 5.45,
+      "ltv90": 5.47,
+      "ltv100": 5.49
+     },
+     {
+      "fixedYears": 15,
+      "nhg": 5.18,
+      "ltv60": 5.39,
+      "ltv70": 5.44,
+      "ltv80": 5.49,
+      "ltv90": 5.51,
+      "ltv100": 5.53
+     },
+     {
+      "fixedYears": 20,
+      "nhg": 5.29,
+      "ltv60": 5.53,
+      "ltv70": 5.6,
+      "ltv80": 5.62,
+      "ltv90": 5.69,
+      "ltv100": 5.73
+     }
+    ],
+    "energyLabelDiscount": "A++++/A+++ -0.20%, A++/A+/A -0.18%, B -0.10%, C -0.07%, D -0.03%, E-G/geen 0.00% (fixed rates only).",
+    "note": "ing.nl blocks automated access (connection reset/timeouts), so rates were taken from ING's own adviser 'Tariefoverzicht 23 september 2026' PDF as republished by adviser homeinvest.nl (hence needs_verification; a search snippet from ing.nl on 28-09 showing 4.12% for 1 jaar NHG+label A matches this sheet: 4.30-0.18). Rates INCLUDE 0.25% Actieve Betaalrekening Korting and assume 'Geen energielabel beschikbaar' (no label discount). Lineaire rates equal annuity up to 10y (slightly lower for 12-20y). ING LTV classes: NHG, <=55, <=65, <=70, <=75, <=80, <=85, <=90, <=95, <=100, <=106, >106. Mapping: ltv60 = <=65% class (a 60% loan falls there; <=55% class is 0.01-0.02 lower), ltv70 = <=70%, ltv80 = <=80%, ltv90 = <=90%, ltv100 = <=100%. interestOnly fixedYears 0 = 1-maands variabele rente 4.860% (rentedatum 15-09-2026, same for all classes, max 25% of hoofdsom). Overbrugging 5.12%."
+   }
+  },
+  {
+   "slug": "rabobank",
+   "name": "Rabobank",
+   "brands": [],
+   "website": "https://www.rabobank.nl",
+   "active": true,
+   "activeNote": "Obvion is a Rabobank subsidiary (separate lender, not included here).",
+   "fields": {
+    "maxLtvPct": {
+     "value": 100,
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+     "note": "Acceptatiebeleid 2 feb 2026 §1.3: max verstrekkingsnorm 100% marktwaarde; 106% with energiebesparende voorzieningen; 115% for restschuld, oversluiten incl. oversluitkosten, noodzakelijke woningverbetering, VvE-achterstand (latter three Alleen Plusvoorwaarden)."
+    },
+    "maxInterestOnlyPctOfValue": {
+     "value": 30,
+     "sourceUrl": "https://www.rabobank.nl/nieuws/011512344/rabobank-scherpt-beleid-voor-aflossingsvrije-hypotheek-aan-per-11-mei-2026",
+     "note": "Since 11 May 2026: max 30% of woningwaarde aflossingsvrij, capped at EUR 150,000 (new loans, herfinanciering, verhoging; also Obvion). Confirmed via banken.nl and search snippet of rabobank.nl news (rabobank.nl blocks automated access). Before: 50% (acceptatiebeleid Feb 2026)."
+    },
+    "meeneemregeling": {
+     "value": true,
+     "sourceUrl": "https://www.rabobank.nl/particulieren/hypotheek/hypotheekvormen-en-voorwaarden/basisvoorwaarden",
+     "note": "Rente meenemen bij verhuizen: Basisvoorwaarden within 3 months, Plusvoorwaarden within 6 months (per search snippets of rabobank.nl pages; pages themselves blocked)."
+    },
+    "verhuisregeling": {
+     "value": true,
+     "sourceUrl": "https://www.rabobank.nl/particulieren/hypotheek/hypotheekvormen-en-voorwaarden/plusvoorwaarden",
+     "note": "Basis: 3 months; Plus: 6 months (search snippet)."
+    },
+    "acceptsPermanentContract": {
+     "value": true,
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+     "note": "§3.1.3: proeftijd verstreken, no pending termination; income via IBL or werkgeversverklaring."
+    },
+    "acceptsIntentieverklaring": {
+     "value": true,
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+     "note": "§3.1.3: bepaalde tijd met intentieverklaring (voortzetting voor onbepaalde tijd) treated as vast after proeftijd."
+    },
+    "acceptsFlexIBL": {
+     "value": true,
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+     "note": "§3.1.1: IBL accepted when in loondienst at application (not after uitdiensttreding / mismatch employer). Flex without perspectiefverklaring: IBL or 3-yr average. Arbeidsmarktscan (>=70) also accepted."
+    },
+    "acceptsPerspectiefverklaring": {
+     "value": true,
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+     "note": "§3.1.3: via uitzendbureau or Externe Perspectief Taxateur registered at Stichting Perspectiefverklaring."
+    },
+    "acceptsBenefits": {
+     "value": true,
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+     "note": "§3.7-3.9: WAO, IVA (+aanvullende), Wajong, Anw, nabestaandenpensioen; other overheidsuitkeringen if paying until at least AOW-leeftijd."
+    },
+    "acceptsPension": {
+     "value": true,
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+     "note": "§3.6: AOW, werkgeverspensioen, lijfrente, pensioen in eigen beheer/ODV."
+    },
+    "entMinYearsFigures": {
+     "value": "unknown",
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+     "note": "Rabobank uses an inkomensverklaring (IKV) per its IKV-beleid; minimum years not stated in acceptatiebeleid."
+    },
+    "entAcceptsForecastForStarters": {
+     "value": true,
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+     "note": "§3.2 + documentenlijst: toetsinkomen from 'inkomensverklaring of nulverklaring'; document 8462 'Inkomensprognose/verklaring (nulverklaring)' accepted. Exact starter conditions in IKV-beleid (not found)."
+    },
+    "entIvoPolicy": {
+     "value": "required",
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+     "note": "§3.2: for ondernemers always an inkomensverklaring or nulverklaring; intermediary channel: by Rabobank or external rekenexpert Raadhuys, Zakelijk Inkomen, Overviewz, Pentrax (direct channel: Rabobank only). For verhuur-income IKV only by Rabobank."
+    },
+    "entCalcMethod": {
+     "value": "ivo",
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+     "note": "Toetsinkomen = amount from inkomensverklaring/nulverklaring."
+    },
+    "entAcceptedLegalForms": {
+     "value": [
+      "eenmanszaak",
+      "vof",
+      "maatschap",
+      "bv"
+     ],
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+     "note": "Acceptatiebeleid distinguishes 'IB-onderneming' (eenmanszaak/vof/maatschap assumed as IB-ondernemingen; not individually listed) and directeur/aandeelhouder (Vpb-onderneming). Holding/CV not explicitly mentioned (pensioen-BV/holding only for PEB income)."
+    },
+    "entDgaTreatment": {
+     "value": "ivo",
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+     "note": "DGA with >25% shares/zeggenschap (with partner): inkomensverklaring. <=25%: treated as loondienst (werkgeversverklaring) + dividend (lowest of last 3 years) if received 3 years."
+    },
+    "entMinSolvencyPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMinCurrentRatio": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entCountsManagementFee": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entDgaThresholdPct": {
+     "value": 25,
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+     "note": "Inkomensverklaring required above 25% aandelenbelang/zeggenschap (together with partner)."
+    },
+    "entAllowsLoanNextToOwnBv": {
+     "value": "unknown",
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+     "note": "§4.5: private financial obligations to own onderneming counted at actual costs (RC per IKV); no explicit statement on loans from own BV for the home."
+    },
+    "entGuaranteesTreatment": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMaxLtvPct": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "No separate entrepreneur LTV found; general max 100%."
+    },
+    "entMaxInterestOnlyPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "bridgeLoanMaxMonths": {
+     "value": 24,
+     "sourceUrl": "https://www.rabobank.nl/particulieren/hypotheek/hypotheekvormen-en-voorwaarden/hypotheekproducten/overbruggingshypotheek",
+     "note": "OverbruggingsHypotheek for 1 or 2 years (rate sheet shows 1 and 2 jaar vast); duration from search snippet, page blocked. Needs verification."
+    },
+    "bridgeLoanConditions": {
+     "value": "Security on old and new home. Sold (bedenktijd verstreken): verkoopprijs -2% verkoopkosten - bestaande leningen; unsold: 90% of marktwaarde (95% if taxatie shows comparable homes sell within 6-9 months; 90% with Calcasa desktoptaxatie) - bestaande leningen; +100% spaartegoed / +70% beleggingstegoed if terminated. 'Losse' OverbruggingsHypotheek only for existing clients. Dubbele lasten >3 months tested (12 months if unsold bestaande bouw; 12-24 months nieuwbouw). Rates 21-09-2026: 5.20% (1 jaar), 5.25% (2 jaar); no duurzaamheids-/betaalpakketkorting.",
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf"
+    },
+    "oversluitenVerhogenConditions": {
+     "value": "Oversluiten with meefinancieren oversluitkosten: Alleen Plusvoorwaarden, NHG possible, max 115% of marktwaarde; applicant keeps living there, debtor unchanged; new loan <= current loan + advies-, afsluit-, notaris-, taxatiekosten and vergoedingsrente. Ophogers/interne oversluiters may keep existing aflossingsvrij % above limit but not increase it (Feb 2026 text; aflossingsvrij norm since changed to 30%/EUR 150k).",
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf"
+    },
+    "bouwdepot": {
+     "value": true,
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf",
+     "note": "§1.4.2: for nieuwbouw, verduurzaming or verbouwing; max 24 months."
+    },
+    "duurzaamheidsdepot": {
+     "value": "Via bouwdepot (verduurzaming); energiebesparende voorzieningen financeable up to 106% of marktwaarde; also Rabo GroenHypotheek (10 jaar vast, lower rate).",
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf"
+    },
+    "restschuldFinancing": {
+     "value": "Yes - Restschuldlening up to 115% of marktwaarde new home (new loan max 100%), max 15 years, annuïtair or lineair; both new and old financing at Rabobank.",
+     "sourceUrl": "https://hypotheekcompany.nl/wp-content/uploads/2026/02/Rabobank-acceptatie-feb-2026.pdf"
+    },
+    "penaltyFreeRepaymentPct": {
+     "value": 10,
+     "sourceUrl": "https://www.rabobank.nl/particulieren/hypotheek/hypotheekvormen-en-voorwaarden/basisvoorwaarden",
+     "note": "Basisvoorwaarden: 10% of original loan amount per year; Plusvoorwaarden: 20% (search snippets of rabobank.nl)."
+    },
+    "renteverlenging": {
+     "value": "Verlengen at earliest 3 months before end of RVP; tussentijds rente aanpassen possible against vergoeding voor vervroegd aflossen (lump sum or via rentemiddeling) plus EUR 250 wijzigingskosten per lening (max EUR 500).",
+     "sourceUrl": "https://www.rabobank.nl/particulieren/hypotheek/mijn-hypotheek-of-woning-aanpassen/rente-aanpassen",
+     "note": "From search snippets; rabobank.nl blocked. Needs verification."
+    },
+    "rentemiddeling": {
+     "value": true,
+     "sourceUrl": "https://www.rabobank.nl/particulieren/hypotheek/mijn-hypotheek-of-woning-aanpassen/rente-aanpassen",
+     "note": "Search snippet states rentemiddeling currently only offered for aflossingsvrije leningen with Plusvoorwaarden under conditions. Needs verification."
+    },
+    "energyLabelDiscount": {
+     "value": "Duurzaamheidskorting 0.15% on fixed rates for homes with a valid, definitive registered energielabel A or better (also granted during RVP when label appears in EP-online); snippet mentions possible extra 0.05% (max 0.20%) for labels registered in 2025 - unverified.",
+     "sourceUrl": "https://www.rabobank.nl/particulieren/hypotheek/hypotheekrente/duurzaamheidskorting",
+     "note": "Rate sheet 21-09-2026 confirms 0.15% duurzaamheidskorting tables."
+    },
+    "closingCostsEur": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "specials": {
+     "value": "Two product lines: Basisvoorwaarden (lower rate, 10% boetevrij, 3-month verhuisregeling) and Plusvoorwaarden (higher rate, 20% boetevrij, 6 months; required for some cases e.g. oversluiten >100%, verhuur-income, foreign income). Betaalpakketkorting 0.2% included in published rates. Rabo GroenHypotheek (10 jaar vast Basis NHG 3.63% on 21-09 incl. duurzaamheids- en betaalpakketkorting). KeuzePlus Hypotheek / Rabo HypotheekKrediet variable. RVPs up to 30 jaar.",
+     "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2026/09/rabobank-rentetarieven-21-09-2026.pdf"
+    }
+   },
+   "rates": {
+    "date": "2026-09-21",
+    "sourceUrl": "https://homeinvest.nl/wp-content/uploads/2026/09/rabobank-rentetarieven-21-09-2026.pdf",
+    "status": "needs_verification",
+    "annuity": [
+     {
+      "fixedYears": 0,
+      "nhg": 3.98,
+      "ltv60": 3.98,
+      "ltv70": 4.08,
+      "ltv80": 4.08,
+      "ltv90": 4.08,
+      "ltv100": 4.13
+     },
+     {
+      "fixedYears": 1,
+      "nhg": 4.18,
+      "ltv60": 4.44,
+      "ltv70": 4.54,
+      "ltv80": 4.54,
+      "ltv90": 4.54,
+      "ltv100": 4.59
+     },
+     {
+      "fixedYears": 2,
+      "nhg": 4.19,
+      "ltv60": 4.49,
+      "ltv70": 4.59,
+      "ltv80": 4.59,
+      "ltv90": 4.59,
+      "ltv100": 4.64
+     },
+     {
+      "fixedYears": 3,
+      "nhg": 4.24,
+      "ltv60": 4.6,
+      "ltv70": 4.7,
+      "ltv80": 4.7,
+      "ltv90": 4.7,
+      "ltv100": 4.75
+     },
+     {
+      "fixedYears": 4,
+      "nhg": 4.24,
+      "ltv60": 4.61,
+      "ltv70": 4.71,
+      "ltv80": 4.71,
+      "ltv90": 4.71,
+      "ltv100": 4.76
+     },
+     {
+      "fixedYears": 5,
+      "nhg": 4.28,
+      "ltv60": 4.63,
+      "ltv70": 4.73,
+      "ltv80": 4.73,
+      "ltv90": 4.73,
+      "ltv100": 4.78
+     },
+     {
+      "fixedYears": 6,
+      "nhg": 4.28,
+      "ltv60": 4.63,
+      "ltv70": 4.73,
+      "ltv80": 4.73,
+      "ltv90": 4.73,
+      "ltv100": 4.78
+     },
+     {
+      "fixedYears": 7,
+      "nhg": 4.28,
+      "ltv60": 4.63,
+      "ltv70": 4.73,
+      "ltv80": 4.73,
+      "ltv90": 4.73,
+      "ltv100": 4.78
+     },
+     {
+      "fixedYears": 8,
+      "nhg": 4.28,
+      "ltv60": 4.63,
+      "ltv70": 4.73,
+      "ltv80": 4.73,
+      "ltv90": 4.73,
+      "ltv100": 4.78
+     },
+     {
+      "fixedYears": 9,
+      "nhg": 4.28,
+      "ltv60": 4.63,
+      "ltv70": 4.73,
+      "ltv80": 4.73,
+      "ltv90": 4.73,
+      "ltv100": 4.78
+     },
+     {
+      "fixedYears": 10,
+      "nhg": 4.28,
+      "ltv60": 4.63,
+      "ltv70": 4.73,
+      "ltv80": 4.73,
+      "ltv90": 4.73,
+      "ltv100": 4.78
+     },
+     {
+      "fixedYears": 11,
+      "nhg": 4.71,
+      "ltv60": 5.07,
+      "ltv70": 5.17,
+      "ltv80": 5.17,
+      "ltv90": 5.17,
+      "ltv100": 5.22
+     },
+     {
+      "fixedYears": 12,
+      "nhg": 4.73,
+      "ltv60": 5.09,
+      "ltv70": 5.19,
+      "ltv80": 5.19,
+      "ltv90": 5.19,
+      "ltv100": 5.24
+     },
+     {
+      "fixedYears": 13,
+      "nhg": 4.76,
+      "ltv60": 5.12,
+      "ltv70": 5.22,
+      "ltv80": 5.22,
+      "ltv90": 5.22,
+      "ltv100": 5.27
+     },
+     {
+      "fixedYears": 14,
+      "nhg": 4.76,
+      "ltv60": 5.14,
+      "ltv70": 5.24,
+      "ltv80": 5.24,
+      "ltv90": 5.24,
+      "ltv100": 5.29
+     },
+     {
+      "fixedYears": 15,
+      "nhg": 4.76,
+      "ltv60": 5.17,
+      "ltv70": 5.27,
+      "ltv80": 5.27,
+      "ltv90": 5.27,
+      "ltv100": 5.32
+     },
+     {
+      "fixedYears": 20,
+      "nhg": 4.8,
+      "ltv60": 5.22,
+      "ltv70": 5.32,
+      "ltv80": 5.32,
+      "ltv90": 5.32,
+      "ltv100": 5.37
+     },
+     {
+      "fixedYears": 25,
+      "nhg": 5.02,
+      "ltv60": 5.28,
+      "ltv70": 5.38,
+      "ltv80": 5.38,
+      "ltv90": 5.38,
+      "ltv100": 5.43
+     },
+     {
+      "fixedYears": 30,
+      "nhg": 5.05,
+      "ltv60": 5.32,
+      "ltv70": 5.42,
+      "ltv80": 5.42,
+      "ltv90": 5.42,
+      "ltv100": 5.47
+     }
+    ],
+    "interestOnly": [
+     {
+      "fixedYears": 1,
+      "nhg": 4.68,
+      "ltv60": 4.89,
+      "ltv70": 4.99,
+      "ltv80": 4.99,
+      "ltv90": 4.99,
+      "ltv100": 5.04
+     },
+     {
+      "fixedYears": 2,
+      "nhg": 4.69,
+      "ltv60": 4.94,
+      "ltv70": 5.04,
+      "ltv80": 5.04,
+      "ltv90": 5.04,
+      "ltv100": 5.09
+     },
+     {
+      "fixedYears": 3,
+      "nhg": 4.74,
+      "ltv60": 5.1,
+      "ltv70": 5.2,
+      "ltv80": 5.2,
+      "ltv90": 5.2,
+      "ltv100": 5.25
+     },
+     {
+      "fixedYears": 4,
+      "nhg": 4.74,
+      "ltv60": 5.11,
+      "ltv70": 5.21,
+      "ltv80": 5.21,
+      "ltv90": 5.21,
+      "ltv100": 5.26
+     },
+     {
+      "fixedYears": 5,
+      "nhg": 4.78,
+      "ltv60": 5.13,
+      "ltv70": 5.23,
+      "ltv80": 5.23,
+      "ltv90": 5.23,
+      "ltv100": 5.28
+     },
+     {
+      "fixedYears": 6,
+      "nhg": 4.78,
+      "ltv60": 5.13,
+      "ltv70": 5.23,
+      "ltv80": 5.23,
+      "ltv90": 5.23,
+      "ltv100": 5.28
+     },
+     {
+      "fixedYears": 7,
+      "nhg": 4.78,
+      "ltv60": 5.13,
+      "ltv70": 5.23,
+      "ltv80": 5.23,
+      "ltv90": 5.23,
+      "ltv100": 5.28
+     },
+     {
+      "fixedYears": 8,
+      "nhg": 4.78,
+      "ltv60": 5.13,
+      "ltv70": 5.23,
+      "ltv80": 5.23,
+      "ltv90": 5.23,
+      "ltv100": 5.28
+     },
+     {
+      "fixedYears": 9,
+      "nhg": 4.78,
+      "ltv60": 5.13,
+      "ltv70": 5.23,
+      "ltv80": 5.23,
+      "ltv90": 5.23,
+      "ltv100": 5.28
+     },
+     {
+      "fixedYears": 10,
+      "nhg": 4.78,
+      "ltv60": 5.13,
+      "ltv70": 5.23,
+      "ltv80": 5.23,
+      "ltv90": 5.23,
+      "ltv100": 5.28
+     },
+     {
+      "fixedYears": 11,
+      "nhg": 5.21,
+      "ltv60": 5.57,
+      "ltv70": 5.67,
+      "ltv80": 5.67,
+      "ltv90": 5.67,
+      "ltv100": 5.72
+     },
+     {
+      "fixedYears": 12,
+      "nhg": 5.23,
+      "ltv60": 5.59,
+      "ltv70": 5.69,
+      "ltv80": 5.69,
+      "ltv90": 5.69,
+      "ltv100": 5.74
+     },
+     {
+      "fixedYears": 13,
+      "nhg": 5.26,
+      "ltv60": 5.62,
+      "ltv70": 5.72,
+      "ltv80": 5.72,
+      "ltv90": 5.72,
+      "ltv100": 5.77
+     },
+     {
+      "fixedYears": 14,
+      "nhg": 5.26,
+      "ltv60": 5.64,
+      "ltv70": 5.74,
+      "ltv80": 5.74,
+      "ltv90": 5.74,
+      "ltv100": 5.79
+     },
+     {
+      "fixedYears": 15,
+      "nhg": 5.26,
+      "ltv60": 5.67,
+      "ltv70": 5.77,
+      "ltv80": 5.77,
+      "ltv90": 5.77,
+      "ltv100": 5.82
+     },
+     {
+      "fixedYears": 20,
+      "nhg": 5.35,
+      "ltv60": 5.77,
+      "ltv70": 5.87,
+      "ltv80": 5.87,
+      "ltv90": 5.87,
+      "ltv100": 5.92
+     },
+     {
+      "fixedYears": 25,
+      "nhg": 5.57,
+      "ltv60": 5.83,
+      "ltv70": 5.93,
+      "ltv80": 5.93,
+      "ltv90": 5.93,
+      "ltv100": 5.98
+     },
+     {
+      "fixedYears": 30,
+      "nhg": 5.6,
+      "ltv60": 5.87,
+      "ltv70": 5.97,
+      "ltv80": 5.97,
+      "ltv90": 5.97,
+      "ltv100": 6.02
+     }
+    ],
+    "energyLabelDiscount": "Duurzaamheidskorting -0.15% (energielabel A or better, fixed rates). Listed rates EXCLUDE it.",
+    "note": "rabobank.nl blocks automated access ('Sorry, er gaat iets niet goed' / 403), so rates were taken from Rabobank's own 'Hypotheek adviestarieven' sheet (ingangsdatum maandag 21 september 2026) as republished by adviser homeinvest.nl (hence needs_verification; newer sheets may exist). Listed rates: Basisvoorwaarden, annuïtair/lineair resp. aflossingsvrij, INCLUDING 0.2% betaalpakketkorting and WITHOUT the 0.15% duurzaamheidskorting (subtract 0.15 for label A+). Plusvoorwaarden rates are higher (see sheet). Rabobank LTV classes: NHG, <=67.5%, >67.5%-<=90%, >90%. Mapping: ltv60 = <=67.5%; ltv70/ltv80/ltv90 = >67.5-90% class (a 70% loan exceeds 67.5%); ltv100 = >90%. annuity fixedYears 0 = '1 maands variabele hypotheekrente' 3.98/3.98/4.08/4.13 (sheet says 'rente met ingang van 1 oktober 2026'; betaalpakketkorting/duurzaamheidskorting applicability to variable not stated); a separate 'Variabel' rate 3.40-3.55 (ingang 1 maart 2026) is also listed on the sheet but not included (unclear product)."
+   }
+  },
+  {
+   "slug": "de-volksbank",
+   "name": "de Volksbank (ASN Bank)",
+   "brands": [
+    "SNS",
+    "ASN Bank",
+    "RegioBank"
+   ],
+   "website": "https://www.asnbank.nl/hypotheek.html",
+   "active": true,
+   "activeNote": "De Volksbank N.V. heet nu ASN Bank N.V. (KvK 16062338; devolksbank.nl verwijst naar corporate.asnbank.nl). SNS, RegioBank en BLG Wonen zijn opgegaan in het merk ASN Bank: snsbank.nl en regiobank.nl tonen 'SNS/RegioBank is nu ASN Bank', snsbank.nl-hypotheekpagina's redirecten naar asnbank.nl en blgwonen.nl naar asnbank.nl/blg-wonen. Nieuwe hypotheken sinds 1 juli 2025 alleen als ASN Hypotheek / ASN Bespaarhypotheek; SNS-, RegioBank- en BLG-merkhypotheken zijn niet meer af te sluiten (alleen rentearchieven voor bestaande klanten). Er zijn dus geen afzonderlijke merktarieven meer.",
+   "fields": {
+    "maxLtvPct": {
+     "value": 100,
+     "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+     "note": "Max. schuld-marktwaarde volgens Trhk (100%, plus wettelijke extra ruimte voor energiebesparende maatregelen, tot 106% genoemd bij Bespaarhypotheek). Afwijkend: restschuld/noodzakelijke woningfinanciering 110%, hypotheek > EUR 2 mln 90%, consumptief 90%, recreatiewoning 70% (acceptatieregels 23-06-2026 par. 10.4). Max. hypotheek EUR 3 mln."
+    },
+    "maxInterestOnlyPctOfValue": {
+     "value": 30,
+     "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+     "note": "Nieuwe aflossingsvrije hypotheek max. 30% van de marktwaarde (par. 10.4.1; ook asnbank.nl aflossingsvrije-hypotheek pagina). Informatiewijzer en adviseurspagina 57+ noemen nog 50% (verouderd)."
+    },
+    "meeneemregeling": {
+     "value": true,
+     "sourceUrl": "https://www.asnbank.nl/downloads/informatiewijzer-asn-hypotheken.html",
+     "note": "Rente Meeneemregeling: vaste rente meenemen bij verhuizing als binnen 3 maanden na aflossing oude ASN Hypotheek nieuwe ASN Hypotheek wordt aangevraagd; niet naar ASN Bespaarhypotheek."
+    },
+    "verhuisregeling": {
+     "value": true,
+     "sourceUrl": "https://www.asnbank.nl/hypotheek/informatie-voor-adviseurs/57-plussers.html",
+     "note": "Senioren-verhuisregeling (AOW binnen 10 jaar): toets op werkelijke lasten als nieuwe maandlast <= huidige; zonder NHG max 80% marktwaarde; rentevast min. 20 jaar (onder voorwaarden 10). Zie ook acceptatieregels par. 11.4."
+    },
+    "acceptsPermanentContract": {
+     "value": true,
+     "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+     "note": "Vast inkomen: dienstverband onbepaalde tijd na proeftijd (par. 3.1)."
+    },
+    "acceptsIntentieverklaring": {
+     "value": true,
+     "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+     "note": "Tijdelijk dienstverband met intentieverklaring (na proeftijd, model NHG) telt als vast inkomen (par. 3.1)."
+    },
+    "acceptsFlexIBL": {
+     "value": true,
+     "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+     "note": "Inkomensbepaling Loondienst: toetsinkomen = uitkomst HDN-rekentool (par. 3.5)."
+    },
+    "acceptsPerspectiefverklaring": {
+     "value": true,
+     "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+     "note": "Perspectiefverklaring uitzendkracht (12 van laatste 14 maanden gewerkt, laatste 26 weken zelfde bureau) en Arbeidsmarktscan (min. 70 punten) geaccepteerd (par. 3.2)."
+    },
+    "acceptsBenefits": {
+     "value": true,
+     "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+     "note": "Alleen WAO, WAZ, IVA en Wajong (en onvoorwaardelijke uitkering tot pensioen) tellen mee; WGA, ANW, ZW, bijstand en kinderalimentatie nooit (par. 3.1, 3.9)."
+    },
+    "acceptsPension": {
+     "value": true,
+     "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+     "note": "Pensioen, AOW en gegarandeerde levenslange lijfrente zijn vast inkomen (par. 3.1); pensioen binnen 10 jaar wordt meegetoetst (3.7)."
+    },
+    "entMinYearsFigures": {
+     "value": 1,
+     "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+     "note": "Minimaal 1 volledig boekjaar; 12 mnd cijfers -> 75% van inkomen, 24 mnd -> 90% van gemiddelde, 3 jaar -> 100% (par. 4.5.1; adviseurspagina ondernemers)."
+    },
+    "entAcceptsForecastForStarters": {
+     "value": false,
+     "sourceUrl": "https://www.asnbank.nl/hypotheek/hypotheek-voor-zzp-of-ondernemer.html",
+     "note": "Zonder jaarcijfers (<1 jaar ondernemer) geen hypotheek mogelijk. Voor starters met 1-3 jaar is een prognose van accountant/administrateur verplicht, maar die kan het inkomen niet verhogen (acceptatieregels 4.5.1)."
+    },
+    "entIvoPolicy": {
+     "value": "required",
+     "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+     "note": "Toetsinkomen ondernemer wordt vastgesteld op basis van een Inkomensverklaring (IKV) door ASN-specialisten of externe rekenmeesters (Raadhuys, Overviewz, Pentrax, Zakelijk Inkomen, ViiZ); ook via ondernemersinkomen.nl (par. 4)."
+    },
+    "entCalcMethod": {
+     "value": "avg3_capped_by_last",
+     "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+     "note": "Zonder rechtspersoonlijkheid: gemiddelde saldo fiscale winst laatste 3 boekjaren, max. het laatste jaar (par. 4.2)."
+    },
+    "entAcceptedLegalForms": {
+     "value": [
+      "eenmanszaak",
+      "vof",
+      "maatschap",
+      "bv"
+     ],
+     "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+     "note": "Genoemd: zzp/eenmanszaak, V.O.F., maatschap (4.2) en bv/nv (4.3); juridische structuur max. 5 entiteiten (4.4), dus holdingstructuren binnen die grens mogelijk. CV niet expliciet genoemd."
+    },
+    "entDgaTreatment": {
+     "value": "salary_plus_distributable_profit",
+     "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+     "note": "BV: gemiddeld DGA-salaris laatste 3 jaar (max. laatste jaar) plus resultaat na Vpb van dat jaar; overwinst meetellen bij belang >= 50%; dividend naar rato van belang (par. 4.3)."
+    },
+    "entMinSolvencyPct": {
+     "value": 20,
+     "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+     "note": "Solvabiliteit >= 20% (par. 4.1); onderneming moet winst hebben in laatste boekjaar."
+    },
+    "entMinCurrentRatio": {
+     "value": 1,
+     "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+     "note": "Current ratio >= 1 (par. 4.1)."
+    },
+    "entCountsManagementFee": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entDgaThresholdPct": {
+     "value": 25,
+     "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+     "note": "Ondernemer = eigenaar/vennoot/maat of DGA met belang >= 25% (par. 4)."
+    },
+    "entAllowsLoanNextToOwnBv": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entGuaranteesTreatment": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMaxLtvPct": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Geen aparte LTV-grens voor ondernemers gevonden; standaard (Trhk) lijkt te gelden."
+    },
+    "entMaxInterestOnlyPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "bridgeLoanMaxMonths": {
+     "value": 18,
+     "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+     "note": "18 maanden bestaande bouw, 30 maanden nieuwbouw (par. 10.5.2)."
+    },
+    "bridgeLoanConditions": {
+     "value": "Alleen i.c.m. 1e ASN Hypotheek van min. EUR 50.000. Hoogte: 99% van verkoopsom bij definitief verkocht, 95% van getaxeerde marktwaarde (of verkoopprijs uit koopovereenkomst) bij niet definitief verkocht. Te verkopen huis niet (deels) verhuurd, geen recreatiewoning, geen coöperatief eigendom. Aflossingsvrij; administratiekosten EUR 195. Max 18 mnd (bestaand) / 30 mnd (nieuwbouw).",
+     "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf"
+    },
+    "oversluitenVerhogenConditions": {
+     "value": "Oversluiten volgt de normale acceptatieregels; zuivere oversluiting (alleen aflossing oude hypotheek, boete en advies-/oversluitkosten) kan bij hogere financieringslast als maatwerk worden beoordeeld; senioren: zuivere oversluiting tot 100% marktwaarde, bij toets op werkelijke lasten tot 80%. Geen hypotheek achter een hypotheek bij een andere bank. Wijzigingen: EUR 195 administratiekosten per wijziging (max EUR 390).",
+     "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf"
+    },
+    "bouwdepot": {
+     "value": true,
+     "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf",
+     "note": "Bestaande bouw standaard 1 jaar (automatisch +1 jaar), nieuwbouw 2 jaar (+max 1 jaar); depotrente = hypotheekrente; vooruitbetaling max EUR 10.000 (par. 9)."
+    },
+    "duurzaamheidsdepot": {
+     "value": "ASN Duurzaam Wonen: EUR 2.500 - 30.000 extra lenen voor energiebesparende, klimaatadaptieve en natuurinclusieve maatregelen tegen een rente 1,00%-punt lager dan de ASN Hypotheek (alleen annuïtair/lineair, alleen i.c.m. ASN Hypotheek), via bouwdepot.",
+     "sourceUrl": "https://www.asnbank.nl/downloads/rentetarieven-asn-hypotheek-per-26-september-2026.html"
+    },
+    "restschuldFinancing": {
+     "value": "Ja: restschuld ontstaan < 1 jaar voor aanvraag, apart lineair leningdeel, looptijd max 15 jaar, totaal max 110% marktwaarde, restschuld van andere geldverstrekker max EUR 30.000; met NHG alleen als oude hypotheek NHG had.",
+     "sourceUrl": "https://www.zelfhypotheekafsluiten.nl/Uploads/geldverstrekkers/2026/09/asn-hypotheek-regels-voor-het-accepteren-en-verstrekken-van-een-hypotheek-23-juni-2026.pdf"
+    },
+    "penaltyFreeRepaymentPct": {
+     "value": 10,
+     "sourceUrl": "https://www.asnbank.nl/downloads/informatiewijzer-asn-hypotheken.html",
+     "note": "10% van oorspronkelijke hoofdsom per leningdeel per kalenderjaar. Boetevrij ook bij verkoop+verhuizing, overlijden, einde rentevaste periode, variabele rente en overbruggingskrediet."
+    },
+    "renteverlenging": {
+     "value": "3 maanden voor einde rentevaste periode renteaanbod voor alle periodes tot resterende looptijd; tussentijds rente aanpassen (vergoeding renteverlies + EUR 195 administratiekosten). Variabel naar vast kosteloos.",
+     "sourceUrl": "https://www.asnbank.nl/hypotheek/mijn-asn-hypotheek/hypotheekrente-eerder-aanpassen.html"
+    },
+    "rentemiddeling": {
+     "value": true,
+     "sourceUrl": "https://www.asnbank.nl/hypotheek/mijn-asn-hypotheek/hypotheekrente-eerder-aanpassen.html",
+     "note": "Mogelijk voor ASN Hypotheek (EUR 195 administratiekosten); niet voor Bespaarhypotheek en Duurzaam Wonen."
+    },
+    "energyLabelDiscount": {
+     "value": "ASN Hypotheek: geen energielabelkorting (tarief gelijk voor alle labels in de rentetool). ASN Bespaarhypotheek: rente per energiegroep (label A of hoger / B / C of lager); bijv. 10 jaar NHG 4,18% / 4,25% / 4,27% (26-09-2026); rente daalt automatisch bij beter geregistreerd label en bij lagere tariefgroep. ASN Duurzaam Wonen-leningdeel: 1%-punt lager tarief.",
+     "sourceUrl": "https://www.asnbank.nl/downloads/rentetarieven-asn-bespaarhypotheek-per-26-september-2026.html"
+    },
+    "closingCostsEur": {
+     "value": "unknown",
+     "sourceUrl": "https://www.asnbank.nl/downloads/kostenoverzicht-wijzigen-hypotheek.html",
+     "note": "Geen afsluitkosten voor een nieuwe hypotheek gevonden in het kostenoverzicht; wijzigingen kosten EUR 195 per wijziging (max EUR 390), annuleringskosten EUR 750 na 3 maanden (informatiewijzer)."
+    },
+    "specials": {
+     "value": "Geen betaalrekening vereist voor rentekorting. Rente daalt automatisch mee bij lagere tariefgroep (Bespaarhypotheek). Zelfstandige woningen vanaf 25 m2; CPO voor alle woningtypes (afbouwgarantie verplicht); AIOS/promovendus op huidig inkomen zonder intentieverklaring (alleen zonder NHG); huurinkomsten max 4 panden (70%). Aparte ASN Bespaarhypotheek (via adviseur) met rente per energiegroep. Overbruggingskrediet 4,88% (26-09-2026). Rentetarieven gelden ook voor voormalige SNS, RegioBank en BLG Wonen-hypotheken.",
+     "sourceUrl": "https://www.asnbank.nl/hypotheek/informatie-voor-adviseurs/starters.html"
+    }
+   },
+   "rates": {
+    "date": "2026-09-26",
+    "sourceUrl": "https://www.asnbank.nl/hypotheek/hypotheekrentes.html",
+    "status": "verified",
+    "annuity": [
+     {
+      "fixedYears": 0,
+      "nhg": 3.78,
+      "ltv60": 3.8,
+      "ltv70": 3.85,
+      "ltv80": 3.85,
+      "ltv90": 4.0,
+      "ltv100": 4.16
+     },
+     {
+      "fixedYears": 1,
+      "nhg": 4.07,
+      "ltv60": 4.21,
+      "ltv70": 4.28,
+      "ltv80": 4.28,
+      "ltv90": 4.31,
+      "ltv100": 4.34
+     },
+     {
+      "fixedYears": 2,
+      "nhg": 4.12,
+      "ltv60": 4.24,
+      "ltv70": 4.3,
+      "ltv80": 4.3,
+      "ltv90": 4.34,
+      "ltv100": 4.36
+     },
+     {
+      "fixedYears": 3,
+      "nhg": 4.18,
+      "ltv60": 4.28,
+      "ltv70": 4.32,
+      "ltv80": 4.32,
+      "ltv90": 4.37,
+      "ltv100": 4.39
+     },
+     {
+      "fixedYears": 4,
+      "nhg": 4.24,
+      "ltv60": 4.31,
+      "ltv70": 4.34,
+      "ltv80": 4.34,
+      "ltv90": 4.4,
+      "ltv100": 4.41
+     },
+     {
+      "fixedYears": 5,
+      "nhg": 4.31,
+      "ltv60": 4.35,
+      "ltv70": 4.37,
+      "ltv80": 4.37,
+      "ltv90": 4.43,
+      "ltv100": 4.44
+     },
+     {
+      "fixedYears": 6,
+      "nhg": 4.34,
+      "ltv60": 4.39,
+      "ltv70": 4.41,
+      "ltv80": 4.41,
+      "ltv90": 4.46,
+      "ltv100": 4.48
+     },
+     {
+      "fixedYears": 7,
+      "nhg": 4.37,
+      "ltv60": 4.44,
+      "ltv70": 4.46,
+      "ltv80": 4.46,
+      "ltv90": 4.5,
+      "ltv100": 4.52
+     },
+     {
+      "fixedYears": 10,
+      "nhg": 4.47,
+      "ltv60": 4.59,
+      "ltv70": 4.6,
+      "ltv80": 4.6,
+      "ltv90": 4.62,
+      "ltv100": 4.66
+     },
+     {
+      "fixedYears": 12,
+      "nhg": 4.47,
+      "ltv60": 4.59,
+      "ltv70": 4.6,
+      "ltv80": 4.6,
+      "ltv90": 4.62,
+      "ltv100": 4.66
+     },
+     {
+      "fixedYears": 15,
+      "nhg": 4.63,
+      "ltv60": 4.65,
+      "ltv70": 4.71,
+      "ltv80": 4.71,
+      "ltv90": 4.82,
+      "ltv100": 4.92
+     },
+     {
+      "fixedYears": 20,
+      "nhg": 4.75,
+      "ltv60": 4.77,
+      "ltv70": 4.85,
+      "ltv80": 4.85,
+      "ltv90": 4.86,
+      "ltv100": 4.98
+     }
+    ],
+    "interestOnly": [
+     {
+      "fixedYears": 0,
+      "nhg": 4.18,
+      "ltv60": 4.2,
+      "ltv70": 4.25,
+      "ltv80": 4.25,
+      "ltv90": 4.4,
+      "ltv100": 4.56
+     },
+     {
+      "fixedYears": 1,
+      "nhg": 4.62,
+      "ltv60": 4.76,
+      "ltv70": 4.83,
+      "ltv80": 4.83,
+      "ltv90": 4.86,
+      "ltv100": 4.89
+     },
+     {
+      "fixedYears": 2,
+      "nhg": 4.67,
+      "ltv60": 4.79,
+      "ltv70": 4.85,
+      "ltv80": 4.85,
+      "ltv90": 4.89,
+      "ltv100": 4.91
+     },
+     {
+      "fixedYears": 3,
+      "nhg": 4.73,
+      "ltv60": 4.83,
+      "ltv70": 4.87,
+      "ltv80": 4.87,
+      "ltv90": 4.92,
+      "ltv100": 4.94
+     },
+     {
+      "fixedYears": 4,
+      "nhg": 4.79,
+      "ltv60": 4.86,
+      "ltv70": 4.89,
+      "ltv80": 4.89,
+      "ltv90": 4.95,
+      "ltv100": 4.96
+     },
+     {
+      "fixedYears": 5,
+      "nhg": 4.86,
+      "ltv60": 4.9,
+      "ltv70": 4.92,
+      "ltv80": 4.92,
+      "ltv90": 4.98,
+      "ltv100": 4.99
+     },
+     {
+      "fixedYears": 6,
+      "nhg": 4.89,
+      "ltv60": 4.94,
+      "ltv70": 4.96,
+      "ltv80": 4.96,
+      "ltv90": 5.01,
+      "ltv100": 5.03
+     },
+     {
+      "fixedYears": 7,
+      "nhg": 4.92,
+      "ltv60": 4.99,
+      "ltv70": 5.01,
+      "ltv80": 5.01,
+      "ltv90": 5.05,
+      "ltv100": 5.07
+     },
+     {
+      "fixedYears": 10,
+      "nhg": 5.02,
+      "ltv60": 5.14,
+      "ltv70": 5.15,
+      "ltv80": 5.15,
+      "ltv90": 5.17,
+      "ltv100": 5.21
+     },
+     {
+      "fixedYears": 12,
+      "nhg": 5.02,
+      "ltv60": 5.14,
+      "ltv70": 5.15,
+      "ltv80": 5.15,
+      "ltv90": 5.17,
+      "ltv100": 5.21
+     },
+     {
+      "fixedYears": 15,
+      "nhg": 5.23,
+      "ltv60": 5.25,
+      "ltv70": 5.31,
+      "ltv80": 5.31,
+      "ltv90": 5.42,
+      "ltv100": 5.52
+     },
+     {
+      "fixedYears": 20,
+      "nhg": 5.35,
+      "ltv60": 5.37,
+      "ltv70": 5.45,
+      "ltv80": 5.45,
+      "ltv90": 5.46,
+      "ltv100": 5.58
+     }
+    ],
+    "energyLabelDiscount": "Geen voor ASN Hypotheek (API geeft hetzelfde tarief voor label G t/m A++++). Bespaarhypotheek heeft aparte rente per energiegroep (zie fields.energyLabelDiscount); Duurzaam Wonen-leningdeel 1%-punt lager.",
+    "note": "Merk: ASN Bank (ASN Hypotheek). Er is geen apart SNS-, RegioBank- of BLG-tarief meer; de ASN-tariefbladen zeggen 'Deze tarieven zijn ook geldig voor voormalig SNS, RegioBank en BLG Wonen hypotheken'. Tarieven op 29-09-2026 opgehaald uit de publieke rentetool-API van asnbank.nl (/services/apix-rs-hypotheken-renteoverzicht/api/interest-rates, met de API-key die in de publieke JS van de pagina staat, energy_label=UNKNOWN) en gecontroleerd tegen de tarief-pdf 'met ingang van 26 september 2026' (identiek). LET OP: er staat al een tariefblad 'per 30 september 2026' online met verhogingen van ca. +0,10%-punt (bijv. annuïtair 10 jaar NHG 4,57%, ≤60% 4,69%; 1-7 jaar +0,10; 10-20 jaar +0,10; variabel ongewijzigd) - vanaf 30-09 die gebruiken. Geen betaalrekening-/huisbankkorting; tarieven o.b.v. maandbetaling (kwartaal/jaar +0,2%). Annuïtair = ook lineair; interestOnly = aflossingsvrij tarief (spaarhypotheek +0,2%). ASN-tariefgroepen: NHG; ≤40/≤50/≤60 (één tarief); ≤70/≤80 (één tarief); ≤90; ≤95/≤100/≤106 (één tarief); >106. Mapping: nhg=NHG; ltv60=≤60-klasse; ltv70 en ltv80 = de ≤70/≤80-klasse (zelfde tarief); ltv90=≤90; ltv100=≤100/≤106-klasse. Variabel = maandvariabel (fixedYears 0). ASN Bespaarhypotheek (apart product) heeft andere tarieven per energiegroep en tariefgroepen NHG/≤60/≤80/≤90/>90 - niet opgenomen in deze tabel."
+   }
+  },
+  {
+   "slug": "nationale-nederlanden",
+   "name": "Nationale-Nederlanden",
+   "brands": [],
+   "website": "https://www.nn.nl/Particulier/Hypotheken.htm",
+   "active": true,
+   "activeNote": "Actief; hypotheken verstrekt door Nationale-Nederlanden Bank, alleen via adviseur/HDN. Acceptatiebeleid op adviseur.nn.nl is publiek (geraadpleegd 29-09-2026).",
+   "fields": {
+    "maxLtvPct": {
+     "value": 100,
+     "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+     "note": "Max. LTV 100% van de marktwaarde (par. 6.9; nieuwbouw 5.3). Met EBB/EBV (energiebesparende maatregelen) max 106% (TRHK); oversluiting tot 112,5%; restschuld van NN-gefinancierde woning onbeperkt onder voorwaarden. Hypotheken >= EUR 1.250.000 extra voorwaarden (5.14)."
+    },
+    "maxInterestOnlyPctOfValue": {
+     "value": 50,
+     "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+     "note": "Max. 50% van de marktwaarde aflossingsvrij (par. 6.13); ook max 50% box 3 (6.14). Bevestigd op nn.nl aflossingsvrije-hypotheek pagina."
+    },
+    "meeneemregeling": {
+     "value": true,
+     "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+     "note": "Meeneemregeling (6.7): hoofdsom = afgelost bedrag, zelfde basisrente, resterende rentevaste periode; akte binnen 6 maanden na aflossing; opslagen opnieuw bepaald; variabele rente niet mee te nemen."
+    },
+    "verhuisregeling": {
+     "value": true,
+     "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+     "note": "Senioren Verhuisregeling (maatwerk) voor aanvragers die binnen 10 jaar met pensioen gaan of al met pensioen zijn: meer lenen op pensioeninkomen dan de reguliere annuïteitentoets. NN noemt ook de meeneemregeling 'verhuisregeling' (6.7)."
+    },
+    "acceptsPermanentContract": {
+     "value": true,
+     "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken"
+    },
+    "acceptsIntentieverklaring": {
+     "value": true,
+     "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+     "note": "Tijdelijk contract na proeftijd met intentieverklaring: inkomen volledig mee (3.4.1). Zonder intentie: gemiddelde laatste 3 jaar, max laatste jaar/werkgeversverklaring (3.4.2)."
+    },
+    "acceptsFlexIBL": {
+     "value": true,
+     "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+     "note": "Inkomensbepaling Loondienst met UWV-verzekeringsbericht geaccepteerd (3.7); bericht max 3 maanden oud."
+    },
+    "acceptsPerspectiefverklaring": {
+     "value": true,
+     "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+     "note": "Perspectiefverklaring (uitzendbureau aangesloten bij Stichting Perspectiefverklaring, max 6 mnd oud): inkomen o.b.v. werkgeversverklaring (3.4.3)."
+    },
+    "acceptsBenefits": {
+     "value": true,
+     "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+     "note": "Alleen blijvende uitkeringen: IVA, WAO, WAZ, Wajong (met beperkingen tot 70/75% WML); WGA niet; PGB niet (3.10). Partneralimentatie voor vastgestelde periode (3.11)."
+    },
+    "acceptsPension": {
+     "value": true,
+     "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+     "note": "Pensioen, AOW en lijfrente (3.12); pensioeninkomen opgevraagd vanaf 57 jaar, toets als pensioen binnen 10 jaar."
+    },
+    "entMinYearsFigures": {
+     "value": 1,
+     "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+     "note": "Inkomensverklaring (IKV) verplicht; startende ondernemers kunnen IKV aanvragen vanaf 12 maanden ondernemerschap (3.9). nn.nl: 'Ook mogelijkheden zonder jaarcijfers van de afgelopen 3 jaar'."
+    },
+    "entAcceptsForecastForStarters": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "NN-beleid regelt niets over prognoses; het inkomen wordt door de IKV-rekenmeester bepaald."
+    },
+    "entIvoPolicy": {
+     "value": "required",
+     "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+     "note": "Ondernemers en werknemers met aanmerkelijk belang tonen inkomen aan met een inkomensverklaring van Overviewz, Pentrax Advies, Raadhuys Tax Legal Accounting of Zakelijk Inkomen; max 6 maanden oud (3.9). 0-verklaring als ondernemersinkomen niet nodig is."
+    },
+    "entCalcMethod": {
+     "value": "avg3_capped_by_last",
+     "sourceUrl": "https://www.nn.nl/Particulier/Hypotheken/Een-hypotheek-voor-ondernemers.htm",
+     "note": "nn.nl: de onafhankelijke partij kijkt meestal naar de gemiddelde winst van de laatste 3 jaar of, als het laatste jaar lager is, de winst van dat jaar; gebroken boekjaar telt mee. Eerder loondienstinkomen (3 jaar voorafgaand) mag meetellen na min. 1 jaar ondernemerschap."
+    },
+    "entAcceptedLegalForms": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Geen beperking van rechtsvormen in het NN-beleid gevonden; IKV-rekenmeester bepaalt inkomen (ook voor DGA/aanmerkelijk belang)."
+    },
+    "entDgaTreatment": {
+     "value": "ivo",
+     "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+     "note": "Werknemers met aanmerkelijk belang (DGA) moeten ook een inkomensverklaring aanleveren (3.9)."
+    },
+    "entMinSolvencyPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMinCurrentRatio": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entCountsManagementFee": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entDgaThresholdPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entAllowsLoanNextToOwnBv": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entGuaranteesTreatment": {
+     "value": "unknown",
+     "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+     "note": "Alleen gevonden: BKR-code ZK (zakelijk krediet) moet onderdeel zijn van de inkomensverklaring ondernemer; ZO (zakelijk krediet overig) niet mogelijk."
+    },
+    "entMaxLtvPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMaxInterestOnlyPct": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "bridgeLoanMaxMonths": {
+     "value": 12,
+     "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+     "note": "Bestaande bouw max 12 maanden (of tot levering), nieuwbouw max 24 maanden (of tot 1 maand na oplevering); daarna eventueel max 1 jaar verlengen tegen nieuwe rente (6.5)."
+    },
+    "bridgeLoanConditions": {
+     "value": "Alleen als de hypotheek ook bij NN wordt gesloten. Max 100% van verkoopprijs minus resthypotheek bij definitief verkocht; 95% van marktwaarde (90% bij NN Calcasa Desktop Taxatie) minus resthypotheek bij niet verkocht. Bij niet-verkochte woning: lasten passen binnen normen, of lastendepot (nieuwbouw min 3% van koop-/aanneemsom; bestaande bouw 12 maanden rentelasten), of 12 maanden lasten uit eigen middelen. Vast tarief zonder risico-opslag (4,38% per 11-7-2026).",
+     "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken"
+    },
+    "oversluitenVerhogenConditions": {
+     "value": "Verhoging als apart leningdeel tegen actuele rente en voorwaarden (6.3); minimaal EUR 10.000 (eerste hypotheek min EUR 25.000). Verhoging zonder NHG achter NHG-hypotheek mogelijk als eerste hypotheek >= 6 maanden gepasseerd; rente o.b.v. tariefklasse van totale hypotheek (6.4). Oversluiten tot 112,5% van marktwaarde als klant in woning blijft en nieuwe hypotheek niet hoger is dan oude plus kosten/boete. Alleen 1e hypotheekrecht (of hogere rang achter NN).",
+     "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken"
+    },
+    "bouwdepot": {
+     "value": true,
+     "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+     "note": "Verbouwdepot 12 maanden (+12 automatisch, zonder rentevergoeding), vergoeding = gewogen hypotheekrente min 1%; nieuwbouwdepot 24 maanden (+12), vergoeding = hypotheekrente; minimaal EUR 5.000 (6.10)."
+    },
+    "duurzaamheidsdepot": {
+     "value": true,
+     "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken",
+     "note": "Duurzaamheidsdepot voor EBB/EBV (6.11); extra leenruimte volgens nn.nl: EUR 20.000 (E-G), 15.000 (C-D), 10.000 (B t/m A++), niets bij A+++ en hoger."
+    },
+    "restschuldFinancing": {
+     "value": "Beperkt: NN financiert een restschuld alleen mee (zonder max LTV) als de klant al een NN-hypotheek heeft en de restschuld ontstond bij verkoop van een door NN gefinancierde woning, zonder eigen middelen, passend binnen TRHK en bedrag boven 50% van de marktwaarde wordt afgelost. Restschuldkrediet elders (max 15 jaar looptijd) kan op werkelijke lasten worden getoetst (4.7).",
+     "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken"
+    },
+    "penaltyFreeRepaymentPct": {
+     "value": 10,
+     "sourceUrl": "https://www.nn.nl/Download/Voorwaarden-NN-Hypotheek.htm",
+     "note": "10% van oorspronkelijk bedrag per leningdeel per kalenderjaar; boetevrij ook bij verkoop/verhuizing, overlijden, 3 mnd voor renteherziening, en als marktrente hoger is dan contractrente."
+    },
+    "renteverlenging": {
+     "value": "3 maanden voor einde rentevaste periode renteaanbod; bij geen reactie automatisch dezelfde periode. Tariefklasse bij renteherziening bepaald met Kadaster-geïndexeerde woningwaarde; risico-opslag daalt ook tussentijds automatisch bij aflossing of aangetoonde waardestijging.",
+     "sourceUrl": "https://www.nn.nl/Download/Voorwaarden-NN-Hypotheek.htm"
+    },
+    "rentemiddeling": {
+     "value": true,
+     "sourceUrl": "https://www.nn.nl/Particulier/Hypotheken/Je-hypotheek/Hypotheekrente-wijzigen/Tussentijdse-rentewijziging-met-rentemiddeling.htm",
+     "note": "Via mijn.nn; opslag in nieuwe rente i.p.v. eenmalige vergoeding."
+    },
+    "energyLabelDiscount": {
+     "value": "Geen energielabelkorting in de NN-rentetabel gevonden (tarieven per tariefklasse, niet per label). Energielabel beïnvloedt alleen de leenruimte (TRHK).",
+     "sourceUrl": "https://www.nn.nl/Hypotheekrente-overzicht.htm"
+    },
+    "closingCostsEur": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Geen afsluitkosten van NN gevonden; bankgarantie kost 1% van garantiebedrag."
+    },
+    "specials": {
+     "value": "Nieuwbouw- en vernieuwbouwtarief: rente van één tariefklasse lager gedurende eerste rentevaste periode. Risico-opslag daalt automatisch tijdens rentevaste periode bij aflossing/waardestijging. Risico-opslagen t.o.v. ≤40%: ≤50 +0,05; ≤60 +0,10; ≤70 +0,15; ≤80 +0,25; ≤90 +0,30; ≤100 +0,45; >100 +0,60 (NHG 0,00) (nn.nl Tariefklassen). Rentevaste perioden tot 30 jaar. Rentegarantie 6 weken bestaande bouw, 12 weken nieuwbouw. Aanvragen alleen via HDN/adviseur.",
+     "sourceUrl": "https://adviseur.nn.nl/hypotheken/informatie/acceptatiebeleid-hypotheken"
+    }
+   },
+   "rates": {
+    "date": "2026-07-11",
+    "sourceUrl": "https://www.nn.nl/Hypotheekrente-overzicht.htm",
+    "status": "needs_verification",
+    "annuity": [
+     {
+      "fixedYears": 0,
+      "nhg": 4.12,
+      "ltv60": 4.27,
+      "ltv70": 4.32,
+      "ltv80": 4.42,
+      "ltv90": 4.47,
+      "ltv100": 4.62
+     },
+     {
+      "fixedYears": 1,
+      "nhg": 3.42,
+      "ltv60": 3.63,
+      "ltv70": 3.68,
+      "ltv80": 3.78,
+      "ltv90": 3.83,
+      "ltv100": 3.98
+     },
+     {
+      "fixedYears": 2,
+      "nhg": 3.44,
+      "ltv60": 3.65,
+      "ltv70": 3.7,
+      "ltv80": 3.8,
+      "ltv90": 3.85,
+      "ltv100": 4.0
+     },
+     {
+      "fixedYears": 5,
+      "nhg": 3.57,
+      "ltv60": 3.73,
+      "ltv70": 3.78,
+      "ltv80": 3.88,
+      "ltv90": 3.93,
+      "ltv100": 4.08
+     },
+     {
+      "fixedYears": 6,
+      "nhg": 3.65,
+      "ltv60": 3.83,
+      "ltv70": 3.88,
+      "ltv80": 3.98,
+      "ltv90": 4.03,
+      "ltv100": 4.18
+     },
+     {
+      "fixedYears": 7,
+      "nhg": 3.7,
+      "ltv60": 3.91,
+      "ltv70": 3.96,
+      "ltv80": 4.06,
+      "ltv90": 4.11,
+      "ltv100": 4.26
+     },
+     {
+      "fixedYears": 10,
+      "nhg": 4.01,
+      "ltv60": 4.01,
+      "ltv70": 4.06,
+      "ltv80": 4.16,
+      "ltv90": 4.21,
+      "ltv100": 4.36
+     },
+     {
+      "fixedYears": 12,
+      "nhg": 4.08,
+      "ltv60": 4.23,
+      "ltv70": 4.28,
+      "ltv80": 4.38,
+      "ltv90": 4.43,
+      "ltv100": 4.58
+     },
+     {
+      "fixedYears": 15,
+      "nhg": 4.25,
+      "ltv60": 4.5,
+      "ltv70": 4.55,
+      "ltv80": 4.65,
+      "ltv90": 4.7,
+      "ltv100": 4.85
+     },
+     {
+      "fixedYears": 20,
+      "nhg": 4.13,
+      "ltv60": 4.71,
+      "ltv70": 4.76,
+      "ltv80": 4.86,
+      "ltv90": 4.91,
+      "ltv100": 5.06
+     },
+     {
+      "fixedYears": 30,
+      "nhg": 4.17,
+      "ltv60": 4.87,
+      "ltv70": 4.92,
+      "ltv80": 5.02,
+      "ltv90": 5.07,
+      "ltv100": 5.22
+     }
+    ],
+    "interestOnly": [
+     {
+      "fixedYears": 0,
+      "nhg": 4.52,
+      "ltv60": 4.67,
+      "ltv70": 4.72,
+      "ltv80": 4.82,
+      "ltv90": 4.87,
+      "ltv100": 5.02
+     },
+     {
+      "fixedYears": 1,
+      "nhg": 3.82,
+      "ltv60": 4.03,
+      "ltv70": 4.08,
+      "ltv80": 4.18,
+      "ltv90": 4.23,
+      "ltv100": 4.38
+     },
+     {
+      "fixedYears": 2,
+      "nhg": 3.84,
+      "ltv60": 4.05,
+      "ltv70": 4.1,
+      "ltv80": 4.2,
+      "ltv90": 4.25,
+      "ltv100": 4.4
+     },
+     {
+      "fixedYears": 5,
+      "nhg": 3.97,
+      "ltv60": 4.13,
+      "ltv70": 4.18,
+      "ltv80": 4.28,
+      "ltv90": 4.33,
+      "ltv100": 4.48
+     },
+     {
+      "fixedYears": 6,
+      "nhg": 4.05,
+      "ltv60": 4.23,
+      "ltv70": 4.28,
+      "ltv80": 4.38,
+      "ltv90": 4.43,
+      "ltv100": 4.58
+     },
+     {
+      "fixedYears": 7,
+      "nhg": 4.1,
+      "ltv60": 4.31,
+      "ltv70": 4.36,
+      "ltv80": 4.46,
+      "ltv90": 4.51,
+      "ltv100": 4.66
+     },
+     {
+      "fixedYears": 10,
+      "nhg": 4.41,
+      "ltv60": 4.41,
+      "ltv70": 4.46,
+      "ltv80": 4.56,
+      "ltv90": 4.61,
+      "ltv100": 4.76
+     },
+     {
+      "fixedYears": 12,
+      "nhg": 4.48,
+      "ltv60": 4.63,
+      "ltv70": 4.68,
+      "ltv80": 4.78,
+      "ltv90": 4.83,
+      "ltv100": 4.98
+     },
+     {
+      "fixedYears": 15,
+      "nhg": 4.65,
+      "ltv60": 4.9,
+      "ltv70": 4.95,
+      "ltv80": 5.05,
+      "ltv90": 5.1,
+      "ltv100": 5.25
+     },
+     {
+      "fixedYears": 20,
+      "nhg": 4.53,
+      "ltv60": 5.11,
+      "ltv70": 5.16,
+      "ltv80": 5.26,
+      "ltv90": 5.31,
+      "ltv100": 5.46
+     },
+     {
+      "fixedYears": 30,
+      "nhg": 4.57,
+      "ltv60": 5.27,
+      "ltv70": 5.32,
+      "ltv80": 5.42,
+      "ltv90": 5.47,
+      "ltv100": 5.62
+     }
+    ],
+    "energyLabelDiscount": "Geen (rentetabel differentieert niet naar energielabel).",
+    "note": "OFFICIËLE TABEL IS VEROUDERD: de enige publiek bereikbare NN-rentetabel (PDF achter www.nn.nl/Hypotheekrente-overzicht.htm -> adviseur.nn.nl/va/Download-1/Actuele-hypotheekrente-5.htm, nummer 26.27) is 'geldig vanaf 11-7-2026' (bestaande bouw). De interactieve rentetool op nn.nl haalt tarieven op via api.nn-group.com met een OAuth-token (niet gebruikt: geauthenticeerd). NN heeft sindsdien verhoogd (Van Bruggen rentebericht week 39, 2026). Secundaire bron actuelerentestanden.nl/hypotheek/rente/nationale-nederlanden (opgehaald 29-09-2026) toont annuïtair NHG: 1j 4,15; 2j 4,17; 5j 4,23; 6j 4,26; 7j 4,31; 10j 4,39; 12j 4,51; 15j 4,68; 20j 4,86; 30j 4,69 (ca. +0,4 à +0,7%-punt t.o.v. juli); hun niet-NHG-kolommen zijn onbruikbaar (alle LTV's gelijk). Tabel hieronder = juli-PDF, dus opnieuw verifiëren. Voorwaarden: nominale rente, geen betaalrekening- of energielabelkorting; bestaande-bouwtarief (nieuwbouw = één tariefklasse lager); NN Variant Hypotheek met dagrente +0,1%. Annuïtair = ook lineair. interestOnly = tabel 'Aflossingsvrije en BankSpaar Plus Hypotheek' (variabel en 30 jaar niet voor BSP). NN-tariefklassen: NHG, ≤40, ≤50, ≤60, ≤70, ≤80, ≤90, ≤100, >100. Mapping: nhg=NHG, ltv60=≤60, ltv70=≤70, ltv80=≤80, ltv90=≤90, ltv100=≤100 (≤40, ≤50 en >100 niet opgenomen). Opvallend: bij 10/20/30 jaar is NHG in deze tabel hoger dan ≤40% - zo in de bron. Geen 3/4 jaar rentevast."
+   }
+  },
+  {
+   "slug": "aegon",
+   "name": "Aegon",
+   "brands": [],
+   "website": "https://www.aegon.nl",
+   "active": false,
+   "activeNote": "Niet meer actief als hypotheekmerk (gecontroleerd 29-09-2026). Alle aegon.nl-URL's (incl. /hypotheek, /hypotheek/hypotheekrente, /adviseur/hypotheken) worden 301-doorgestuurd naar https://www.asr.nl/hallo-klant-van-aegon ('Aegon Nederland is nu onderdeel van a.s.r.'). Volgens a.s.r. zijn de Aegon-hypotheken in 2025 verhuisd naar het a.s.r.-administratiesysteem en is de naam veranderd in a.s.r.; de rekening van Aegon Hypotheken B.V. heet nu ASR Hypotheken B.V. Nieuwe hypotheken worden aangeboden als a.s.r. hypotheek (https://www.asr.nl/hypotheek). Geen aparte Aegon-rentetabel of acceptatiecriteria meer gepubliceerd.",
+   "fields": {
+    "maxLtvPct": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "maxInterestOnlyPctOfValue": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "meeneemregeling": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "verhuisregeling": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "acceptsPermanentContract": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "acceptsIntentieverklaring": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "acceptsFlexIBL": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "acceptsPerspectiefverklaring": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "acceptsBenefits": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "acceptsPension": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "entMinYearsFigures": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "entAcceptsForecastForStarters": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "entIvoPolicy": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "entCalcMethod": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "entAcceptedLegalForms": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "entDgaTreatment": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "entMinSolvencyPct": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "entMinCurrentRatio": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "entCountsManagementFee": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "entDgaThresholdPct": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "entAllowsLoanNextToOwnBv": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "entGuaranteesTreatment": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "entMaxLtvPct": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "entMaxInterestOnlyPct": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "bridgeLoanMaxMonths": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "bridgeLoanConditions": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "oversluitenVerhogenConditions": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "bouwdepot": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "duurzaamheidsdepot": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "restschuldFinancing": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "penaltyFreeRepaymentPct": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "renteverlenging": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "rentemiddeling": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "energyLabelDiscount": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "closingCostsEur": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Merk Aegon Hypotheken niet meer actief; voor nieuwe aanvragen gelden de a.s.r.-criteria (zie lender 'asr')."
+    },
+    "specials": {
+     "value": "Aegon Hypotheken B.V. heet nu ASR Hypotheken B.V.; bestaande Aegon-hypotheken zijn in 2025 overgezet naar de a.s.r.-administratie, hypotheekvoorwaarden en adviseur blijven gelijk, geen nieuwe voorwaarden bij de naamswijziging.",
+     "sourceUrl": "https://www.asr.nl/hallo-klant-van-aegon/welkom-bij-hypotheek-van-asr"
+    }
+   },
+   "rates": {
+    "date": null,
+    "sourceUrl": null,
+    "status": "needs_verification",
+    "annuity": [],
+    "interestOnly": [],
+    "energyLabelDiscount": "unknown",
+    "note": "Geen Aegon-rentes meer gepubliceerd: aegon.nl/hypotheek/hypotheekrente leidt door naar asr.nl/hallo-klant-van-aegon (gecontroleerd 2026-09-29). Gebruik de a.s.r.-rentes."
+   }
+  },
+  {
+   "slug": "obvion",
+   "name": "Obvion",
+   "brands": [
+    "Obvion Woon Hypotheek",
+    "Verhuur- en Recreatiehypotheek"
+   ],
+   "website": "https://obvion.nl",
+   "active": true,
+   "activeNote": "Actief per 29-09-2026: verstrekt nieuwe hypotheken (Woon Hypotheek) uitsluitend via onafhankelijke adviseurs; 100% dochter van Rabobank sinds 2012, kantoor Heerlen. Renteverhoging 23-09-2026 gepubliceerd, product- en acceptatiekaart september 2026. Geen aankondiging gevonden van opgaan in Rabobank; wel gezamenlijk beleid (aflossingsvrij 30%) en combikorting met Rabobank-betaalrekening.",
+   "fields": {
+    "maxLtvPct": {
+     "value": 100,
+     "sourceUrl": "https://obvion.nl/media/kxudk0d2/product-en-acceptatiekaart.pdf",
+     "note": "Max 100% marktwaarde; 106% bij energiebesparende maatregelen; 110% voor zuivere oversluiters, bij LTI <60% en bij meefinancieren restschuld. Max hoofdsom EUR 3.000.000 incl. OBK; min EUR 50.000."
+    },
+    "maxInterestOnlyPctOfValue": {
+     "value": 30,
+     "sourceUrl": "https://obvion.nl/hypotheek/vorm/aflossingsvrij/beleid-aflossingsvrij/",
+     "note": "Sinds 11/12 mei 2026: max 30% van de marktwaarde en max EUR 150.000 aflossingsvrij (incl. verkapt aflossingsvrij: leven, beleggen, switch, hybride, UL). Overgangsregeling tot 1-1-2030 voor bestaande klanten in bepaalde beheersituaties (behoud tot 50% MW)."
+    },
+    "meeneemregeling": {
+     "value": true,
+     "sourceUrl": "https://obvion.nl/media/kxudk0d2/product-en-acceptatiekaart.pdf",
+     "note": "Obvion noemt dit 'verhuisregeling': rentecondities meenemen naar nieuwe hypotheek, max restant hoofdsom en duur restant RVP. Daarnaast doorgeefregeling (rente doorgeven aan koper)."
+    },
+    "verhuisregeling": {
+     "value": true,
+     "sourceUrl": "https://obvion.nl/media/kxudk0d2/product-en-acceptatiekaart.pdf",
+     "note": "Ja, maximaal voor de restant hoofdsom en duur restant rentevaste periode. Verhuistarief = 1-jaarstarief."
+    },
+    "acceptsPermanentContract": {
+     "value": true,
+     "sourceUrl": "https://obvion.nl/media/cneljkrz/acceptatiebeleid.pdf",
+     "note": "Proeftijd moet verlopen zijn."
+    },
+    "acceptsIntentieverklaring": {
+     "value": true,
+     "sourceUrl": "https://obvion.nl/media/cneljkrz/acceptatiebeleid.pdf",
+     "note": "Intentie voor onbepaalde tijd: huidig inkomen is toetsinkomen. Intentie bepaalde tijd >=12 mnd (zonder NHG): gemiddelde huidig + 2 voorgaande jaren, max huidig inkomen."
+    },
+    "acceptsFlexIBL": {
+     "value": true,
+     "sourceUrl": "https://obvion.nl/media/cneljkrz/acceptatiebeleid.pdf",
+     "note": "Inkomensbepaling Loondienst (HDN-rekentool) geaccepteerd bij vast en niet-vast dienstverband; niet te combineren met perspectiefverklaring of Arbeidsmarktscan. Ook eigen Arbeidsmarktscan (min 70 punten, 12 mnd arbeidshistorie in laatste 14 mnd volgens UWV-verzekeringsbericht; niet voor uitzendkrachten)."
+    },
+    "acceptsPerspectiefverklaring": {
+     "value": true,
+     "sourceUrl": "https://obvion.nl/media/cneljkrz/acceptatiebeleid.pdf",
+     "note": "Min 26 weken bij uitzendbureau en 52 weken beoordeelbare werkervaring (uitzonderingen bij gedwongen overgang)."
+    },
+    "acceptsBenefits": {
+     "value": true,
+     "sourceUrl": "https://obvion.nl/media/cneljkrz/acceptatiebeleid.pdf",
+     "note": "Uitkering bij niet-beperkte duur (toekenningsbesluit) voor hele looptijd; tijdelijke uitkering voor de zekere periode. IVA, WAO/WAZ, blijvende Wajong wel; niet: bijstand, ANW, Ziektewet, WGA, buitenlandse uitkeringen, Wajong studieregeling; WW alleen als blijvend tot pensioen."
+    },
+    "acceptsPension": {
+     "value": true,
+     "sourceUrl": "https://obvion.nl/media/cneljkrz/acceptatiebeleid.pdf",
+     "note": "AOW en pensioen volledig; lijfrente met gegarandeerde uitkering; opgebouwd garantiekapitaal /20. Geen FOR/pensioen-BV."
+    },
+    "entMinYearsFigures": {
+     "value": 1,
+     "sourceUrl": "https://obvion.nl/adviseur/doelgroep/werken/ondernemers/",
+     "note": "Minimaal 12 maanden KvK-inschrijving; met voorafgaand loondienstinkomen wordt de 36-maandsperiode aangevuld. Zonder loondienst en onderneming 24-36 mnd: ontbrekend jaar op 0, totaal /3. Onderneming <12 mnd: geen hypotheek mogelijk."
+    },
+    "entAcceptsForecastForStarters": {
+     "value": false,
+     "sourceUrl": "https://obvion.nl/media/cneljkrz/acceptatiebeleid.pdf",
+     "note": "'Er wordt geen gebruik gemaakt van een prognose.'"
+    },
+    "entIvoPolicy": {
+     "value": "required",
+     "sourceUrl": "https://obvion.nl/media/cneljkrz/acceptatiebeleid.pdf",
+     "note": "Inkomen uit onderneming/zzp/DGA moet worden vastgesteld door een goedgekeurde externe Rekenexpert (Inkomensverklaring; Raadhuys, Pentrax, Zakelijk Inkomen, Overviewz). Max EUR 250 vergoeding na passeren. IKV max 6 mnd geldig."
+    },
+    "entCalcMethod": {
+     "value": "ivo",
+     "sourceUrl": "https://obvion.nl/media/cneljkrz/acceptatiebeleid.pdf",
+     "note": "Rekenexpert volgt 'veelal de rekenregels van NHG'; cijfers lopend boekjaar mogen oudste jaar vervangen."
+    },
+    "entAcceptedLegalForms": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Acceptatiebeleid noemt zelfstandigen/zzp, DGA en minderheidsdeelneming (5-<50%) maar geen expliciete lijst rechtsvormen. Geen buitenlandse ondernemingen/holdings met buitenlandse entiteiten."
+    },
+    "entDgaTreatment": {
+     "value": "ivo",
+     "sourceUrl": "https://obvion.nl/media/cneljkrz/acceptatiebeleid.pdf",
+     "note": "DGA-inkomen via Inkomensverklaring van rekenexpert; directeur zonder DGA-status via werkgeversverklaring."
+    },
+    "entMinSolvencyPct": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Geen minimum gepubliceerd; rekenexpert mag afwijken qua solvabiliteit en liquiditeitsratio op basis van professional judgement."
+    },
+    "entMinCurrentRatio": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Zie entMinSolvencyPct."
+    },
+    "entCountsManagementFee": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entDgaThresholdPct": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Minderheidsdeelneming gedefinieerd als belang >=5% en <50% (privé ontvangen dividenden, vastgesteld door rekenexpert); DGA-drempel zelf niet expliciet genoemd."
+    },
+    "entAllowsLoanNextToOwnBv": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entGuaranteesTreatment": {
+     "value": "unknown",
+     "sourceUrl": null
+    },
+    "entMaxLtvPct": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Geen aparte LTV-grens voor ondernemers gevonden; algemene max 100%."
+    },
+    "entMaxInterestOnlyPct": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Geen aparte grens gevonden; algemene 30%/EUR 150.000."
+    },
+    "bridgeLoanMaxMonths": {
+     "value": 24,
+     "sourceUrl": "https://obvion.nl/hypotheek/afsluiten/overbruggingskrediet/",
+     "note": "2 jaar bestaande bouw; 3 jaar (36 mnd) bij nieuwbouw."
+    },
+    "bridgeLoanConditions": {
+     "value": "Max 100% waarde oude woning -2% verkoopkosten -hypotheek (bij Calcasa Desktop Taxatie Plus: x90%); opgebouwde gegarandeerde (bank)spaarwaarde wordt overbrugd. Alleen i.c.m. hypotheek bij Obvion; beide woningen onderpand. Dubbele lasten: aantonen min 6 maanden te kunnen dragen (nieuwbouw: tot oplevering + 3 mnd). Vaste rente gedurende looptijd (23-09-2026: 5,10%). Geen extra afsluitkosten.",
+     "sourceUrl": "https://obvion.nl/hypotheek/afsluiten/overbruggingskrediet/"
+    },
+    "oversluitenVerhogenConditions": {
+     "value": "Zuivere oversluiters tot 110% MW. Verhogen: inkomens- en waardetoets, min verhoging EUR 5.000; nieuwe aflossingsvrije delen max 30% MW/EUR 150.000 (bestaand aflossingsvrij mag behouden). Hele lening kan in hogere tariefgroep komen. Kosten: taxatie, notaris, adviseur.",
+     "sourceUrl": "https://obvion.nl/hypotheek/wijzigen/verhogen/"
+    },
+    "bouwdepot": {
+     "value": true,
+     "sourceUrl": "https://obvion.nl/media/kxudk0d2/product-en-acceptatiekaart.pdf",
+     "note": "Max 2 jaar (nieuwbouw 3 jaar), vanaf EUR 2.500; rentevergoeding = gewogen gemiddelde hypotheekrente, 12 mnd (nieuwbouw 24 mnd)."
+    },
+    "duurzaamheidsdepot": {
+     "value": true,
+     "sourceUrl": "https://obvion.nl/media/kxudk0d2/product-en-acceptatiekaart.pdf",
+     "note": "Bouwdepot en duurzaamheidsdepot; standaard EUR 10.000 EBB in offerte (niet bij A+++ of beter); max LTV 106%."
+    },
+    "restschuldFinancing": {
+     "value": true,
+     "sourceUrl": "https://obvion.nl/media/kxudk0d2/product-en-acceptatiekaart.pdf",
+     "note": "Nieuwe en bestaande klanten; apart annuïtair/lineair leningdeel, looptijd/RVP/toetsing max 15 jaar, binnen LTI, max LTV 110%."
+    },
+    "penaltyFreeRepaymentPct": {
+     "value": 10,
+     "sourceUrl": "https://obvion.nl/media/kxudk0d2/product-en-acceptatiekaart.pdf",
+     "note": "Woon Hypotheek: 10% van oorspronkelijke hoofdsom per leningdeel per kalenderjaar bij terugbetalen met niet-eigen (geleende) middelen; onbeperkt boetevrij uit eigen middelen (spaargeld, erfenis, verzekeringsuitkering). Oude producten (Basis/Compact/Obvion Hypotheek): 20%."
+    },
+    "renteverlenging": {
+     "value": "Automatisch voorstel voor nieuwe rentevaste periode voor einde RVP; wijzigen via MijnObvion of adviseur; hypotheekvorm wijzigen aan einde RVP zonder vergoeding en administratiekosten. Flexibele rente sinds 23 feb 2026 niet meer te kiezen. Automatische rentedaling bij lagere tariefgroep (maandelijkse LTV-herrekening).",
+     "sourceUrl": "https://obvion.nl/hypotheek/wijzigen/einde-rentevaste-periode/"
+    },
+    "rentemiddeling": {
+     "value": false,
+     "sourceUrl": "https://obvion.nl/media/kxudk0d2/product-en-acceptatiekaart.pdf",
+     "note": "Product- en acceptatiekaart: 'Rentemiddeling: Nee.'"
+    },
+    "energyLabelDiscount": {
+     "value": "Duurzaamheidskorting op de Woon Hypotheek-tarieven: energielabel A++++ (energieneutraal/EP/NOM) -0,20%; A t/m A+++ -0,15%; B -0,08%. Geldig definitief label B of hoger vereist; aan te vragen tot 24 maanden na start rentevaste periode, geldt voor één rentevaste periode. Daarnaast combikorting 0,05% (vanaf 3 aug 2026) bij betaalrekening Rabobank.",
+     "sourceUrl": "https://obvion.nl/media/t2pjl2jb/rentetarieven-obvion-woon-hypotheek-23-september-2026.pdf"
+    },
+    "closingCostsEur": {
+     "value": "unknown",
+     "sourceUrl": null,
+     "note": "Geen afsluit-/administratiekosten van Obvion gevonden (Obvion werkt alleen via adviseurs; adviseurskosten apart). Annuleringskosten 1% alleen na verlengd bindend aanbod."
+    },
+    "specials": {
+     "value": "Alleen via onafhankelijke adviseurs; 100% dochter Rabobank. Automatische renteverlaging bij lagere tariefgroep (loopt maandelijks mee met LTV). Combikorting 0,05% bij Rabobank-betaalrekening. Offerte 3 mnd (nieuwbouw 6), verlenging tot 9 mnd (nieuwbouw 6) zonder kosten. Meetekenen ouders, leen-en-schenk, expats zonder extra LTV-beperking. Max looptijd 30 jaar. Verhuur- en Recreatiehypotheek (max 80% MW verhuurde staat, max EUR 500.000).",
+     "sourceUrl": "https://obvion.nl/media/kxudk0d2/product-en-acceptatiekaart.pdf"
+    }
+   },
+   "rates": {
+    "date": "2026-09-23",
+    "sourceUrl": "https://obvion.nl/media/t2pjl2jb/rentetarieven-obvion-woon-hypotheek-23-september-2026.pdf",
+    "status": "verified",
+    "annuity": [
+     {
+      "fixedYears": 1,
+      "nhg": 4.15,
+      "ltv60": 4.41,
+      "ltv70": 4.44,
+      "ltv80": 4.45,
+      "ltv90": 4.46,
+      "ltv100": 4.47
+     },
+     {
+      "fixedYears": 2,
+      "nhg": 4.2,
+      "ltv60": 4.46,
+      "ltv70": 4.49,
+      "ltv80": 4.5,
+      "ltv90": 4.51,
+      "ltv100": 4.52
+     },
+     {
+      "fixedYears": 3,
+      "nhg": 4.22,
+      "ltv60": 4.47,
+      "ltv70": 4.5,
+      "ltv80": 4.51,
+      "ltv90": 4.52,
+      "ltv100": 4.53
+     },
+     {
+      "fixedYears": 4,
+      "nhg": 4.22,
+      "ltv60": 4.47,
+      "ltv70": 4.5,
+      "ltv80": 4.51,
+      "ltv90": 4.52,
+      "ltv100": 4.53
+     },
+     {
+      "fixedYears": 5,
+      "nhg": 4.22,
+      "ltv60": 4.47,
+      "ltv70": 4.5,
+      "ltv80": 4.51,
+      "ltv90": 4.52,
+      "ltv100": 4.53
+     },
+     {
+      "fixedYears": 6,
+      "nhg": 4.22,
+      "ltv60": 4.57,
+      "ltv70": 4.6,
+      "ltv80": 4.61,
+      "ltv90": 4.62,
+      "ltv100": 4.63
+     },
+     {
+      "fixedYears": 7,
+      "nhg": 4.24,
+      "ltv60": 4.6,
+      "ltv70": 4.63,
+      "ltv80": 4.64,
+      "ltv90": 4.65,
+      "ltv100": 4.66
+     },
+     {
+      "fixedYears": 8,
+      "nhg": 4.27,
+      "ltv60": 4.63,
+      "ltv70": 4.66,
+      "ltv80": 4.67,
+      "ltv90": 4.68,
+      "ltv100": 4.69
+     },
+     {
+      "fixedYears": 9,
+      "nhg": 4.29,
+      "ltv60": 4.65,
+      "ltv70": 4.68,
+      "ltv80": 4.69,
+      "ltv90": 4.7,
+      "ltv100": 4.71
+     },
+     {
+      "fixedYears": 10,
+      "nhg": 4.33,
+      "ltv60": 4.69,
+      "ltv70": 4.72,
+      "ltv80": 4.73,
+      "ltv90": 4.74,
+      "ltv100": 4.75
+     },
+     {
+      "fixedYears": 11,
+      "nhg": 4.41,
+      "ltv60": 4.74,
+      "ltv70": 4.77,
+      "ltv80": 4.78,
+      "ltv90": 4.79,
+      "ltv100": 4.8
+     },
+     {
+      "fixedYears": 12,
+      "nhg": 4.47,
+      "ltv60": 4.82,
+      "ltv70": 4.85,
+      "ltv80": 4.86,
+      "ltv90": 4.87,
+      "ltv100": 4.88
+     },
+     {
+      "fixedYears": 13,
+      "nhg": 4.54,
+      "ltv60": 4.86,
+      "ltv70": 4.89,
+      "ltv80": 4.9,
+      "ltv90": 4.91,
+      "ltv100": 4.92
+     },
+     {
+      "fixedYears": 14,
+      "nhg": 4.56,
+      "ltv60": 4.88,
+      "ltv70": 4.91,
+      "ltv80": 4.92,
+      "ltv90": 4.93,
+      "ltv100": 4.94
+     },
+     {
+      "fixedYears": 15,
+      "nhg": 4.61,
+      "ltv60": 4.89,
+      "ltv70": 4.92,
+      "ltv80": 4.93,
+      "ltv90": 4.94,
+      "ltv100": 4.95
+     },
+     {
+      "fixedYears": 16,
+      "nhg": 4.74,
+      "ltv60": 5.01,
+      "ltv70": 5.04,
+      "ltv80": 5.05,
+      "ltv90": 5.06,
+      "ltv100": 5.07
+     },
+     {
+      "fixedYears": 17,
+      "nhg": 4.74,
+      "ltv60": 5.01,
+      "ltv70": 5.04,
+      "ltv80": 5.05,
+      "ltv90": 5.06,
+      "ltv100": 5.07
+     },
+     {
+      "fixedYears": 18,
+      "nhg": 4.74,
+      "ltv60": 5.01,
+      "ltv70": 5.04,
+      "ltv80": 5.05,
+      "ltv90": 5.06,
+      "ltv100": 5.07
+     },
+     {
+      "fixedYears": 19,
+      "nhg": 4.74,
+      "ltv60": 5.01,
+      "ltv70": 5.04,
+      "ltv80": 5.05,
+      "ltv90": 5.06,
+      "ltv100": 5.07
+     },
+     {
+      "fixedYears": 20,
+      "nhg": 4.72,
+      "ltv60": 5.06,
+      "ltv70": 5.09,
+      "ltv80": 5.1,
+      "ltv90": 5.11,
+      "ltv100": 5.12
+     },
+     {
+      "fixedYears": 25,
+      "nhg": 4.84,
+      "ltv60": 5.22,
+      "ltv70": 5.25,
+      "ltv80": 5.26,
+      "ltv90": 5.27,
+      "ltv100": 5.28
+     },
+     {
+      "fixedYears": 30,
+      "nhg": 4.93,
+      "ltv60": 5.25,
+      "ltv70": 5.28,
+      "ltv80": 5.29,
+      "ltv90": 5.3,
+      "ltv100": 5.31
+     }
+    ],
+    "interestOnly": [
+     {
+      "fixedYears": 1,
+      "nhg": 4.65,
+      "ltv60": 4.91,
+      "ltv70": 4.94,
+      "ltv80": 4.95,
+      "ltv90": 4.96,
+      "ltv100": 4.97
+     },
+     {
+      "fixedYears": 2,
+      "nhg": 4.7,
+      "ltv60": 4.96,
+      "ltv70": 4.99,
+      "ltv80": 5.0,
+      "ltv90": 5.01,
+      "ltv100": 5.02
+     },
+     {
+      "fixedYears": 3,
+      "nhg": 4.72,
+      "ltv60": 4.97,
+      "ltv70": 5.0,
+      "ltv80": 5.01,
+      "ltv90": 5.02,
+      "ltv100": 5.03
+     },
+     {
+      "fixedYears": 4,
+      "nhg": 4.72,
+      "ltv60": 4.97,
+      "ltv70": 5.0,
+      "ltv80": 5.01,
+      "ltv90": 5.02,
+      "ltv100": 5.03
+     },
+     {
+      "fixedYears": 5,
+      "nhg": 4.72,
+      "ltv60": 4.97,
+      "ltv70": 5.0,
+      "ltv80": 5.01,
+      "ltv90": 5.02,
+      "ltv100": 5.03
+     },
+     {
+      "fixedYears": 6,
+      "nhg": 4.72,
+      "ltv60": 5.07,
+      "ltv70": 5.1,
+      "ltv80": 5.11,
+      "ltv90": 5.12,
+      "ltv100": 5.13
+     },
+     {
+      "fixedYears": 7,
+      "nhg": 4.74,
+      "ltv60": 5.1,
+      "ltv70": 5.13,
+      "ltv80": 5.14,
+      "ltv90": 5.15,
+      "ltv100": 5.16
+     },
+     {
+      "fixedYears": 8,
+      "nhg": 4.77,
+      "ltv60": 5.13,
+      "ltv70": 5.16,
+      "ltv80": 5.17,
+      "ltv90": 5.18,
+      "ltv100": 5.19
+     },
+     {
+      "fixedYears": 9,
+      "nhg": 4.79,
+      "ltv60": 5.15,
+      "ltv70": 5.18,
+      "ltv80": 5.19,
+      "ltv90": 5.2,
+      "ltv100": 5.21
+     },
+     {
+      "fixedYears": 10,
+      "nhg": 4.83,
+      "ltv60": 5.19,
+      "ltv70": 5.22,
+      "ltv80": 5.23,
+      "ltv90": 5.24,
+      "ltv100": 5.25
+     },
+     {
+      "fixedYears": 11,
+      "nhg": 4.91,
+      "ltv60": 5.24,
+      "ltv70": 5.27,
+      "ltv80": 5.28,
+      "ltv90": 5.29,
+      "ltv100": 5.3
+     },
+     {
+      "fixedYears": 12,
+      "nhg": 4.97,
+      "ltv60": 5.32,
+      "ltv70": 5.35,
+      "ltv80": 5.36,
+      "ltv90": 5.37,
+      "ltv100": 5.38
+     },
+     {
+      "fixedYears": 13,
+      "nhg": 5.04,
+      "ltv60": 5.36,
+      "ltv70": 5.39,
+      "ltv80": 5.4,
+      "ltv90": 5.41,
+      "ltv100": 5.42
+     },
+     {
+      "fixedYears": 14,
+      "nhg": 5.06,
+      "ltv60": 5.38,
+      "ltv70": 5.41,
+      "ltv80": 5.42,
+      "ltv90": 5.43,
+      "ltv100": 5.44
+     },
+     {
+      "fixedYears": 15,
+      "nhg": 5.11,
+      "ltv60": 5.39,
+      "ltv70": 5.42,
+      "ltv80": 5.43,
+      "ltv90": 5.44,
+      "ltv100": 5.45
+     },
+     {
+      "fixedYears": 16,
+      "nhg": 5.24,
+      "ltv60": 5.51,
+      "ltv70": 5.54,
+      "ltv80": 5.55,
+      "ltv90": 5.56,
+      "ltv100": 5.57
+     },
+     {
+      "fixedYears": 17,
+      "nhg": 5.24,
+      "ltv60": 5.51,
+      "ltv70": 5.54,
+      "ltv80": 5.55,
+      "ltv90": 5.56,
+      "ltv100": 5.57
+     },
+     {
+      "fixedYears": 18,
+      "nhg": 5.24,
+      "ltv60": 5.51,
+      "ltv70": 5.54,
+      "ltv80": 5.55,
+      "ltv90": 5.56,
+      "ltv100": 5.57
+     },
+     {
+      "fixedYears": 19,
+      "nhg": 5.24,
+      "ltv60": 5.51,
+      "ltv70": 5.54,
+      "ltv80": 5.55,
+      "ltv90": 5.56,
+      "ltv100": 5.57
+     },
+     {
+      "fixedYears": 20,
+      "nhg": 5.27,
+      "ltv60": 5.61,
+      "ltv70": 5.64,
+      "ltv80": 5.65,
+      "ltv90": 5.66,
+      "ltv100": 5.67
+     },
+     {
+      "fixedYears": 25,
+      "nhg": 5.44,
+      "ltv60": 5.82,
+      "ltv70": 5.85,
+      "ltv80": 5.86,
+      "ltv90": 5.87,
+      "ltv100": 5.88
+     },
+     {
+      "fixedYears": 30,
+      "nhg": 5.53,
+      "ltv60": 5.85,
+      "ltv70": 5.88,
+      "ltv80": 5.89,
+      "ltv90": 5.9,
+      "ltv100": 5.91
+     }
+    ],
+    "energyLabelDiscount": "Duurzaamheidskorting op de Woon Hypotheek-tarieven: energielabel A++++ (energieneutraal/EP/NOM) -0,20%; A t/m A+++ -0,15%; B -0,08%. Geldig definitief label B of hoger vereist; aan te vragen tot 24 maanden na start rentevaste periode, geldt voor één rentevaste periode. Daarnaast combikorting 0,05% (vanaf 3 aug 2026) bij betaalrekening Rabobank.",
+    "note": "Obvion Woon Hypotheek, nominale tarieven per 23-09-2026 (PDF gelinkt vanaf https://obvion.nl/hypotheekrente/actueel/). Tarieven ZONDER duurzaamheidskorting en ZONDER combikorting (0,05% bij Rabobank-betaalrekening). 'annuity' = kolom ANNUITEIT/LINEAIR; 'interestOnly' = kolom OVERIG (aflossingsvrij en overige vormen). Tariefgroepen: NHG, 0-60% MW -> ltv60, >60-70 -> ltv70, >70-80 -> ltv80, >80-90 -> ltv90, >90-106% -> ltv100. Er is ook een klasse >106% MW (annuïtair 10 jr 5,22%) die niet is opgenomen. Rentevaste periodes 1-20, 25, 30 jaar; geen variabele rente gepubliceerd voor nieuwe aanvragen."
+   }
+  }
+ ]
+}

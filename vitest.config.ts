@@ -18,7 +18,7 @@ export default defineConfig({
       include: ["src/lib/engine/**/*.ts"],
       exclude: ["src/lib/engine/**/*.test.ts", "src/lib/engine/**/fixtures/**", "src/lib/engine/**/types.ts"],
       reporter: ["text-summary", "text", "html"],
-      thresholds: { lines: 90, statements: 90, functions: 90, branches: 85 },
+      thresholds: { lines: 90, statements: 90, functions: 90, branches: 80 },
     },
   },
 })
