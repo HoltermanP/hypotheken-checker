@@ -31,6 +31,7 @@ export default async function DocumentsPage({ params }: PageProps<"/app/dossiers
       fields,
       warnings: extraction?.warnings ?? [],
       documentTypeMatches: extraction?.documentTypeMatches ?? true,
+      financials: def?.extraction === "financials",
       error: d.errorMessage,
       expiresAt: d.expiresAt.toISOString(),
     }

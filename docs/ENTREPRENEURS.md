@@ -46,7 +46,8 @@ die, dan is de uitkomst "onder voorbehoud" en noemt het rapport de ontbrekende d
 toetsinkomen = salaris (laatste jaar) + [uitkeerbare winst × aandelenbelang]   (als de bank winst meetelt)
 
 uitkeerbare winst = min( winstcapaciteit, solvabiliteitsruimte, liquiditeitsruimte, vrije reserves )
-  winstcapaciteit     = rekenmethode van de bank over het resultaat na belasting
+  winstcapaciteit     = rekenmethode van de bank over het genormaliseerde resultaat na belasting
+  genormaliseerd      = resultaat na belasting − incidentele posten × (1 − effectief Vpb-tarief)
   solvabiliteitsruimte = (EV − s × BT) / (1 − s)          zodat (EV − p) / (BT − p) ≥ s
   liquiditeitsruimte   = min(liquide middelen, VA − c × KVV) zodat de current ratio ≥ c blijft
   vrije reserves       = EV − geplaatst kapitaal          (uitkeringstoets)
@@ -55,6 +56,16 @@ uitkeerbare winst = min( winstcapaciteit, solvabiliteitsruimte, liquiditeitsruim
 - Onder de DGA-grens van de bank (bijv. < 5%) wordt de aandeelhouder als werknemer behandeld: alleen salaris.
 - Salaris onder het normbedrag van de gebruikelijkloonregeling (2026: € 58.000) geeft een waarschuwing.
 - Het rapport toont per bank het toetsinkomen, de methode en welke toets bepalend is.
+- **Incidentele posten** (vóór belasting, bate positief) worden per jaar na belasting uit het resultaat gehaald; het effectieve tarief is Vpb / resultaat vóór belasting (valt terug op 19%). Een laatste jaar dat onder 70% van het gemiddelde ligt, geeft een waarschuwing.
+- Aangeleverde geconsolideerde cijfers (`bv.consolidated`) gaan vóór de zelf berekende consolidatie.
+
+### Cijfers uit bestanden (`/app/dossiers/[id]/ondernemer`)
+
+1. De gebruiker uploadt één of meer bestanden van het documenttype `jaarcijfers_onderneming`: jaarrekening (pdf/foto), Excel/CSV of een jaaroverzicht/jaaropgave DGA.
+2. **Excel-sjabloon** (`/api/templates/jaarcijfers`, herkend aan de marker in cel A1) wordt exact ingelezen, zonder AI. Andere spreadsheets gaan als tekst (per tabblad) naar Claude; pdf's en afbeeldingen als document. Claude leest per entiteit en per jaar af (ook vergelijkende cijfers), rekent niets uit en markeert prognoses.
+3. `mergeFinancials` voegt alle bestanden samen per entiteit (op genormaliseerde naam) en jaar; de waarde met de hoogste zekerheid wint; verschillen > 1% worden als conflict getoond.
+4. De gebruiker controleert en corrigeert de cijfers in een tabel; het toetsinkomen per bank rekent direct mee in de browser (dezelfde rekenkern).
+5. "Overnemen in intake" (`applyFinancialsToBusiness`) koppelt entiteiten, legt de holdingstructuur vast, zet salarissen, belang, geplaatst kapitaal, rekening-courant en geconsolideerde cijfers, en markeert de bestanden als bevestigd. Prognosejaren worden niet overgenomen; maximaal de laatste 4 jaren blijven bewaard.
 
 ## 3. Holding met werkmaatschappij(en)
 

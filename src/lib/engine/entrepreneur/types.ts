@@ -65,6 +65,8 @@ export interface BvYear {
   resultFromParticipations: number
   /** Boekwaarde van deelnemingen (holding; wordt bij consolidatie geëlimineerd). */
   participationsValue: number
+  /** Incidentele posten vóór belasting (+ = bate, − = last); worden uit de winstcapaciteit gehaald. */
+  incidentalItems?: number
   isForecast?: boolean
 }
 

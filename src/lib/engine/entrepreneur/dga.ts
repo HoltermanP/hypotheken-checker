@@ -47,7 +47,33 @@ const ZERO_YEAR = (year: number): BvYear => ({
   intercompanyPayables: 0,
   resultFromParticipations: 0,
   participationsValue: 0,
+  incidentalItems: 0,
 })
+
+export interface NormalizedYear {
+  year: number
+  resultAfterTax: number
+  incidentalAfterTax: number
+  normalized: number
+  effectiveTaxPct: number
+}
+
+/**
+ * Genormaliseerd resultaat na belasting: incidentele posten eruit, na aftrek van belasting tegen
+ * het effectieve Vpb-tarief van dat jaar (Vpb / resultaat vóór belasting; 0 als dat niet te
+ * bepalen is).
+ */
+export function normalizeYear(f: BvYear): NormalizedYear {
+  const eff = f.resultBeforeTax > 0 && f.corporateTax > 0 ? Math.min(0.4, f.corporateTax / f.resultBeforeTax) : 0
+  const incidentalAfterTax = (f.incidentalItems ?? 0) * (1 - eff)
+  return {
+    year: f.year,
+    resultAfterTax: f.resultAfterTax,
+    incidentalAfterTax,
+    normalized: f.resultAfterTax - incidentalAfterTax,
+    effectiveTaxPct: eff * 100,
+  }
+}
 
 /** Effectief belang van de top-aandeelhouder in een entiteit (product van de keten). */
 export function effectiveOwnership(entities: BvEntity[], key: string): number {
@@ -89,6 +115,7 @@ export function consolidate(entities: BvEntity[]): BvYear[] {
       c.currentLiabilities += f.currentLiabilities * weight
       c.longTermLiabilities += f.longTermLiabilities * weight
       c.dgaSalaryPaid += f.dgaSalaryPaid * weight
+      c.incidentalItems = (c.incidentalItems ?? 0) + (f.incidentalItems ?? 0) * weight
       feeReceived += f.managementFeeReceived * weight
       feePaid += f.managementFeePaid * weight
       icReceivable += f.intercompanyReceivables * weight
@@ -133,6 +160,9 @@ export interface DistributableTests {
   minCurrentRatio: number
   distributable: number
   limitingTest: "winstcapaciteit" | "solvabiliteit" | "liquiditeit" | "uitkeringstoets"
+  /** Opbouw per jaar (genormaliseerd resultaat na belasting). */
+  years: NormalizedYear[]
+  method: string
 }
 
 export function distributableProfit(
@@ -141,7 +171,8 @@ export function distributableProfit(
   policy: LenderEntrepreneurPolicy
 ): DistributableTests {
   const method = policy.calcMethod === "ivo" || !policy.calcMethod ? "avg3_capped_by_last" : policy.calcMethod
-  const profitCapacity = Math.max(0, applyMethod(figures.map((f) => f.resultAfterTax), method))
+  const years = figures.map(normalizeYear)
+  const profitCapacity = Math.max(0, applyMethod(years.map((y) => y.normalized), method))
   const latest = figures[figures.length - 1] ?? ZERO_YEAR(0)
   const s = (policy.minSolvencyPct ?? DEFAULT_MIN_SOLVENCY_PCT) / 100
   const cr = policy.minCurrentRatio ?? DEFAULT_MIN_CURRENT_RATIO
@@ -169,6 +200,8 @@ export function distributableProfit(
     minCurrentRatio: cr,
     distributable,
     limitingTest,
+    years,
+    method,
   }
 }
 
@@ -183,6 +216,8 @@ export interface DgaIncomeResult {
   treatedAsEmployee: boolean
   explanation: string[]
   warnings: string[]
+  /** Aandelenbelang waarmee de uitkeerbare winst is vermenigvuldigd. */
+  shareholdingPct?: number
 }
 
 export function dgaIncome(
@@ -312,6 +347,18 @@ export function dgaIncome(
   } else if (treatment === "salary_only") {
     explanation.push("Deze bank telt alleen het DGA-salaris; winst in de BV telt niet mee.")
   }
+  if (tests) {
+    const incidental = tests.years.filter((y) => Math.abs(y.incidentalAfterTax) >= 1)
+    if (incidental.length > 0) {
+      explanation.push(`Incidentele posten zijn uit de winst gehaald (${incidental.map((y) => y.year).join(", ")}).`)
+    }
+    const norm = tests.years.map((y) => y.normalized)
+    const avg = norm.slice(-3).reduce((a, b) => a + b, 0) / Math.max(1, Math.min(3, norm.length))
+    const last = norm.at(-1) ?? 0
+    if (norm.length >= 2 && avg > 0 && last < avg * 0.7) {
+      warnings.push("Het resultaat van het laatste jaar ligt ruim onder het gemiddelde. Banken rekenen dan meestal met het laatste jaar; licht de daling toe.")
+    }
+  }
   if (tests && tests.solvencyPct < tests.minSolvencyPct) {
     warnings.push(`De solvabiliteit (${tests.solvencyPct.toFixed(1)}%) ligt onder de drempel van ${tests.minSolvencyPct}%.`)
   }
@@ -321,6 +368,7 @@ export function dgaIncome(
   return {
     accepted,
     income: salaryCounted + distributableShare,
+    shareholdingPct: bv.shareholdingPct,
     salary,
     salaryCounted,
     distributableShare,

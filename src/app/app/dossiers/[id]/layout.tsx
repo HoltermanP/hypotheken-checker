@@ -20,6 +20,7 @@ export default async function DossierLayout({ children, params }: LayoutProps<"/
   const tabs = [
     { href: `/app/dossiers/${id}/intake`, label: "Intake" },
     { href: `/app/dossiers/${id}/documenten`, label: "Documenten" },
+    { href: `/app/dossiers/${id}/ondernemer`, label: "Ondernemer" },
     { href: `/app/dossiers/${id}/advies`, label: "Advies" },
     { href: `/app/dossiers/${id}/wat-als`, label: "Wat als" },
     { href: `/app/dossiers/${id}/chat`, label: "Vraag het" },

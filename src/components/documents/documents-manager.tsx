@@ -1,7 +1,7 @@
 "use client"
 
-import { upload } from "@vercel/blob/client"
 import { CheckCircle2, Eye, FileUp, Loader2, RefreshCw, Trash2, Wand2 } from "lucide-react"
+import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { useId, useState, useTransition } from "react"
 import { toast } from "sonner"
@@ -15,12 +15,11 @@ import {
   deleteDocumentAction,
   downloadUrlAction,
   extractAction,
-  localUploadAction,
-  registerUploadAction,
 } from "@/app/app/dossiers/[id]/documenten/actions"
 import type { ExtractedField, FieldValue } from "@/lib/documents/extraction"
-import { ALLOWED_CONTENT_TYPES, MAX_UPLOAD_BYTES, type ChecklistItem } from "@/lib/documents/types"
+import { ACCEPT_ATTR, type ChecklistItem } from "@/lib/documents/types"
 import { formatDate } from "@/lib/format"
+import { uploadDocumentFile } from "./upload-file"
 
 export interface DocView {
   id: string
@@ -32,6 +31,8 @@ export interface DocView {
   fields: ExtractedField[]
   warnings: string[]
   documentTypeMatches: boolean
+  /** Jaarcijfers: controle op de pagina Inkomenstoets ondernemer. */
+  financials: boolean
   error: string | null
   expiresAt: string
 }
@@ -56,41 +57,9 @@ function UploadButton({ item, dossierId, local }: { item: ChecklistItem; dossier
   const router = useRouter()
   const [busy, setBusy] = useState(false)
   async function onFile(file: File) {
-    if (!(ALLOWED_CONTENT_TYPES as readonly string[]).includes(file.type)) return toast.error("Alleen PDF, JPG, PNG of WebP.")
-    if (file.size > MAX_UPLOAD_BYTES) return toast.error("Bestand is te groot (max. 20 MB).")
     setBusy(true)
     try {
-      let docId: string | null = null
-      if (local) {
-        const form = new FormData()
-        form.set("file", file)
-        form.set("dossierId", dossierId)
-        form.set("type", item.type)
-        if (item.applicantPosition) form.set("applicantPosition", String(item.applicantPosition))
-        const r = await localUploadAction(form)
-        if (!r.ok) throw new Error(r.error)
-        docId = r.data.id
-      } else {
-        const ext = file.type === "application/pdf" ? "pdf" : file.type.split("/")[1]
-        const blob = await upload(`dossiers/${dossierId}/${item.type}.${ext}`, file, {
-          access: "private",
-          handleUploadUrl: "/api/documents/upload",
-          contentType: file.type,
-          clientPayload: JSON.stringify({ dossierId, type: item.type, applicantPosition: item.applicantPosition, fileName: file.name }),
-        })
-        const r = await registerUploadAction({
-          dossierId,
-          type: item.type,
-          applicantPosition: item.applicantPosition,
-          pathname: blob.pathname,
-          url: blob.url,
-          contentType: file.type,
-          size: file.size,
-          fileName: file.name,
-        })
-        if (!r.ok) throw new Error(r.error)
-        docId = r.data.id
-      }
+      const docId = await uploadDocumentFile({ file, dossierId, type: item.type, applicantPosition: item.applicantPosition, local })
       toast.success("Geüpload. We lezen het document nu uit…")
       router.refresh()
       const e = await extractAction(docId, dossierId)
@@ -110,7 +79,7 @@ function UploadButton({ item, dossierId, local }: { item: ChecklistItem; dossier
       <input
         id={inputId}
         type="file"
-        accept={ALLOWED_CONTENT_TYPES.join(",")}
+        accept={ACCEPT_ATTR}
         className="sr-only"
         onChange={(e) => {
           const f = e.target.files?.[0]
@@ -261,7 +230,20 @@ function DocumentRow({ doc, dossierId }: { doc: DocView; dossierId: string }) {
         </div>
       </div>
       {doc.error ? <p className="text-sm text-amber-800 dark:text-amber-300">{doc.error}</p> : null}
-      {open && doc.fields.length > 0 ? <Review doc={doc} dossierId={dossierId} /> : null}
+      {open && doc.financials ? (
+        <p className="rounded-lg bg-muted/40 p-3 text-sm">
+          {doc.warnings.map((w) => (
+            <span key={w} className="block text-amber-800 dark:text-amber-300">{w}</span>
+          ))}
+          Jaarcijfers controleer en bevestig je op de pagina{" "}
+          <Link href={`/app/dossiers/${dossierId}/ondernemer`} className="font-medium underline">
+            Inkomenstoets ondernemer
+          </Link>
+          .
+        </p>
+      ) : open && doc.fields.length > 0 ? (
+        <Review doc={doc} dossierId={dossierId} />
+      ) : null}
     </li>
   )
 }

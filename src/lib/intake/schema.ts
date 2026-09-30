@@ -124,6 +124,7 @@ export const bvYear = z.object({
   intercompanyPayables: eur,
   resultFromParticipations: z.number(),
   participationsValue: eur,
+  incidentalItems: z.number().optional(),
 })
 
 export const bvEntity = z.object({
@@ -179,6 +180,8 @@ export const business = z.object({
         armsLength: z.boolean(),
       }),
       entities: z.array(bvEntity).min(1).max(5),
+      /** Geconsolideerde cijfers (optioneel; anders berekent de engine de consolidatie). */
+      consolidated: z.array(bvYear).max(5).optional(),
       loansToDga: z
         .array(
           z.object({

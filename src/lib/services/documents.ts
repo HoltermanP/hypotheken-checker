@@ -2,9 +2,11 @@ import "server-only"
 import { and, desc, eq, lt } from "drizzle-orm"
 import { getDb, schema } from "@/lib/db/client"
 import { extractDocument } from "@/lib/ai/extract"
+import { extractFinancials } from "@/lib/ai/extract-financials"
 import { applyToIntake } from "@/lib/documents/apply"
 import { runConsistencyChecks, type ConfirmedDoc, type IntakeFacts } from "@/lib/documents/consistency"
 import type { ExtractedField, FieldValue, NormalizedExtraction } from "@/lib/documents/extraction"
+import type { FinancialsExtraction } from "@/lib/documents/financials"
 import { ALLOWED_CONTENT_TYPES, checklist, docType, MAX_UPLOAD_BYTES, type ChecklistItem } from "@/lib/documents/types"
 import type { IntakeData, StepKey } from "@/lib/intake/schema"
 import { aiRateLimit, enforceRateLimit } from "@/lib/rate-limit"
@@ -66,7 +68,7 @@ export async function registerDocument(
   await getOwnedDossier(userId, input.dossierId)
   if (!docType(input.type)) throw new DocumentValidationError("Onbekend documenttype.")
   if (!input.pathname.startsWith(documentPathPrefix(input.dossierId))) throw new DocumentValidationError("Ongeldig pad.")
-  if (!(ALLOWED_CONTENT_TYPES as readonly string[]).includes(input.contentType)) throw new DocumentValidationError("Alleen PDF, JPG, PNG of WebP.")
+  if (!(ALLOWED_CONTENT_TYPES as readonly string[]).includes(input.contentType)) throw new DocumentValidationError("Alleen PDF, JPG, PNG, WebP, Excel of CSV.")
   if (input.size <= 0 || input.size > MAX_UPLOAD_BYTES) throw new DocumentValidationError("Bestand is te groot (max. 20 MB).")
   const db = getDb()
   const [existing] = await db
@@ -94,7 +96,7 @@ export async function registerDocument(
   return row!.id
 }
 
-export async function runExtraction(userId: string, documentId: string): Promise<NormalizedExtraction> {
+export async function runExtraction(userId: string, documentId: string): Promise<NormalizedExtraction | FinancialsExtraction> {
   const doc = await getOwnedDocument(userId, documentId)
   const def = docType(doc.type)
   if (!def) throw new DocumentValidationError("Onbekend documenttype.")
@@ -103,7 +105,11 @@ export async function runExtraction(userId: string, documentId: string): Promise
   await db.update(schema.documents).set({ status: "extracting", errorMessage: null }).where(eq(schema.documents.id, doc.id))
   try {
     const data = await readObject(doc.blobUrl)
-    const extraction = await extractDocument({ def, data, contentType: doc.contentType, now: new Date().toISOString() })
+    const now = new Date().toISOString()
+    const extraction =
+      def.extraction === "financials"
+        ? await extractFinancials({ data, contentType: doc.contentType, now })
+        : await extractDocument({ def, data, contentType: doc.contentType, now })
     await db
       .update(schema.documents)
       .set({ status: "extracted", extraction: extraction as unknown as Record<string, unknown> })
@@ -125,6 +131,7 @@ export async function confirmDocument(
 ): Promise<{ summary: string[]; errors: string[] }> {
   const doc = await getOwnedDocument(userId, documentId)
   const def = docType(doc.type)!
+  if (def.extraction === "financials") throw new DocumentValidationError("Jaarcijfers bevestig je op de pagina Inkomenstoets ondernemer.")
   const allowed = new Set(def.fields.map((f) => f.key))
   const clean: Record<string, FieldValue> = {}
   for (const [k, v] of Object.entries(values)) {

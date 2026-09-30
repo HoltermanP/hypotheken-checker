@@ -14,6 +14,8 @@ export interface FieldDef {
 
 export interface DocTypeDef {
   type: string
+  /** "financials": meerjarige jaarcijfers per entiteit (eigen extractie en review). */
+  extraction?: "fields" | "financials"
   label: string
   description: string
   /** Hoe oud het document maximaal mag zijn (maanden), indien van toepassing. */
@@ -32,6 +34,14 @@ const bool = (key: string, label: string, hint?: string): FieldDef => ({ key, la
 const person = [text("naam", "Naam"), date("geboortedatum", "Geboortedatum")]
 
 export const DOC_TYPES: DocTypeDef[] = [
+  {
+    type: "jaarcijfers_onderneming",
+    label: "Jaarcijfers onderneming (jaarrekening, Excel, jaaroverzicht)",
+    description: "Jaarrekeningen (pdf), een Excel-overzicht of het sjabloon, jaaroverzicht DGA of aangiften. Meerdere jaren en entiteiten tegelijk.",
+    perApplicant: true,
+    extraction: "financials",
+    fields: [],
+  },
   {
     type: "werkgeversverklaring",
     label: "Werkgeversverklaring",
@@ -235,7 +245,27 @@ export function docType(type: string): DocTypeDef | undefined {
   return DOC_TYPE_MAP.get(type)
 }
 
-export const ALLOWED_CONTENT_TYPES = ["application/pdf", "image/jpeg", "image/png", "image/webp"] as const
+export const ALLOWED_CONTENT_TYPES = [
+  "application/pdf",
+  "image/jpeg",
+  "image/png",
+  "image/webp",
+  "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "application/vnd.ms-excel",
+  "text/csv",
+] as const
+
+/** Extensies voor de bestandskiezer (sommige browsers geven geen MIME-type voor .csv/.xls). */
+export const ACCEPT_ATTR = ".pdf,.jpg,.jpeg,.png,.webp,.xlsx,.xls,.csv"
+
+/** Bepaal het MIME-type, ook als de browser het leeg laat. */
+export function resolveContentType(fileName: string, type: string): string {
+  if (type && type !== "application/octet-stream") return type
+  const ext = fileName.toLowerCase().split(".").pop()
+  return (
+    { pdf: "application/pdf", jpg: "image/jpeg", jpeg: "image/jpeg", png: "image/png", webp: "image/webp", xlsx: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", xls: "application/vnd.ms-excel", csv: "text/csv" }[ext ?? ""] ?? type
+  )
+}
 export const MAX_UPLOAD_BYTES = 20 * 1024 * 1024
 
 export interface ChecklistItem {
@@ -286,7 +316,8 @@ export function checklist(p: ChecklistProfile): ChecklistItem[] {
     for (const b of a.businesses) {
       const bv = b.legalForm === "bv" || b.legalForm === "bv_holding"
       add("kvk_uittreksel", true, a.position, "Rechtsvorm, startdatum en bestuurders.")
-      add("jaarrekening", true, a.position, "Cijfers van de laatste 3 jaar.")
+      add("jaarcijfers_onderneming", true, a.position, "Jaarrekeningen of een Excel-overzicht van de laatste 3 jaar; we vullen de cijfers automatisch in.")
+      add("jaarrekening", false, a.position, "Losse jaarrekening per jaar (als alternatief voor het overzicht hierboven).")
       add("ib_aangifte", true, a.position, "IB-aangiften en definitieve aanslagen van 3 jaar.")
       add("ivo", false, a.position, "Veel banken vragen een Inkomensverklaring Ondernemer.")
       add("tussentijdse_cijfers", false, a.position, "Actuele ontwikkeling van het lopende jaar.")

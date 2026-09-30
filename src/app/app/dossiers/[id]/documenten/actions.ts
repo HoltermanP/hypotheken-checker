@@ -4,7 +4,7 @@ import { randomUUID } from "node:crypto"
 import { revalidatePath } from "next/cache"
 import { AuthError, requireUserId } from "@/lib/auth"
 import type { FieldValue } from "@/lib/documents/extraction"
-import { ALLOWED_CONTENT_TYPES, MAX_UPLOAD_BYTES } from "@/lib/documents/types"
+import { ALLOWED_CONTENT_TYPES, MAX_UPLOAD_BYTES, resolveContentType } from "@/lib/documents/types"
 import { RateLimitError } from "@/lib/rate-limit"
 import { audit } from "@/lib/services/audit"
 import {
@@ -60,7 +60,8 @@ export async function localUploadAction(form: FormData): Promise<Result<{ id: st
     await getOwnedDossier(userId, dossierId)
     const file = form.get("file")
     if (!(file instanceof File)) return { ok: false, error: "Geen bestand." }
-    if (!(ALLOWED_CONTENT_TYPES as readonly string[]).includes(file.type)) return { ok: false, error: "Alleen PDF, JPG, PNG of WebP." }
+    const contentType = resolveContentType(file.name, file.type)
+    if (!(ALLOWED_CONTENT_TYPES as readonly string[]).includes(contentType)) return { ok: false, error: "Alleen PDF, JPG, PNG, WebP, Excel of CSV." }
     if (file.size > MAX_UPLOAD_BYTES) return { ok: false, error: "Bestand is te groot (max. 20 MB)." }
     const pathname = `${documentPathPrefix(dossierId)}${randomUUID()}`
     const stored = await putLocal(pathname, Buffer.from(await file.arrayBuffer()))
@@ -71,11 +72,11 @@ export async function localUploadAction(form: FormData): Promise<Result<{ id: st
       applicantPosition: pos ? Number(pos) : null,
       pathname: stored.pathname,
       url: stored.url,
-      contentType: file.type,
+      contentType,
       size: file.size,
       fileName: file.name,
     })
-    revalidatePath(`/app/dossiers/${dossierId}/documenten`)
+    revalidatePath(`/app/dossiers/${dossierId}`, "layout")
     return { ok: true, data: { id } }
   } catch (err) {
     return fail(err)
@@ -87,7 +88,7 @@ export async function extractAction(documentId: string, dossierId: string): Prom
     const userId = await requireUserId()
     await runExtraction(userId, documentId)
     await audit({ userId, action: "extract", entityType: "document", entityId: documentId, dossierId })
-    revalidatePath(`/app/dossiers/${dossierId}/documenten`)
+    revalidatePath(`/app/dossiers/${dossierId}`, "layout")
     return { ok: true, data: null }
   } catch (err) {
     revalidatePath(`/app/dossiers/${dossierId}/documenten`)

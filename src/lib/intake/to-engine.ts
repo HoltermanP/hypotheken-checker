@@ -37,7 +37,7 @@ export function businessToEngine(b: BusinessForm): BusinessInput {
             pensionAccrual: b.bv.pensionAccrual,
             entities: b.bv.entities.map((e) => ({ ...e, parentKey: e.parentKey || null, financials: fromStart(e.financials) })),
             fiscalUnity: b.bv.fiscalUnity,
-            consolidated: null,
+            consolidated: b.bv.consolidated && b.bv.consolidated.length > 0 ? fromStart(b.bv.consolidated) : null,
             managementFee: b.bv.managementFee.annual > 0 ? b.bv.managementFee : null,
             currentAccountDga: b.bv.currentAccountDga,
             loansToDga: b.bv.loansToDga,

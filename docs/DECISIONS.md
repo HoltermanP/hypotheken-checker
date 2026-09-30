@@ -121,3 +121,13 @@ genomen. Elke beslissing heeft een korte motivatie.
 | D67 | Openbare voorbeeldpagina (`/demo`) met drie fictieve profielen die in de browser worden doorgerekend | Laat de werking zien zonder account; hergebruikt de wat-als-modus. |
 | D68 | De wizard vult standaard drie jaar cijfers voor; jaren vóór de startdatum van de onderneming worden bij het omzetten naar de engine weggelaten | Gevonden via e2e: anders zou een starter met 1 jaar als 3-jarige onderneming (met twee nuljaren) worden beoordeeld. |
 | D69 | `pg` als devDependency | `drizzle-kit migrate` heeft een Node-Postgresdriver nodig voor Neon-connection strings. |
+
+## Na oplevering — Inkomenstoets ondernemer vanuit bestanden
+
+| # | Beslissing | Motivatie |
+|---|---|---|
+| D70 | Eén documenttype `jaarcijfers_onderneming` voor jaarrekening, Excel/CSV en jaaroverzicht, met een eigen extractie (meerdere entiteiten en jaren per bestand) naast de veld-extractie | Een jaarrekening bevat holding, werkmaatschappij, geconsolideerd en vergelijkende jaren; dat past niet in een vaste veldenlijst. |
+| D71 | Excel-sjabloon wordt deterministisch ingelezen; overige spreadsheets gaan als tekst naar Claude | Exact en zonder AI-kosten voor wie het sjabloon gebruikt; werkt ook zonder API-sleutel (en in e2e). |
+| D72 | Samenvoegen per entiteit en jaar, hoogste zekerheid wint, conflicten zichtbaar; niets wordt overgenomen zonder bevestiging | Meerdere bronnen (jaarrekening + jaaropgave) vullen elkaar aan; tegenstrijdigheden moet de gebruiker zien. |
+| D73 | Incidentele posten worden genormaliseerd uit de winstcapaciteit (na belasting) | Banken toetsen op duurzame winst; eenmalige baten/lasten vertekenen het gemiddelde. |
+| D74 | De xlsx-code staat in `financials-xlsx.ts`, los van de pure samenvoeg-/veldlogica | Houdt de spreadsheetbibliotheek uit de browserbundel van de inkomenstoetspagina. |

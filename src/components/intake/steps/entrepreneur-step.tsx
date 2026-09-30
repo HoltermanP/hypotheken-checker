@@ -1,6 +1,7 @@
 "use client"
 
-import { Plus, Trash2 } from "lucide-react"
+import { FileUp, Plus, Trash2 } from "lucide-react"
+import Link from "next/link"
 import { useFieldArray, useWatch, type Control } from "react-hook-form"
 import { Button } from "@/components/ui/button"
 import { CheckboxField, FieldGroup, MoneyField, NumberField, SelectField, TextField } from "@/components/forms/fields"
@@ -71,6 +72,7 @@ function EntityFinancials({ control, ep }: { control: C; ep: string }) {
               <MoneyField control={control} name={`${yp}.resultBeforeTax` as never} allowNegative label="Resultaat vóór belasting" />
               <MoneyField control={control} name={`${yp}.corporateTax` as never} label="Vennootschapsbelasting" />
               <MoneyField control={control} name={`${yp}.resultAfterTax` as never} allowNegative label="Resultaat na belasting" />
+              <MoneyField control={control} name={`${yp}.incidentalItems` as never} allowNegative label="Incidentele posten vóór belasting (+ = bate)" />
               <MoneyField control={control} name={`${yp}.dividendPaid` as never} label="Uitgekeerd dividend" />
               <MoneyField control={control} name={`${yp}.retainedEarnings` as never} allowNegative label="Winstreserves" />
               <MoneyField control={control} name={`${yp}.equity` as never} allowNegative label="Eigen vermogen" />
@@ -276,6 +278,16 @@ export function EntrepreneurStepForm({ dossierId, defaults, prev, context }: Ste
     <WizardShell dossierId={dossierId} step="ondernemer" prev={prev} status={status} serverErrors={serverErrors} onSubmit={submit} submitting={form.formState.isSubmitting}>
       <p className="text-sm text-muted-foreground">
         Banken rekenen je inkomen verschillend uit. Vul de cijfers van de laatste drie jaar in (uit je IB-aangifte of jaarrekening); we laten per bank zien welk toetsinkomen eruit komt.
+      </p>
+      <p className="flex gap-2 rounded-lg border p-3 text-sm">
+        <FileUp aria-hidden className="size-4 shrink-0 text-primary" />
+        <span>
+          Liever uploaden? Op{" "}
+          <Link href={`/app/dossiers/${dossierId}/ondernemer`} className="font-medium underline">
+            Inkomenstoets ondernemer
+          </Link>{" "}
+          lees je jaarrekeningen (pdf), Excel-overzichten en jaaroverzichten in en zie je direct het toetsinkomen per bank. Sla eerst deze stap op.
+        </span>
       </p>
       {defaults.applicants.map((_, a) =>
         context.entrepreneurs[a] ? (

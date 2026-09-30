@@ -1,4 +1,6 @@
 import { expect, test, type Page } from "@playwright/test"
+import { mkdirSync, writeFileSync } from "node:fs"
+import path from "node:path"
 import { calculate, fillMoney, login, newDossier, next, personal } from "./helpers"
 
 async function toEntrepreneurStep(page: Page, user: string, dob: string, extraSalary?: string) {
@@ -99,4 +101,56 @@ test("DGA met een BV", async ({ page }) => {
   await finish(page)
   await expect(page.getByText("Duurzaam uitkeerbare winst")).toBeVisible()
   await expect(page.getByText("Hypotheek bij de eigen BV", { exact: true })).toBeVisible()
+})
+
+test("DGA: jaarcijfers uit een Excel-bestand (sjabloon) inlezen en overnemen", async ({ page }) => {
+  const XLSX = await import("xlsx")
+  const res = await page.request.get("/api/templates/jaarcijfers")
+  expect(res.ok()).toBe(true)
+  const wb = XLSX.read(await res.body(), { type: "buffer" })
+  const fill = (sheet: string, label: string, values: number[]) => {
+    const ws = wb.Sheets[sheet]!
+    const rows = XLSX.utils.sheet_to_json<unknown[]>(ws, { header: 1, defval: null })
+    const r = rows.findIndex((row) => row[0] === label)
+    values.forEach((v, i) => (ws[XLSX.utils.encode_cell({ r, c: i + 1 })] = { t: "n", v }))
+  }
+  fill("Werkmaatschappij", "Resultaat na belasting", [80000, 90000, 100000])
+  fill("Werkmaatschappij", "Incidentele posten (vóór belasting, + = bate)", [0, 0, 20000])
+  fill("Werkmaatschappij", "Eigen vermogen", [300000, 380000, 480000])
+  fill("Werkmaatschappij", "Balanstotaal", [500000, 600000, 700000])
+  fill("Werkmaatschappij", "Liquide middelen", [100000, 150000, 200000])
+  fill("Werkmaatschappij", "Vlottende activa (incl. liquide middelen)", [200000, 250000, 300000])
+  fill("Werkmaatschappij", "Kortlopende schulden", [80000, 90000, 100000])
+  fill("Holding", "Resultaat na belasting", [2000, 2000, 2000])
+  fill("DGA", "Aandelenbelang DGA (%)", [100])
+  const dga = wb.Sheets.DGA!
+  ;[60000, 62000, 64000].forEach((v, i) => (dga[`B${5 + i}`] = { t: "n", v }))
+  const file = path.join("test-results", "e2e-jaarcijfers.xlsx")
+  mkdirSync("test-results", { recursive: true })
+  writeFileSync(file, Buffer.from(XLSX.write(wb, { type: "array", bookType: "xlsx" }) as ArrayBuffer))
+
+  await login(page, "dgaexcel")
+  const dossier = await newDossier(page, /Mijn eerste woning kopen/)
+  await personal(page, ["1980-01-01"])
+  await next(page, "inkomen")
+  await page.getByRole("button", { name: "Inkomen verwijderen" }).click()
+  await page.getByLabel("Ik ben (ook) ondernemer (eenmanszaak, vof, BV of holding)").check()
+  await next(page, "ondernemer")
+  await page.getByLabel("Rechtsvorm").selectOption("bv")
+  await page.getByLabel("Startdatum onderneming").fill("2015-01-01")
+  await next(page, "verplichtingen")
+
+  await page.goto(`${dossier}/ondernemer`)
+  await expect(page.getByRole("heading", { name: "1. Bestanden" })).toBeVisible()
+  await page.locator("input[type=file]").setInputFiles(file)
+  await expect(page.getByText("sjabloon", { exact: true })).toBeVisible()
+  await expect(page.getByLabel("Naam").first()).toHaveValue("Werk BV")
+  await expect(page.getByRole("table", { name: "Toetsinkomen per bank" })).toBeVisible()
+  await expect(page.getByText("Genormaliseerd resultaat na belasting")).toBeVisible()
+  await page.getByRole("button", { name: "Overnemen in intake" }).click()
+  await expect(page.getByText("overgenomen", { exact: true })).toBeVisible()
+
+  await page.goto(`${dossier}/intake/ondernemer`)
+  await expect(page.getByLabel("Rechtsvorm")).toHaveValue("bv_holding")
+  await expect(page.getByLabel("Naam onderneming")).toHaveValue("Werk BV")
 })
