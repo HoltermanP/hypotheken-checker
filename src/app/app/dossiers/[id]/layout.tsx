@@ -18,9 +18,7 @@ export default async function DossierLayout({ children, params }: LayoutProps<"/
   }
   await audit({ userId, action: "view", entityType: "dossier", entityId: id, dossierId: id })
   const tabs = [
-    { href: `/app/dossiers/${id}/intake`, label: "Intake" },
-    { href: `/app/dossiers/${id}/documenten`, label: "Documenten" },
-    { href: `/app/dossiers/${id}/ondernemer`, label: "Ondernemer" },
+    { href: `/app/dossiers/${id}/start`, label: "Start" },
     { href: `/app/dossiers/${id}/advies`, label: "Advies" },
     { href: `/app/dossiers/${id}/wat-als`, label: "Wat als" },
     { href: `/app/dossiers/${id}/chat`, label: "Vraag het" },

@@ -8,11 +8,21 @@ export async function login(page: Page, user: string, admin = false) {
   await page.waitForURL("**/app")
 }
 
+/** Nieuw dossier via de uitgebreide intake (doel kiezen, dan door de wizard). */
 export async function newDossier(page: Page, goalLabel: RegExp) {
+  const dossier = await newQuickDossier(page)
+  await page.goto(`${dossier}/intake/doel`)
+  await page.getByLabel(goalLabel).check()
+  await next(page, "persoonlijk")
+  return dossier
+}
+
+/** Nieuw dossier; komt uit op de pagina Start (snelle invoer). */
+export async function newQuickDossier(page: Page) {
   await page.goto("/app")
-  await page.getByRole("button", { name: goalLabel }).click()
-  await page.waitForURL("**/intake/persoonlijk")
-  return page.url().replace(/\/intake\/.*/, "")
+  await page.getByRole("button", { name: "Nieuwe berekening" }).click()
+  await page.waitForURL("**/start")
+  return page.url().replace(/\/start$/, "")
 }
 
 export async function next(page: Page, expectedStep: string) {

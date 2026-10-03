@@ -7,3 +7,13 @@ export const GOAL_OPTIONS = [
   { value: "verkopen", label: "Alleen verkopen", text: "Wat houd je over na verkoop, en wat zijn je opties?" },
   { value: "orientatie", label: "Oriënteren: wat kan ik maximaal lenen?", text: "Nog geen woning op het oog." },
 ] as const
+
+/** Standaardnaam van een dossier per doel. */
+export const GOAL_TITLES: Record<(typeof GOAL_OPTIONS)[number]["value"], string> = {
+  starter: "Eerste woning",
+  doorstromer: "Verhuizen",
+  oversluiten: "Oversluiten",
+  verhogen: "Hypotheek verhogen",
+  verkopen: "Woning verkopen",
+  orientatie: "Oriëntatie",
+}

@@ -7,7 +7,6 @@ import { Disclaimer } from "@/components/disclaimer"
 import { requireUserIdOrRedirect } from "@/lib/auth"
 import { formatDate } from "@/lib/format"
 import { listDossiers } from "@/lib/services/dossiers"
-import { GOAL_OPTIONS } from "@/lib/intake/goals"
 import { createDossierAction } from "./actions"
 
 export const metadata = { title: "Mijn dossiers" }
@@ -39,7 +38,7 @@ export default async function DossiersPage() {
         <div className="flex flex-col items-center gap-2 rounded-xl border border-dashed p-8 text-center">
           <FolderOpen aria-hidden className="size-8 text-muted-foreground" />
           <p className="font-medium">Nog geen dossiers</p>
-          <p className="text-sm text-muted-foreground">Kies hieronder wat je wilt doen om te beginnen.</p>
+          <p className="text-sm text-muted-foreground">Start een berekening: upload je loonstroken of jaarcijfers en vul een paar bedragen in.</p>
         </div>
       ) : (
         <ul className="grid gap-4 sm:grid-cols-2">
@@ -60,19 +59,11 @@ export default async function DossiersPage() {
           ))}
         </ul>
       )}
-      <section aria-labelledby="nieuw" className="space-y-3">
-        <h2 id="nieuw" className="text-lg font-semibold">Nieuw dossier</h2>
-        <form action={createDossierAction} className="grid gap-3 sm:grid-cols-2">
-          {GOAL_OPTIONS.map((o) => (
-            <Button key={o.value} type="submit" name="goal" value={o.value} variant="outline" className="h-auto flex-col items-start gap-1 p-4 text-left whitespace-normal">
-              <span className="flex items-center gap-2 font-medium">
-                <Plus aria-hidden /> {o.label}
-              </span>
-              <span className="text-xs font-normal text-muted-foreground">{o.text}</span>
-            </Button>
-          ))}
-        </form>
-      </section>
+      <form action={createDossierAction}>
+        <Button type="submit" size="lg">
+          <Plus aria-hidden /> Nieuwe berekening
+        </Button>
+      </form>
       <Disclaimer />
     </div>
   )

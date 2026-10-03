@@ -6,5 +6,5 @@ export default async function DossierIndex({ params }: PageProps<"/app/dossiers/
   const { id } = await params
   const userId = await requireUserIdOrRedirect()
   const d = await getOwnedDossier(userId, id)
-  redirect(d.status === "advice" ? `/app/dossiers/${id}/advies` : `/app/dossiers/${id}/intake/${d.currentStep}`)
+  redirect(d.status === "advice" ? `/app/dossiers/${id}/advies` : `/app/dossiers/${id}/start`)
 }

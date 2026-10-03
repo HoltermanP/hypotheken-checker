@@ -32,6 +32,8 @@ type General = {
   bkrRegistrations?: string
   drafts?: Record<string, { at: string; data: unknown }>
   skipped?: string[]
+  /** Concept van het snelle formulier (pagina Start). */
+  quick?: unknown
 }
 
 export async function ensureUser(userId: string) {
@@ -217,6 +219,20 @@ export async function saveDraft(userId: string, dossierId: string, step: StepKey
     .update(schema.dossiers)
     .set({ general, currentStep: step })
     .where(and(eq(schema.dossiers.id, dossierId), eq(schema.dossiers.userId, userId)))
+}
+
+/** Concept van het snelle formulier bewaren of ophalen. */
+export async function saveQuickDraft(userId: string, dossierId: string, data: unknown) {
+  const dossier = await getOwnedDossier(userId, dossierId)
+  const general = { ...((dossier.general ?? {}) as General), quick: data }
+  await getDb()
+    .update(schema.dossiers)
+    .set({ general })
+    .where(and(eq(schema.dossiers.id, dossierId), eq(schema.dossiers.userId, userId)))
+}
+
+export function quickDraftOf(dossier: { general: unknown }): unknown {
+  return ((dossier.general ?? {}) as General).quick ?? null
 }
 
 export async function skipStep(userId: string, dossierId: string, step: StepKey) {

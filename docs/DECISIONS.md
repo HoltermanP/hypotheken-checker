@@ -131,3 +131,12 @@ genomen. Elke beslissing heeft een korte motivatie.
 | D72 | Samenvoegen per entiteit en jaar, hoogste zekerheid wint, conflicten zichtbaar; niets wordt overgenomen zonder bevestiging | Meerdere bronnen (jaarrekening + jaaropgave) vullen elkaar aan; tegenstrijdigheden moet de gebruiker zien. |
 | D73 | Incidentele posten worden genormaliseerd uit de winstcapaciteit (na belasting) | Banken toetsen op duurzame winst; eenmalige baten/lasten vertekenen het gemiddelde. |
 | D74 | De xlsx-code staat in `financials-xlsx.ts`, los van de pure samenvoeg-/veldlogica | Houdt de spreadsheetbibliotheek uit de browserbundel van de inkomenstoetspagina. |
+
+## Na oplevering — Snelle invoer (pagina Start)
+
+| # | Beslissing | Motivatie |
+|---|---|---|
+| D75 | Eén pagina Start als standaardingang: loonstroken/jaarcijfers uploaden, vermogen, schulden en woning invullen, direct berekenen; de wizard blijft bestaan als "uitgebreide intake" | De volledige wizard (11 stappen) was te veel voor een eerste berekening. `quickToIntake` zet het korte formulier om naar de bestaande intake-stappen (gevalideerd via `saveStep`), zodat engine, advies en wat-als ongewijzigd blijven. |
+| D76 | Niet-gevraagde velden krijgen een standaardwaarde of behouden wat al in de intake stond | Details uit de uitgebreide intake (kinderen, toeslagen, leases) gaan niet verloren als je daarna de snelle invoer opnieuw gebruikt. |
+| D77 | Uitgelezen documenten gelden als bevestigd bij "Bereken"; de waarden staan zichtbaar en aanpasbaar in het formulier | Eén bevestigingsmoment in plaats van per document; de consistentiecontrole werkt daardoor ook in de snelle flow. |
+| D78 | Een DGA-loonstrook telt als DGA-salaris (laatste jaar) en niet als loondienst; standaard aan zodra jaarcijfers een BV tonen | Voorkomt dubbeltelling van het salaris in de BV-toets. |
