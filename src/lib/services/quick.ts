@@ -4,6 +4,7 @@ import { getDb, schema } from "@/lib/db/client"
 import { confirmedValues, type ExtractedField, type NormalizedExtraction } from "@/lib/documents/extraction"
 import { mergeFinancials, type FinancialsExtraction, type MergedFinancials } from "@/lib/documents/financials"
 import { docType } from "@/lib/documents/types"
+import type { BusinessForm } from "@/lib/intake/schema"
 import {
   fillFromSuggestions,
   legalFormFromFinancials,
@@ -40,6 +41,10 @@ export interface QuickDocView {
 
 export interface QuickFinancialsView {
   position: number
+  /** Samengevoegde cijfers en de bestaande onderneming (voor de live toetsinkomen-preview). */
+  merged: MergedFinancials
+  existing: BusinessForm | null
+  fileCount: number
   legalForm: string | null
   entities: { name: string; role: string; years: { year: number; result: number | null; forecast: boolean }[] }[]
   conflicts: string[]
@@ -65,9 +70,12 @@ function mergedFor(rows: DocRow[], position: number): MergedFinancials | null {
   return items.length ? mergeFinancials(items) : null
 }
 
-function financialsView(position: number, m: MergedFinancials, rows: DocRow[]): QuickFinancialsView {
+function financialsView(position: number, m: MergedFinancials, rows: DocRow[], existing: BusinessForm | null): QuickFinancialsView {
   return {
     position,
+    merged: m,
+    existing,
+    fileCount: rows.filter((r) => r.type === FINANCIALS_TYPE && (r.applicantPosition ?? 1) === position).length,
     legalForm: legalFormFromFinancials(m),
     entities: m.entities.map((e) => ({
       name: e.name,
@@ -112,7 +120,7 @@ export async function loadQuick(userId: string, dossierId: string) {
     }))
   const financials = [1, 2].map((p) => {
     const m = mergedFor(rows, p)
-    return m && m.entities.length ? financialsView(p, m, rows) : null
+    return m && m.entities.length ? financialsView(p, m, rows, intake.ondernemer?.applicants[p - 1]?.businesses[0] ?? null) : null
   })
   return { defaults, docs, financials, calcYear, hasAdvice: dossier.status === "advice" }
 }

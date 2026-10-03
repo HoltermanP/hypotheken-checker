@@ -4,7 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { AlertTriangle, Calculator, CheckCircle2, FileUp, Loader2, Plus, Trash2 } from "lucide-react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
-import { useEffect, useId, useRef, useState, useTransition } from "react"
+import { useEffect, useId, useMemo, useRef, useState, useTransition } from "react"
 import { Controller, useFieldArray, useForm, useWatch, type Control, type UseFormSetValue } from "react-hook-form"
 import { toast } from "sonner"
 import { Button } from "@/components/ui/button"
@@ -12,11 +12,16 @@ import { CheckboxField, FieldGroup, MoneyField, NumberField, SelectField, TextFi
 import { uploadDocumentFile } from "@/components/documents/upload-file"
 import { deleteDocumentAction } from "@/app/app/dossiers/[id]/documenten/actions"
 import { quickCalculateAction, quickExtractAction, saveQuickDraftAction } from "@/app/app/dossiers/[id]/start/actions"
+import type { WorkbenchLender } from "@/components/entrepreneur/financials-workbench"
 import { ACCEPT_ATTR } from "@/lib/documents/types"
+import { businessIncome, withDefaults } from "@/lib/engine/entrepreneur"
+import type { LenderEntrepreneurPolicy } from "@/lib/engine/lenders/types"
+import type { NormValues } from "@/lib/engine/norms"
 import { formatEuro } from "@/lib/format"
 import { GOAL_OPTIONS } from "@/lib/intake/goals"
 import { ENERGY_LABELS } from "@/lib/intake/schema"
-import { CURRENT_HOME_GOALS, emptyLoanPart, emptyQuickApplicant, quickForm, TARGET_HOME_GOALS, type QuickForm } from "@/lib/quick/quick"
+import { businessToEngine } from "@/lib/intake/to-engine"
+import { CURRENT_HOME_GOALS, emptyLoanPart, emptyQuickApplicant, quickBusiness, quickForm, TARGET_HOME_GOALS, type QuickForm } from "@/lib/quick/quick"
 import type { QuickDocView, QuickFinancialsView } from "@/lib/services/quick"
 import { cn } from "@/lib/utils"
 
@@ -45,6 +50,8 @@ export function QuickStart({
   financials,
   calcYear,
   local,
+  lenders,
+  gebruikelijkLoon,
 }: {
   dossierId: string
   defaults: QuickForm
@@ -52,6 +59,8 @@ export function QuickStart({
   financials: (QuickFinancialsView | null)[]
   calcYear: number
   local: boolean
+  lenders: WorkbenchLender[]
+  gebruikelijkLoon: number
 }) {
   const form = useForm<QuickForm>({ resolver: zodResolver(quickForm), defaultValues: defaults, mode: "onBlur" })
   const { control, setValue, getValues } = form
@@ -147,6 +156,9 @@ export function QuickStart({
               docs={docs.filter((d) => d.applicantPosition === i + 1)}
               financials={financials[i] ?? null}
               name={names[i]!}
+              calcYear={calcYear}
+              lenders={lenders}
+              gebruikelijkLoon={gebruikelijkLoon}
             />
           ))}
         </div>
@@ -223,7 +235,13 @@ function ApplicantCard({
   local,
   docs,
   financials,
+  calcYear,
+  lenders,
+  gebruikelijkLoon,
 }: {
+  calcYear: number
+  lenders: WorkbenchLender[]
+  gebruikelijkLoon: number
   index: number
   title: string
   name: string
@@ -266,7 +284,8 @@ function ApplicantCard({
           <UploadDocs label="Jaarcijfers uploaden" type="jaarcijfers_onderneming" position={index + 1} dossierId={dossierId} local={local} onExtracted={onExtracted} />
         </div>
         <p className="text-xs text-muted-foreground">
-          Loonstrook of werkgeversverklaring (pdf of foto). Ondernemer? Upload je jaarrekeningen of een Excel-overzicht van de laatste 3 jaar. We lezen alles automatisch uit.
+          Loonstrook of werkgeversverklaring (pdf of foto). Ondernemer? Upload de jaarrekeningen van de laatste 3 jaar (je kunt meerdere bestanden tegelijk kiezen) of één
+          Excel-overzicht. We voegen de jaren samen en berekenen direct je toetsinkomen.
         </p>
         <DocList docs={docs} dossierId={dossierId} />
       </div>
@@ -287,7 +306,9 @@ function ApplicantCard({
         {isBv ? <CheckboxField control={control} name={`${p}.salaryFromOwnBv`} label="Dit salaris krijg ik van mijn eigen BV (DGA)" help="Dan tellen we het als DGA-salaris in de BV-toets en niet dubbel." /> : null}
       </div>
 
-      {financials ? <FinancialsSummary f={financials} dossierId={dossierId} /> : null}
+      {financials ? (
+        <EntrepreneurIncome f={financials} dossierId={dossierId} control={control} index={index} calcYear={calcYear} lenders={lenders} gebruikelijkLoon={gebruikelijkLoon} />
+      ) : null}
     </fieldset>
   )
 }
@@ -311,11 +332,12 @@ function UploadDocs({
   const router = useRouter()
   const [busy, setBusy] = useState<string | null>(null)
   async function onFiles(files: File[]) {
-    for (const file of files) {
+    for (const [i, file] of files.entries()) {
+      const n = files.length > 1 ? ` (${i + 1}/${files.length})` : ""
       try {
-        setBusy(`${file.name} uploaden…`)
+        setBusy(`${file.name} uploaden${n}…`)
         const id = await uploadDocumentFile({ file, dossierId, type, applicantPosition: position, local })
-        setBusy(`${file.name} uitlezen…`)
+        setBusy(`${file.name} uitlezen${n}…`)
         const r = await quickExtractAction(id, dossierId)
         if (!r.ok) toast.error(`${file.name}: ${r.error}`)
         onExtracted(r)
@@ -402,11 +424,59 @@ function DocList({ docs, dossierId }: { docs: QuickDocView[]; dossierId: string 
 
 const ROLE: Record<string, string> = { holding: "holding", werkmaatschappij: "werkmaatschappij", geconsolideerd: "geconsolideerd", eenmanszaak: "eenmanszaak", onbekend: "" }
 const FORM: Record<string, string> = { eenmanszaak: "Eenmanszaak / IB-ondernemer", bv: "BV", bv_holding: "BV met holding" }
+const LIMITING: Record<string, string> = { winstcapaciteit: "winstcapaciteit", solvabiliteit: "solvabiliteit", liquiditeit: "liquiditeit", uitkeringstoets: "vrij uitkeerbare reserves" }
 
-function FinancialsSummary({ f, dossierId }: { f: QuickFinancialsView; dossierId: string }) {
+/** Toetsinkomen uit de jaarcijfers, live doorgerekend met de rekenkern (gemiddelde bank en per bank). */
+function EntrepreneurIncome({
+  f,
+  dossierId,
+  control,
+  index,
+  calcYear,
+  lenders,
+  gebruikelijkLoon,
+}: {
+  f: QuickFinancialsView
+  dossierId: string
+  control: Control<QuickForm>
+  index: number
+  calcYear: number
+  lenders: WorkbenchLender[]
+  gebruikelijkLoon: number
+}) {
+  const applicant = useWatch({ control, name: `applicants.${index}` })
+  const results = useMemo(() => {
+    try {
+      const { business } = quickBusiness(f.existing ?? undefined, f.merged, applicant, calcYear)
+      if (!business) return []
+      const input = businessToEngine(business)
+      const norms = { ondernemer: { gebruikelijkLoon } } as NormValues
+      return [{ slug: "__standaard", name: "Gemiddelde bank", policy: {} }, ...lenders].map((lender) => ({
+        lender,
+        r: businessIncome(input, withDefaults(lender.policy as LenderEntrepreneurPolicy), norms),
+      }))
+    } catch {
+      return []
+    }
+  }, [f, applicant, calcYear, lenders, gebruikelijkLoon])
+
+  const main = f.entities.find((e) => e.role !== "geconsolideerd" && e.role !== "holding") ?? f.entities[0]
+  const years = (main?.years ?? []).filter((y) => !y.forecast).map((y) => y.year)
+  const last = years.length ? Math.max(...years) : calcYear - 1
+  const missing = [last - 2, last - 1, last].filter((y) => !years.includes(y))
+  const std = results[0]?.r
+  const banks = results.slice(1).filter((x) => x.r.accepted !== false)
+  const incomes = banks.map((x) => x.r.income)
+
   return (
-    <div className="space-y-2 rounded-lg bg-muted/40 p-3 text-sm">
-      <p className="font-medium">Onderneming: {FORM[f.legalForm ?? ""] ?? "onbekend"}</p>
+    <div className="space-y-3 rounded-lg bg-muted/40 p-3 text-sm">
+      <p className="font-medium">
+        Onderneming: {FORM[f.legalForm ?? ""] ?? "onbekend"}
+        <span className="font-normal text-muted-foreground">
+          {" "}
+          · {f.fileCount} {f.fileCount === 1 ? "bestand" : "bestanden"}
+        </span>
+      </p>
       <ul className="space-y-1">
         {f.entities.map((e) => (
           <li key={e.name}>
@@ -421,14 +491,57 @@ function FinancialsSummary({ f, dossierId }: { f: QuickFinancialsView; dossierId
           </li>
         ))}
       </ul>
-      {f.conflicts.length > 0 || f.warnings.length > 0 ? (
+      {missing.length > 0 ? (
         <p className="flex gap-1.5 text-xs text-amber-800 dark:text-amber-300">
           <AlertTriangle aria-hidden className="size-4 shrink-0" />
-          {f.conflicts.length > 0 ? `${f.conflicts.length} verschil(len) tussen bestanden.` : f.warnings[0]}
+          Banken kijken meestal naar 3 jaar. Upload ook de cijfers over {missing.join(" en ")}.
         </p>
       ) : null}
+      {f.conflicts.length > 0 ? (
+        <p className="flex gap-1.5 text-xs text-amber-800 dark:text-amber-300">
+          <AlertTriangle aria-hidden className="size-4 shrink-0" />
+          {f.conflicts.length} verschil(len) tussen bestanden; de waarde met de hoogste zekerheid is gebruikt.
+        </p>
+      ) : null}
+
+      {std ? (
+        <div className="space-y-2 rounded-lg border bg-background p-3" data-testid="quick-toetsinkomen">
+          <div className="flex flex-wrap items-baseline justify-between gap-2">
+            <span className="font-medium">Toetsinkomen onderneming</span>
+            <span className="text-lg font-semibold tabular-nums">{formatEuro(std.income)}</span>
+          </div>
+          <p className="text-xs text-muted-foreground">
+            Bij een gemiddelde bank
+            {incomes.length > 0 ? `; bij ${incomes.length} banken tussen ${formatEuro(Math.min(...incomes))} en ${formatEuro(Math.max(...incomes))}` : ""}.
+            {std.dga?.tests ? ` Beperkt door: ${LIMITING[std.dga.tests.limitingTest] ?? std.dga.tests.limitingTest}.` : ""}
+          </p>
+          {std.dga ? (
+            <dl className="grid grid-cols-[1fr_auto] gap-x-4 gap-y-0.5 text-xs">
+              <dt className="text-muted-foreground">Salaris DGA dat meetelt</dt>
+              <dd className="text-right tabular-nums">{formatEuro(std.dga.salaryCounted)}</dd>
+              <dt className="text-muted-foreground">Jouw deel uitkeerbare winst</dt>
+              <dd className="text-right tabular-nums">{formatEuro(std.dga.distributableShare)}</dd>
+            </dl>
+          ) : null}
+          {std.warnings.slice(0, 3).map((w) => (
+            <p key={w} className="flex gap-1.5 text-xs text-amber-800 dark:text-amber-300">
+              <AlertTriangle aria-hidden className="size-4 shrink-0" /> {w}
+            </p>
+          ))}
+          {std.explanation.length > 0 ? (
+            <details className="text-xs">
+              <summary className="cursor-pointer text-muted-foreground">Hoe is dit berekend?</summary>
+              <ul className="mt-1 list-disc space-y-0.5 pl-4">
+                {std.explanation.map((e) => (
+                  <li key={e}>{e}</li>
+                ))}
+              </ul>
+            </details>
+          ) : null}
+        </div>
+      ) : null}
       <Link href={`/app/dossiers/${dossierId}/ondernemer`} className="text-xs underline">
-        Cijfers controleren of aanpassen
+        Toetsinkomen per bank bekijken of cijfers aanpassen
       </Link>
     </div>
   )

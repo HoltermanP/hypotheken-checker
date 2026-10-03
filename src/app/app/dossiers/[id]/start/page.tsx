@@ -7,6 +7,7 @@ import { requireUserIdOrRedirect } from "@/lib/auth"
 import { NotFoundError } from "@/lib/services/dossiers"
 import { retentionDays } from "@/lib/services/documents"
 import { loadQuick } from "@/lib/services/quick"
+import { getActiveNormSet, getLenders } from "@/lib/services/reference-data"
 import { isLocalStorage } from "@/lib/storage"
 
 export const metadata = { title: "Start" }
@@ -14,6 +15,7 @@ export const metadata = { title: "Start" }
 export default async function QuickStartPage({ params }: PageProps<"/app/dossiers/[id]/start">) {
   const { id } = await params
   const userId = await requireUserIdOrRedirect()
+  const [lenders, norms] = await Promise.all([getLenders(), getActiveNormSet()])
   let data
   try {
     data = await loadQuick(userId, id)
@@ -27,7 +29,16 @@ export default async function QuickStartPage({ params }: PageProps<"/app/dossier
         Upload je loonstroken en (als je ondernemer bent) je jaarcijfers, vul aan wat we niet uit je documenten halen en klik op Bereken. De rest vullen we in met gangbare
         standaardwaarden; die zie je terug in het advies.
       </p>
-      <QuickStart dossierId={id} defaults={data.defaults} docs={data.docs} financials={data.financials} calcYear={data.calcYear} local={isLocalStorage()} />
+      <QuickStart
+        dossierId={id}
+        defaults={data.defaults}
+        docs={data.docs}
+        financials={data.financials}
+        calcYear={data.calcYear}
+        local={isLocalStorage()}
+        lenders={lenders.filter((l) => l.active).map((l) => ({ slug: l.slug, name: l.name, policy: l.entrepreneur }))}
+        gebruikelijkLoon={norms.values.ondernemer.gebruikelijkLoon}
+      />
       <div className="flex gap-3 rounded-xl border p-4 text-sm text-muted-foreground">
         <ShieldCheck aria-hidden className="size-5 shrink-0 text-primary" />
         <p>

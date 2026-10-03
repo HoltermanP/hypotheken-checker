@@ -284,6 +284,35 @@ function freshBusiness(merged: MergedFinancials, calcYear: number): BusinessForm
 }
 
 /**
+ * De onderneming van één aanvrager na het overnemen van de jaarcijfers (en, bij een DGA, het
+ * salaris uit de loonstrook). Gedeeld door de berekening en de live preview van het toetsinkomen.
+ */
+export function quickBusiness(
+  existing: BusinessForm | undefined,
+  merged: MergedFinancials | null,
+  a: QuickApplicant,
+  calcYear: number
+): { business: BusinessForm | undefined; changed: boolean; salaryNote: string | null } {
+  let business = existing ? structuredClone(existing) : undefined
+  let changed = false
+  if (merged && merged.entities.length > 0) {
+    business = applyFinancialsToBusiness(business ?? freshBusiness(merged, calcYear), merged).business
+    if (!business.startDate) business.startDate = freshBusiness(merged, calcYear).startDate
+    changed = true
+  }
+  const bv = business && (business.legalForm === "bv" || business.legalForm === "bv_holding") ? business.bv : undefined
+  let salaryNote: string | null = null
+  if (bv && a.salaryFromOwnBv && a.grossMonthlySalary > 0) {
+    const s = annualSalary(a)
+    const amount = round(s.gross + s.holiday + s.thirteenth)
+    bv.salaries = [...bv.salaries.filter((x) => x.year !== calcYear), { year: calcYear, amount }].sort((x, y) => x.year - y.year).slice(-4)
+    changed = true
+    salaryNote = `Salaris uit je loonstrook telt als DGA-salaris ${calcYear} (${amount} per jaar incl. vakantiegeld).`
+  }
+  return { business, changed, salaryNote }
+}
+
+/**
  * Zet het snelle formulier om naar intake-stappen. `financials[i]` zijn de samengevoegde
  * jaarcijfers van aanvrager i (of null).
  */
@@ -329,23 +358,13 @@ export function quickToIntake(q: QuickForm, intake: IntakeData, financials: (Mer
   const ondernemer = { applicants: Array.from({ length: count }, (_, i) => ({ businesses: structuredClone(prevO?.applicants[i]?.businesses ?? []) })) }
   let businessChanged = false
   q.applicants.slice(0, count).forEach((a, i) => {
-    const merged = financials[i]
     const list = ondernemer.applicants[i]!.businesses
-    if (merged && merged.entities.length > 0) {
-      const base = list[0] ?? freshBusiness(merged, calcYear)
-      const { business } = applyFinancialsToBusiness(base, merged)
-      if (!business.startDate) business.startDate = freshBusiness(merged, calcYear).startDate
-      list[0] = business
+    const r = quickBusiness(list[0], financials[i] ?? null, a, calcYear)
+    if (r.changed && r.business) {
+      list[0] = r.business
       businessChanged = true
     }
-    const bv = list[0] && (list[0].legalForm === "bv" || list[0].legalForm === "bv_holding") ? list[0].bv : undefined
-    if (bv && a.salaryFromOwnBv && a.grossMonthlySalary > 0) {
-      const s = annualSalary(a)
-      const amount = round(s.gross + s.holiday + s.thirteenth)
-      bv.salaries = [...bv.salaries.filter((x) => x.year !== calcYear), { year: calcYear, amount }].sort((x, y) => x.year - y.year).slice(-4)
-      businessChanged = true
-      notes.push(`Salaris uit je loonstrook telt als DGA-salaris ${calcYear} (${amount} per jaar incl. vakantiegeld).`)
-    }
+    if (r.salaryNote) notes.push(r.salaryNote)
     entrepreneur[i] = list.length > 0
   })
   if (businessChanged) steps.push(["ondernemer", ondernemer])
